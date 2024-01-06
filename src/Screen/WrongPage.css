@@ -5,3 +5,9 @@
     align-items: center;
     flex-direction: column;
 }
+.WrongPage-Text{
+    font-size: 35px;
+    font-family: 'Arial Narrow Bold';
+    margin-bottom: 0px;
+    margin-top: 0px;
+}

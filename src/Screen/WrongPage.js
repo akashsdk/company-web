@@ -7,7 +7,8 @@ export default function WrongPage() {
   return (
     <div className="WrongPage-Body">
       <Result status="500" />
-      <p>Sorry, We could not find the page! Something went wrong.</p>
+      <p className="WrongPage-Text">404! 'This page does not exist'</p>
+      <p>Sorry, we couldn’t find the page you’re looking for.</p>
       <Link to="/" style={{ textDecoration: "none" }}>
         <Button type="primary" danger>
           Back Home
