@@ -14,16 +14,6 @@ export default function Header() {
     setOpen(false);
   };
 
-
-  const [theme, setTheme] = useState('light'); // State to manage theme
-
-  const handleDarkTheme = () => {
-    setTheme('App');
-  };
-
-  const handleLightTheme = () => {
-    setTheme('light');
-  };
   return (
     <div className="headerBody">
       {/* For max size 1000 */}
@@ -62,11 +52,7 @@ export default function Header() {
       <div className="headerBox-1">Icon and name</div>
       <div className="headerBox-2">Link</div>
       <div className="headerBox-3">
-      <div className={`App ${theme}`}>
-      <h1>Dark and Light Theme Buttons</h1>
-      <button onClick={handleDarkTheme}>Dark Theme</button>
-      <button onClick={handleLightTheme}>Light Theme</button>
-    </div>
+        
       </div>
     </div>
   );

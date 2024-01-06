@@ -1,14 +1,12 @@
-.App {
-  text-align: center;
-  background-color: black;
-  color: #fff;
-}
+
 .light {
+  text-align: center;
   background-color: white;
   color: black;
 }
 
 .dark {
+  text-align: center;
   background-color: black;
   color: white;
 }
