@@ -3,10 +3,9 @@ import "./App.css";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import { BulbOutlined, SyncOutlined } from "@ant-design/icons";
 import { FloatButton } from "antd";
-import sun from './Icon/sun.png';
-import moon from './Icon/moon.png';
+import sun from "./Icon/sun.png";
+import moon from "./Icon/moon.png";
 
 import WrongPage from "./Screen/WrongPage";
 import Home from "./Screen/Home";
@@ -41,8 +40,30 @@ function App() {
           right: 24,
         }}
       >
-        <FloatButton onClick={handleDarkTheme} />
-        <FloatButton onClick={handleLightTheme} icon={<BulbOutlined />} />
+        {theme === "dark" ? (
+          <FloatButton
+            onClick={handleLightTheme}
+            icon={
+              <img
+                style={{ height: "25px", marginLeft: "-3px" }}
+                src={sun}
+                alt=""
+              />
+            }
+          />
+        ) : (
+          <FloatButton
+            onClick={handleDarkTheme}
+            icon={
+              <img
+                style={{ height: "25px", marginLeft: "-3px" }}
+                src={moon}
+                alt=""
+              />
+            }
+          />
+        )}
+
         <FloatButton.BackTop visibilityHeight={0} />
       </FloatButton.Group>
     </BrowserRouter>
