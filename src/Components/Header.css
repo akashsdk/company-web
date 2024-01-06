@@ -1,0 +1,62 @@
+.headerBody {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerBox {
+  display: none;
+}
+.headerBox-Menu {
+  background-color: transparent;
+  border: none;
+}
+.header-MenuBox1 {
+  height: auto;
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+.header-MenuBox {
+    height: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.header-MenuBox2 {
+    height: auto;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.headerBox-1 {
+  flex: 1;
+}
+.headerBox-2 {
+  flex: 3;
+}
+.headerBox-3 {
+  flex: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+  .headerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerBox-1 {
+    display: none;
+  }
+  .headerBox-2 {
+    display: none;
+  }
+  .headerBox-3 {
+    display: none;
+  }
+}
