@@ -15,6 +15,7 @@ import Contacts from "./Screen/Contacts";
 import AboutUs from './Screen/AboutUs';
 import Career from './Screen/Career';
 import Services from './Screen/Services';
+import Blog from './Screen/Blog';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -37,6 +38,7 @@ function App() {
           <Route path="/About-Us" element={<AboutUs />} />
           <Route path="/Career" element={<Career />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/Blog" element={<Blog />} />
         </Routes>
         <Footer />
       </div>

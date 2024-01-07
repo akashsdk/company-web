@@ -15,49 +15,70 @@ export default function Header() {
   };
 
   return (
-    <div className="header-body" >
+    <div className="header-body">
       <div className="headerBody">
-      {/* For max size 1000 */}
+        {/* For max size 1000 */}
 
-      <div className="headerBox">
-        <div className="header-MenuBox1">
-          <Button
-            className="headerBox-Menu"
-            shape="circle"
-            onClick={showDrawer}
-            icon={<MenuOutlined />}
-          />
+        <div className="headerBox">
+          <div className="header-MenuBox1">
+            <Button
+              className="headerBox-Menu"
+              shape="circle"
+              onClick={showDrawer}
+              icon={<MenuOutlined />}
+            />
+          </div>
+          <div className="header-MenuBox">Name&Icon</div>
+          <div className="header-MenuBox2">Icon</div>
         </div>
-        <div className="header-MenuBox">Name&Icon</div>
-        <div className="header-MenuBox2">Icon</div>
-      </div>
 
-      <Drawer
-        title="App Name"
-        placement="left"
-        width={500}
-        onClose={onClose}
-        open={open}
-        extra={
-          <Space>
-            <Button shape="circle" onClick={onClose} icon={<CloseOutlined />} />
-          </Space>
-        }
-      >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Drawer>
+        <Drawer
+          title="App Name"
+          placement="left"
+          width={500}
+          onClose={onClose}
+          open={open}
+          extra={
+            <Space>
+              <Button
+                shape="circle"
+                onClick={onClose}
+                icon={<CloseOutlined />}
+              />
+            </Space>
+          }
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
 
-      {/* For mim size 1000 */}
-      <div className="headerBox-1">Icon and name</div>
-      <div className="headerBox-2">
-        
-      </div>
-      <div className="headerBox-3">yyyy</div>
+        {/* For mim size 1000 */}
+        <div className="headerBox-1">Icon and name</div>
+        <div className="headerBox-2">
+          <div>
+            <p>Home</p>
+          </div>
+
+          <div>
+            <p>Services</p>
+          </div>
+
+          <div>
+            <p>About Us</p>
+          </div>
+
+          <div>
+            <p>Career</p>
+          </div>
+
+          <div>
+            <p>Button</p>
+          </div>
+        </div>
+        <div className="headerBox-3">yyyy</div>
       </div>
       <div className="header-Line" />
-
     </div>
   );
 }
