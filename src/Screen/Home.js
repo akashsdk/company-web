@@ -3,8 +3,10 @@ import "./Home.css";
 import { FloatButton } from "antd";
 
 import HomeAnimation from "../Components/HomeAnimation";
+import SoftwareService from '../Cart/SoftwareService';
 
 import img1 from "../Image/We-Deploy-World.png";
+import img2 from '../Icon/computer.png';
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -12,7 +14,7 @@ export default function Home() {
     <div className="home-Body">
       <div className="homeBody">
         {/* <HomeAnimation/> */}
-        <div className="homeMain-Body">
+        {/* <div className="homeMain-Body">
           <div className="homeMain-Left">
             <p>Offshore Software Development 🙌</p>
             <p>We Deploy World Class Agile Product Teams on Demand</p>
@@ -46,6 +48,10 @@ export default function Home() {
           <div className="homeMain-Right">
             <img className="homeMain-Right-Img" src={img1} alt="SVG" />
           </div>
+        </div> */}
+        <div style={{display:'flex'}}>
+        <SoftwareService img={img2} text1='Compuerr' text2='Fahim'/>
+        <SoftwareService img={img1} text1='Compuerr' text2='Fahim'/>
         </div>
       </div>
     </div>
