@@ -96,6 +96,25 @@
   font-size: 20px;
   font-weight: 600;
 }
+.home-Part-Box {
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+.home-Part-Div {
+  width: 80%;
+  margin-left: 10%;
+}
+.home-Part-Text1 {
+  font-size: 30px;
+  color: rgb(49, 49, 143);
+  font-weight: 800;
+}
+.home-Part-Text2 {
+  font-size: 16px;
+  opacity: 0.6;
+  text-align: center;
+}
 @media only screen and (max-width: 1000px) {
   .homeMain-Body {
     flex-direction: column;
@@ -126,5 +145,15 @@
   }
   .homeMain-Left-Text6 {
     font-size: 18px;
+  }
+  .home-Part-Box {
+    margin-top: 0px;
+  }
+  .home-Part-Div {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .home-Part-Text1 {
+    font-size: 25px;
   }
 }

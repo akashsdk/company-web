@@ -3,10 +3,12 @@ import "./Home.css";
 import { FloatButton } from "antd";
 
 import HomeAnimation from "../Components/HomeAnimation";
-import SoftwareService from '../Cart/SoftwareService';
+import SoftwareService from "../Cart/SoftwareService";
 
 import img1 from "../Image/We-Deploy-World.png";
-import img2 from '../Image/pngtree-blue-removebg-preview (1).png';
+import img2 from "../Image/pngtree-blue-removebg-preview (1).png";
+
+import icon1 from "../Icon/computer.png";
 
 import { Link } from "react-router-dom";
 
@@ -14,7 +16,7 @@ export default function Home() {
   return (
     <div className="home-Body">
       <div className="homeBody">
-        <HomeAnimation/>
+        <HomeAnimation />
         {/* Main-Body */}
         {/* <div className="homeMain-Body">
           <div className="homeMain-Left">
@@ -54,10 +56,29 @@ export default function Home() {
             <img className="homeMain-Right-Img" src={img1} alt="SVG" />
           </div>
         </div> */}
-        {/* <div style={{display:'flex'}}>
-        <SoftwareService img={img2} text1='Compuerr' text2='Fahim'/>
-        <SoftwareService img={img1} text1='Compuerr' text2='Fahim'/>
-        </div> */}
+
+        {/* SoftwareService-Part */}
+        <div className="home-Part-Box">
+          <div className="home-Part-Div">
+            <p className="home-Part-Text1">Most Effective Software Development Outsourcing Service</p>
+            <p className="home-Part-Text2">
+              As your software development partner, we are committed to helping
+              you establish long-term business relationships. We offer a variety
+              of outsourcing services that can be tailored to your specific
+              needs. Our team of experts has extensive experience in all aspects
+              of software development, from enterprise applications to mobile
+              apps and everything in between.
+            </p>
+          </div>
+          <div style={{width:'100%'}}>
+            <SoftwareService
+              img={icon1}
+              text1="Scalable System Design"
+              text2="High-performing product giving you a tailored solution for your business."
+            />
+            <SoftwareService img={img1} text1="Compuerr" text2="Fahim" />
+          </div>
+        </div>
       </div>
     </div>
   );

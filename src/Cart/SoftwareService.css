@@ -1,23 +1,48 @@
-.SoftwareService-Body{
-    height: 280px;
-    width: 350px;
-    background-color: rgb(222, 222, 249);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.SoftwareService-Body {
+  height: 280px;
+  width: 350px;
+  background-color: rgb(232, 232, 250);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.SoftwareService-Icon{
-    height: 80px;
+.SoftwareService-Icon {
+  height: 80px;
 }
-.SoftwareService-Text1{
-    font-size: 30px;
-    
+.SoftwareService-div {
+  height: auto;
+  width: 300px;
 }
-.SoftwareService-Text2{
-    opacity: .6;
-    
+.SoftwareService-Text1 {
+  font-size: 25px;
+  color: rgb(49, 49, 143);
+  font-weight: 600;
+}
+.SoftwareService-Text2 {
+  opacity: 0.6;
+  margin-top: -5px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .SoftwareService-Body {
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .SoftwareService-Icon {
+    height: 60px;
+  }
+  .SoftwareService-div {
+    width: 100%;
+  }
+  .SoftwareService-Text1 {
+    font-size: 20px;
+  }
 }
