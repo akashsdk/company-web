@@ -7,5 +7,11 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
-    background-color: aqua;
+}
+.homeMain-Body{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
