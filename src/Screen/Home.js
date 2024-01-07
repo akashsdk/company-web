@@ -3,6 +3,12 @@ import './Home.css';
 
 export default function Home() {
   return (
-    <div style={{height:'1500px'}}>Home</div>
+    <div className='home-Body'>
+      <div className='homeBody'>
+      <div style={{height:'2000px'}}>
+        
+      </div>
+      </div>
+    </div>
   )
 }

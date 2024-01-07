@@ -1,0 +1,11 @@
+.home-Body{
+    height: calc(100vh - 100px);
+    width: 100%;
+    overflow: auto;
+}
+.homeBody{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    background-color: aqua;
+}
