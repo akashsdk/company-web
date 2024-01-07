@@ -113,4 +113,18 @@
     height: 350px;
     margin-top: 30px;
   }
+  .homeMain-Left-Text4 {
+    font-size: 25px;
+  }
+  .homeMain-Left-Img {
+    height: 25px;
+  }
+  .homeMain-Left-Link {
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+  }
+  .homeMain-Left-Text6 {
+    font-size: 18px;
+  }
 }

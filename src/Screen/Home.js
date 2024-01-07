@@ -14,8 +14,9 @@ export default function Home() {
   return (
     <div className="home-Body">
       <div className="homeBody">
-        {/* <HomeAnimation/> */}
-        <div className="homeMain-Body">
+        <HomeAnimation/>
+        {/* Main-Body */}
+        {/* <div className="homeMain-Body">
           <div className="homeMain-Left">
             <p className="homeMain-Left-Text1">Offshore Software Development 🙌</p>
             <p className="homeMain-Left-Text2">We Deploy World Class Agile Product Teams on Demand</p>
@@ -27,7 +28,7 @@ export default function Home() {
               efficient way.
             </p>
             <div className="homeMain-Left-Box1">
-              <div className="homeMain-Left-Box2">
+              <div >
                 <p className="homeMain-Left-Text4">3+</p>
                 <img className="homeMain-Left-Img" src={img2} alt=""/>
                 <p className="homeMain-Left-Text5">Years of experience</p>
@@ -52,7 +53,7 @@ export default function Home() {
           <div className="homeMain-Right">
             <img className="homeMain-Right-Img" src={img1} alt="SVG" />
           </div>
-        </div>
+        </div> */}
         {/* <div style={{display:'flex'}}>
         <SoftwareService img={img2} text1='Compuerr' text2='Fahim'/>
         <SoftwareService img={img1} text1='Compuerr' text2='Fahim'/>
