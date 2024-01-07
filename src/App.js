@@ -12,6 +12,9 @@ import Home from "./Screen/Home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Contacts from "./Screen/Contacts";
+import AboutUs from './Screen/AboutUs';
+import Career from './Screen/Career';
+import Services from './Screen/Services';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -31,6 +34,9 @@ function App() {
           <Route path="*" element={<WrongPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/About-Us" element={<AboutUs />} />
+          <Route path="/Career" element={<Career />} />
+          <Route path="/Services" element={<Services />} />
         </Routes>
         <Footer />
       </div>

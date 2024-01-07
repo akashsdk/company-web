@@ -51,7 +51,9 @@ export default function Header() {
 
       {/* For mim size 1000 */}
       <div className="headerBox-1">Icon and name</div>
-      <div className="headerBox-2">Link</div>
+      <div className="headerBox-2">
+        
+      </div>
       <div className="headerBox-3">yyyy</div>
       </div>
       <div className="header-Line" />
