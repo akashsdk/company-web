@@ -6,7 +6,8 @@ import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from '../Cart/SoftwareService';
 
 import img1 from "../Image/We-Deploy-World.png";
-import img2 from '../Icon/computer.png';
+import img2 from '../Image/pngtree-blue-removebg-preview (1).png';
+
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -25,24 +26,27 @@ export default function Home() {
               that can design, build, space and scale your vision in the most
               efficient way.
             </p>
-            <div>
-              <div>
+            <div className="homeMain-Left-Box1">
+              <div className="homeMain-Left-Box2">
                 <p className="homeMain-Left-Text4">3+</p>
+                <img className="homeMain-Left-Img" src={img2} alt=""/>
                 <p className="homeMain-Left-Text5">Years of experience</p>
               </div>
 
-              <div>
+              <div className="homeMain-Left-Box2">
                 <p className="homeMain-Left-Text4">10+</p>
+                <img className="homeMain-Left-Img" src={img2} alt=""/>
                 <p className="homeMain-Left-Text5">Dedicated Engineers</p>
               </div>
 
-              <div>
+              <div className="homeMain-Left-Box2">
                 <p className="homeMain-Left-Text4">11+</p>
+                <img className="homeMain-Left-Img" src={img2} alt=""/>
                 <p className="homeMain-Left-Text5">Successful Projects</p>
               </div>
             </div>
-            <Link>
-              <p>Hire Developers</p>
+            <Link to='/Contacts' className="homeMain-Left-Link">
+              <p className="homeMain-Left-Text6">Hire Developers</p>
             </Link>
           </div>
           <div className="homeMain-Right">
