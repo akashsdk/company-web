@@ -15,7 +15,8 @@ export default function Header() {
   };
 
   return (
-    <div className="headerBody">
+    <div className="header-body" >
+      <div className="headerBody">
       {/* For max size 1000 */}
 
       <div className="headerBox">
@@ -51,9 +52,10 @@ export default function Header() {
       {/* For mim size 1000 */}
       <div className="headerBox-1">Icon and name</div>
       <div className="headerBox-2">Link</div>
-      <div className="headerBox-3">
-        
+      <div className="headerBox-3">yyyy</div>
       </div>
+      <div className="header-Line" />
+
     </div>
   );
 }

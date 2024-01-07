@@ -14,7 +14,7 @@ import Footer from "./Components/Footer";
 import Contacts from "./Screen/Contacts";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   const handleDarkTheme = () => {
     setTheme("dark");
