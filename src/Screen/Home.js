@@ -14,11 +14,11 @@ export default function Home() {
     <div className="home-Body">
       <div className="homeBody">
         {/* <HomeAnimation/> */}
-        {/* <div className="homeMain-Body">
+        <div className="homeMain-Body">
           <div className="homeMain-Left">
-            <p>Offshore Software Development 🙌</p>
-            <p>We Deploy World Class Agile Product Teams on Demand</p>
-            <p>
+            <p className="homeMain-Left-Text1">Offshore Software Development 🙌</p>
+            <p className="homeMain-Left-Text2">We Deploy World Class Agile Product Teams on Demand</p>
+            <p className="homeMain-Left-Text3">
               Vivasoft specializes in providing custom software development
               services. Get premium software solutions from a reliable
               outsourcing partner and set your business apart. Skilled teams
@@ -27,18 +27,18 @@ export default function Home() {
             </p>
             <div>
               <div>
-                <p>3+</p>
-                <p>Years of experience</p>
+                <p className="homeMain-Left-Text4">3+</p>
+                <p className="homeMain-Left-Text5">Years of experience</p>
               </div>
 
               <div>
-                <p>10+</p>
-                <p>Dedicated Engineers</p>
+                <p className="homeMain-Left-Text4">10+</p>
+                <p className="homeMain-Left-Text5">Dedicated Engineers</p>
               </div>
 
               <div>
-                <p>11+</p>
-                <p>Successful Projects</p>
+                <p className="homeMain-Left-Text4">11+</p>
+                <p className="homeMain-Left-Text5">Successful Projects</p>
               </div>
             </div>
             <Link>
@@ -48,11 +48,11 @@ export default function Home() {
           <div className="homeMain-Right">
             <img className="homeMain-Right-Img" src={img1} alt="SVG" />
           </div>
-        </div> */}
-        <div style={{display:'flex'}}>
+        </div>
+        {/* <div style={{display:'flex'}}>
         <SoftwareService img={img2} text1='Compuerr' text2='Fahim'/>
         <SoftwareService img={img1} text1='Compuerr' text2='Fahim'/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
