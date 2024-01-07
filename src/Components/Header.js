@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Header.css";
 
-import { Button, Drawer, Space } from "antd";
-import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import { Button, Drawer, Space, Menu } from "antd";
+import { MenuOutlined, CloseOutlined, DownOutlined } from "@ant-design/icons";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -56,27 +57,42 @@ export default function Header() {
         {/* For mim size 1000 */}
         <div className="headerBox-1">Icon and name</div>
         <div className="headerBox-2">
-          <div>
-            <p>Home</p>
+          <div className="headerBox-2-Box">
+            <Link to="/" className="headerBox-2-Link">
+              <p className="headerBox-2-Text">Home</p>
+            </Link>
           </div>
 
-          <div>
-            <p>Services</p>
+          <div className="headerBox-2-Box">
+            <p className="headerBox-2-Text">Services</p>
+            <DownOutlined className="headerBox-2-Icon" />
           </div>
 
-          <div>
-            <p>About Us</p>
+          <div className="headerBox-2-Box">
+            <Link to="/Career" className="headerBox-2-Link">
+              <p className="headerBox-2-Text">Career</p>
+            </Link>
           </div>
 
-          <div>
-            <p>Career</p>
+          <div className="headerBox-2-Box">
+            <Link to="/Blog" className="headerBox-2-Link">
+              <p className="headerBox-2-Text">Blog</p>
+            </Link>
           </div>
 
-          <div>
-            <p>Button</p>
+          <div className="headerBox-2-Box">
+            <Link to="/About-Us" className="headerBox-2-Link">
+              <p className="headerBox-2-Text">About Us</p>
+            </Link>
           </div>
         </div>
-        <div className="headerBox-3">yyyy</div>
+        <div className="headerBox-3">
+          <Link style={{ textDecoration: "none" }} to="/Contacts">
+            <button className="headerBox-3-Button">
+              <p className="headerBox-3-BText">Get Started</p>
+            </button>
+          </Link>
+        </div>
       </div>
       <div className="header-Line" />
     </div>

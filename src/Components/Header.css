@@ -1,10 +1,11 @@
-.header-body{
+.header-body {
   height: auto;
   width: 100%;
 }
 .headerBody {
   height: 100px;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,35 +25,91 @@
   margin-left: 5%;
 }
 .header-MenuBox {
-    height: auto;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  height: auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header-MenuBox2 {
-    height: auto;
-    width: 25%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
+  height: auto;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
 }
 .headerBox-1 {
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .headerBox-2 {
   flex: 3;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .headerBox-3 {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.headerBox-2-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  color: #000;
+
+}
+.headerBox-2-Text{
+  font-size: 18px;
+  font-weight: 700;
+
+}
+.headerBox-2-Icon{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.headerBox-2-Link{
+  text-decoration: none;
+  color: #000;
+}
+.headerBox-2-Box:hover{
+  color: rgb(98, 54, 242);
+}
+.headerBox-2-Link:hover{
+  color: rgb(98, 54, 242);
 }
 
-.header-Line{
-  height: .5px;
+
+
+
+
+
+
+
+.headerBox-3-Button {
+  height: 70px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid rgb(98, 54, 242);
+  color: rgb(98, 54, 242);
+}
+.headerBox-3-BText {
+  font-size: 20px;
+}
+.headerBox-3-Button:hover {
+  background-color: rgb(98, 54, 242);
+  border: 2px solid rgb(98, 54, 242);
+  color: #fff;
+}
+
+.header-Line {
+  height: 0.5px;
   background-color: rgb(177, 177, 177);
   width: 90%;
   margin-left: 5%;
