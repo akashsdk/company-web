@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from "../Cart/SoftwareService";
 import HomeWorks from "../Cart/HomeWorks";
-import HomeTechnology from '../Cart/HomeTechnology';
+import HomeTechnology from "../Cart/HomeTechnology";
 
 import img1 from "../Image/We-Deploy-World.png";
 import img2 from "../Image/pngtree-blue-removebg-preview (1).png";
@@ -27,7 +27,21 @@ import icon11 from "../Icon/presentation.png";
 import icon12 from "../Icon/customer-service.png";
 import icon13 from "../Icon/offshore.png";
 
-import icon14 from '../Icon/java.png';
+
+import icon14 from "../Icon/java.png";
+import icon15 from "../Icon/html.png";
+import icon16 from "../Icon/css-3.png";
+import icon17 from "../Icon/python.png";
+import icon18 from "../Icon/science.png";
+import icon19 from "../Icon/icons8-flutter-480.png";
+import icon20 from "../Icon/icons8-amazon-web-services-480.png";
+import icon21 from "../Icon/icons8-angular-96.png";
+import icon22 from "../Icon/icons8-vuejs-240.png";
+import icon23 from '../Icon/icons8-nodejs-480.png';
+import icon24 from '../Icon/icons8-js-480.png';
+import icon25 from '../Icon/icons8-firebase.png';
+import icon26 from '../Icon/icons8-mongodb.png';
+import icon27 from '../Icon/muSQL-removebg-preview.png';
 
 export default function Home() {
   return (
@@ -230,10 +244,22 @@ export default function Home() {
           </div>
 
           <div>
-            <HomeTechnology img={icon14} text='Java'/>
+            <HomeTechnology img={icon15} text="HTML" color="rgb(227, 76, 38)" />
+            <HomeTechnology img={icon16} text="CSS" color="rgb(38, 77, 228)" />
+            <HomeTechnology img={icon14} text="Java" color="rgb(240, 219, 79)" />
+            <HomeTechnology img={icon19} text="Flutter" color="rgb(42, 217, 200)" />
+            <HomeTechnology img={icon20} text="aws" color="rgb(37, 47, 62)" />
+            <HomeTechnology img={icon17} text="Python" color="rgb(75, 139, 190)" />
+            <HomeTechnology img={icon21} text="Angular" color="rgb(250, 66, 34)" />
+            <HomeTechnology img={icon18} text="React" color="rgb(97, 219, 251)" />
+            <HomeTechnology img={icon22} text="VueJS" color="rgb(65, 184, 131)" />
+            <HomeTechnology img={icon23} text="NodeJS" color="rgb(48, 48, 48)" />
+            <HomeTechnology img={icon24} text="ExpressJS" color="#68A063" />
+            <HomeTechnology img={icon25} text="Firebase" color="#FFA611" />
+            <HomeTechnology img={icon26} text="MongoDB" color="rgb(77, 179, 61)" />
+            <HomeTechnology img={icon27} text="MySQL" color="#F29111" />
           </div>
         </div>
-
       </div>
     </div>
   );
