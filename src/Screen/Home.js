@@ -1,12 +1,16 @@
 import React from "react";
 import "./Home.css";
 import { FloatButton } from "antd";
+import { Link } from "react-router-dom";
 
 import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from "../Cart/SoftwareService";
+import HomeWorks from "../Cart/HomeWorks";
+import HomeTechnology from '../Cart/HomeTechnology';
 
 import img1 from "../Image/We-Deploy-World.png";
 import img2 from "../Image/pngtree-blue-removebg-preview (1).png";
+import img3 from "../Image/Web-dev-removebg-preview.png";
 
 import icon1 from "../Icon/computer.png";
 import icon2 from "../Icon/cloud-computing.png";
@@ -18,14 +22,19 @@ import icon7 from "../Icon/application.png";
 import icon8 from "../Icon/ux-design.png";
 import icon9 from "../Icon/assurance.png";
 
-import { Link } from "react-router-dom";
+import icon10 from "../Icon/motivation.png";
+import icon11 from "../Icon/presentation.png";
+import icon12 from "../Icon/customer-service.png";
+import icon13 from "../Icon/offshore.png";
+
+import icon14 from '../Icon/java.png';
 
 export default function Home() {
   return (
     <div className="home-Body">
       <div className="homeBody">
         {/* HomeAnimation-Part */}
-        <HomeAnimation />
+        {/* <HomeAnimation /> */}
 
         {/* Main-Body */}
         <div className="homeMain-Body">
@@ -69,6 +78,58 @@ export default function Home() {
           <div className="homeMain-Right">
             <img className="homeMain-Right-Img" src={img1} alt="SVG" />
           </div>
+        </div>
+
+        {/* HomeWorks-Part */}
+        <div className="home-Part-Box2">
+          <div style={{ height: "20px" }} />
+          <div className="home-Part-Div2">
+            <p className="home-Part-Text1">How 'web name' Works</p>
+            <p className="home-Part-Text2">
+              We follow agile methodology to deliver a high quality task to meet
+              established deadline. A business can choose the software
+              outsourcing business model that best matches their needs. We will
+              help them augment their core competencies.
+            </p>
+          </div>
+          <div className="home-Part-Flex2">
+            <Link className="home-Part-Link2" to="/Home-TeamAugmentation">
+              <HomeWorks
+                img={icon10}
+                text1="Team Augmentation"
+                text2="Our team of expert software engineers provides additional support to your in-house team, ensuring a seamless collaboration and a boosted workflow. With our support, you can tackle even the most complex projects with confidence."
+                text3="Know More"
+              />
+            </Link>
+
+            <Link className="home-Part-Link2" to="/Home-ProjectDevelopment">
+              <HomeWorks
+                img={icon11}
+                text1="Project Development"
+                text2="Our team of experts takes your ideas and transforms them into top-notch products through an efficient and cost-effective process. We aim to deliver products that are ready for user testing, ensuring a smooth and successful launch."
+                text3="Estimate Project"
+              />
+            </Link>
+
+            <Link className="home-Part-Link2" to="/Home-MVP-Services">
+              <HomeWorks
+                img={icon12}
+                text1="MVP Services"
+                text2="We are an experienced and MVP development company that will help you bring your product to life. Our end-to-end service covers the entire process, from ideation and design to delivery and ongoing support."
+                text3="Know More"
+              />
+            </Link>
+
+            <Link className="home-Part-Link2" to="/Home-OffshoreDev">
+              <HomeWorks
+                img={icon13}
+                text1="Offshore Development"
+                text2="Wondering how to outsource software development to an offshore company? We built overseas team to work on your projects. acts as an extension of your in-house team and has the task of fast-tracking your projects."
+                text3="Expand Office"
+              />
+            </Link>
+          </div>
+          <div style={{ height: "20px" }} />
         </div>
 
         {/* SoftwareService-Part */}
@@ -140,6 +201,39 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Technology-Part */}
+        <div className="home-Part-Box">
+          <div className="home-Part-Div">
+            <p className="home-Part-Text1">Technology We Used</p>
+            <p className="home-Part-Text2">
+              It has become a prerequisite for companies to develop custom
+              software products to stay competitive. 'web Name' technical
+              expertise use the most popular technology for development
+              outsourcing software.
+            </p>
+          </div>
+
+          <div className="home-Part3-Box">
+            <div className="home-Part3-Div">
+              <img className="home-Part3-img" src={img3} alt="" />
+              <div className="home-Part3-DivRight">
+                <p className="home-Part3-text1">
+                  Using The most Update Technology
+                </p>
+                <p className="home-Part3-text2">
+                  Entrusting the new technology to the most advanced programmers
+                  will ensure a more robust and high-performing system.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <HomeTechnology img={icon14} text='Java'/>
+          </div>
+        </div>
+
       </div>
     </div>
   );

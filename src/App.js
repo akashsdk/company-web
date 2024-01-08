@@ -17,6 +17,11 @@ import Career from './Screen/Career';
 import Services from './Screen/Services';
 import Blog from './Screen/Blog';
 
+import TeamAugmentation from './SemiScreen/TeamAugmentation';
+import ProjectDevelopment from './SemiScreen/ProjectDevelopment';
+import OffshoreDev from './SemiScreen/OffshoreDev';
+import MVPServices from './SemiScreen/MVPServices';
+
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -39,6 +44,11 @@ function App() {
           <Route path="/Career" element={<Career />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Blog" element={<Blog />} />
+
+          <Route path="/Home-TeamAugmentation" element={<TeamAugmentation />} />
+          <Route path="/Home-ProjectDevelopment" element={<ProjectDevelopment />} />
+          <Route path="/Home-MVP-Services" element={<MVPServices />} />
+          <Route path="/Home-OffshoreDev" element={<OffshoreDev />} />
         </Routes>
         <Footer />
       </div>

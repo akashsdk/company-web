@@ -96,6 +96,34 @@
   font-size: 20px;
   font-weight: 600;
 }
+.home-Part-Box2 {
+  height: auto;
+  width: 108%;
+  margin-top: 10px;
+  background-color: rgb(232, 232, 250);
+  border-radius: 8px;
+  margin-left: -4%;
+}
+.home-Part-Div2 {
+  width: 80%;
+  margin-left: 10%;
+}
+.home-Part-Flex2 {
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-Part-Link2 {
+  text-decoration: none;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .home-Part-Box {
   height: auto;
   width: 100%;
@@ -115,10 +143,49 @@
   opacity: 0.6;
   text-align: center;
 }
-.home-Part-Flex{
+.home-Part-Flex {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+}
+.home-Part3-Box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-Part3-Div {
+  height: 200px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 20px;
+}
+.home-Part3-img {
+  height: 180px;
+  margin-left: 10px;
+}
+.home-Part3-DivRight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.home-Part3-text1 {
+  font-size: 25px;
+  color: rgb(49, 49, 143);
+  margin-top: 0px;
+  font-weight: 600;
+  text-align: left;
+}
+.home-Part3-text2 {
+  text-align: left;
+  margin-top: 0px;
 }
 @media only screen and (max-width: 1000px) {
   .homeMain-Body {
@@ -161,18 +228,34 @@
   .home-Part-Text1 {
     font-size: 25px;
   }
-  .home-Part-Flex{
+  .home-Part-Flex2 {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-Part-Flex {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
   }
-  .home-Part-FlexDiv{
+  .home-Part-FlexDiv {
     height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .home-Part3-Div {
+    width: 100%;
+  }
+  .home-Part3-img {
+    height: 100px;
+    margin-left: 10px;
+  }
+  .home-Part3-text1 {
+    font-size: 20px;
+    font-weight: 600;
+
   }
 }
