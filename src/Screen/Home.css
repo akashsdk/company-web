@@ -115,6 +115,11 @@
   opacity: 0.6;
   text-align: center;
 }
+.home-Part-Flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 @media only screen and (max-width: 1000px) {
   .homeMain-Body {
     flex-direction: column;
@@ -155,5 +160,19 @@
   }
   .home-Part-Text1 {
     font-size: 25px;
+  }
+  .home-Part-Flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .home-Part-FlexDiv{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
