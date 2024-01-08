@@ -1,6 +1,6 @@
 .HomeTech-Body{
     height: 60px;
-    width: 150px;
+    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,4 +20,16 @@
 .HomeTech-Text{
     font-size: 30px;
     margin-left: 10px;
+}
+@media only screen and (max-width: 1000px) {
+    .HomeTech-Body{
+        height: 50px;
+        width: 150px;
+    }
+    .HomeTech-Imag{
+        height: 40px;
+    }
+    .HomeTech-Text{
+        font-size: 25px;
+    }
 }
