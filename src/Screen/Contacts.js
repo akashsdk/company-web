@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import "./Contacts.css";
 
 import Image1 from "../Image/Group-1000002614-1.png";
+import { Modal, message } from "antd";
 
 export default function Contacts() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    gender: "male",
-    message: "",
+    gender: "",
+    text: "",
   });
 
-  const { name, email, phone, gender, message } = formData;
+  const { name, email, phone, gender, text } = formData;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +23,11 @@ export default function Contacts() {
     });
   };
 
-  const handleReset = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
     setFormData({
       name: "",
       email: "",
@@ -30,10 +35,33 @@ export default function Contacts() {
       gender: "male",
       message: "",
     });
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
   };
 
+  const [messageApi, contextHolder] = message.useMessage();
+  const key = "updatable";
+  const openMessage = () => {
+    messageApi.open({
+      key,
+      type: "loading",
+      content: "Loading...",
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: "success",
+        content: "successful!",
+        duration: 2,
+      });
+      window.location.reload();
+    }, 1000);
+  };
   return (
     <div className="AppBody">
+      {contextHolder}
       <div className="contacts-Body">
         <div className="contacts-Left">
           <p className="contacts-Text1">Contact Us</p>
@@ -55,6 +83,7 @@ export default function Contacts() {
                 value={name}
                 onChange={handleChange}
                 className="contacts-Input"
+                placeholder="Your Good Name"
               />
             </div>
           </div>
@@ -73,6 +102,7 @@ export default function Contacts() {
                   value={email}
                   onChange={handleChange}
                   className="contacts-Input2"
+                  placeholder="Enter Email Id"
                 />
               </div>
             </div>
@@ -90,6 +120,7 @@ export default function Contacts() {
                   value={phone}
                   onChange={handleChange}
                   className="contacts-Input2"
+                  placeholder="Enter Phone No"
                 />
               </div>
             </div>
@@ -101,16 +132,18 @@ export default function Contacts() {
               <p className="contacts-Text4">*</p>
             </div>
             <div className="contacts-Box3">
-              <label htmlFor="gender">Gender:</label>
               <select
+                className="contacts-Input"
                 id="gender"
                 name="gender"
                 value={gender}
                 onChange={handleChange}
               >
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
+                <option value="1">Team Augmentation</option>
+                <option value="2">Offshore Office Expansion</option>
+                <option value="3">MVP Service</option>
+                <option value="4">End to End Development</option>
+                <option value="5">Others</option>
               </select>
             </div>
           </div>
@@ -122,29 +155,39 @@ export default function Contacts() {
             </div>
             <div className="contacts-Box4">
               <textarea
-                id="message"
-                name="message"
-                value={message}
+                id="text"
+                name="text"
+                value={text}
                 onChange={handleChange}
                 className="contacts-textarea"
               />
             </div>
           </div>
 
-          <div>
-            <button type="button" onClick={handleReset}>
-              Reset
+          <div className="contacts-Button-Div">
+            <button
+              className="contacts-Button1"
+              type="button"
+              onClick={showModal}
+            >
+              <p className="contacts-Button-Text">Reset</p>
             </button>
-            <button>Send</button>
+            <button className="contacts-Button2" onClick={openMessage}>
+              <p className="contacts-Button-Text">Send</p>
+            </button>
           </div>
         </div>
+        <Modal
+          title="Confirm to Reset !"
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+        ></Modal>
 
         <div className="contacts-Right">
           <img className="contacts-Image" src={Image1} alt="" />
         </div>
       </div>
-
-      <div></div>
     </div>
   );
 }

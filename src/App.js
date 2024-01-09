@@ -10,7 +10,6 @@ import moon from "./Icon/moon.png";
 import WrongPage from "./Screen/WrongPage";
 import Home from "./Screen/Home";
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
 import Contacts from "./Screen/Contacts";
 import AboutUs from './Screen/AboutUs';
 import Career from './Screen/Career';
@@ -50,7 +49,6 @@ function App() {
           <Route path="/Home-MVP-Services" element={<MVPServices />} />
           <Route path="/Home-OffshoreDev" element={<OffshoreDev />} />
         </Routes>
-        <Footer />
       </div>
       <FloatButton.Group
         shape="circle"
