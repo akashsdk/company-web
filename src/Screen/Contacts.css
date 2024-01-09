@@ -1,0 +1,128 @@
+.contacts-Body {
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-Left {
+  height: calc(100vh - 100px);
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contacts-Right {
+  height: calc(100vh - 100px);
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contacts-Image {
+  height: 500px;
+}
+.contacts-Text1 {
+  font-size: 40px;
+  color: rgb(49, 49, 143);
+  font-weight: 800;
+  text-align: left;
+}
+.contacts-Text2{
+    opacity: .5;
+    text-align: left;
+    margin-top: -20px;
+}
+.contacts-Box1 {
+  height: auto;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.contacts-Box2 {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contacts-Box3 {
+  height: 60px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid rgb(49, 49, 143);
+  border-radius: 10px;
+}
+.contacts-Text3 {
+  font-size: 22px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.contacts-Text4 {
+  color: red;
+  margin-left: 3px;
+}
+.contacts-Input {
+  height: 55px;
+  width: 85%;
+  border: none;
+  outline: none;
+}
+.contacts-Box7 {
+    height: auto;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+.contacts-Box5{
+    height: auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-Box6 {
+    height: 60px;
+    width: 93%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgb(49, 49, 143);
+    border-radius: 10px;
+  }
+
+  .contacts-Input2 {
+    height: 55px;
+    width: 85%;
+    border: none;
+    outline: none;
+  }
+.contacts-Box4 {
+  height: 110px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid rgb(49, 49, 143);
+  border-radius: 10px;
+}
+.contacts-textarea {
+  height: 90px;
+  width: 85%;
+  border: none;
+  outline: none;
+}
+@media only screen and (max-width: 1000px) {
+  .contacts-Left {
+    height: calc(100vh - 100px);
+    width: 100%;
+  }
+  .contacts-Right {
+    display: none;
+  }
+}
