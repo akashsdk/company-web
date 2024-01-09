@@ -33,7 +33,7 @@ export default function Contacts() {
       email: "",
       phone: "",
       gender: "male",
-      message: "",
+      text: "",
     });
     setIsModalOpen(false);
   };
