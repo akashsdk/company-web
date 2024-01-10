@@ -12,9 +12,117 @@
   opacity: 0.6;
   text-align: center;
 }
+.help-TopDiv {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help-TopBox {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(49, 49, 143);
+  border-radius: 50px;
+}
+.help-TopBox:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+.help-TopBoxImg {
+  height: 200px;
+}
+.help-TopBoxText1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(49, 49, 143);
+  margin-top: -10px;
+}
+.help-TopBoxText2 {
+  opacity: 0.6;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.help-TopBoxDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    color: rgb(49, 49, 143);
+}
+.help-TopBoxText3 {
+    font-size: 20px;
+}
+.help-TopBoxIcon1 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.help-TopBoxIcon2 {
+  display: none;
+}
+.helpMain-Box{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helpMain-LeftBox{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.helpMain-LeftText1{
+    font-size: 16px;
+  opacity: 0.6;
+  text-align: left;
+  margin-top: -10px;
+}
 
 @media only screen and (max-width: 1000px) {
   .help-mainText {
     font-size: 25px;
+  }
+  .help-TopDiv {
+    flex-direction: column;
+  }
+  .help-TopBoxIcon2 {
+    display: flex;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.help-TopBoxIcon1 {
+  display: none;
+}
+.helpMain-Box{
+    flex-direction: column;
+}
+.helpMain-LeftBox{
+    width: 100%;
+}
+
+  
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .help-mainText {
+    font-size: 25px;
+  }
+  .help-TopBoxImg {
+    height: 150px;
+  }
+  .help-TopBoxText1 {
+    font-size: 20px;
+  }
+  .help-TopBoxText2 {
+    opacity: 0.6;
+    align-items: center;
+    margin-top: -15px;
   }
 }
