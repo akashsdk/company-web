@@ -1,8 +1,13 @@
-import React from 'react'
-import './MVPServices.css';
+import React from "react";
+import "./MVPServices.css";
+import HelpCart from "../Cart/HelpCart";
 
 export default function MVPServices() {
   return (
-    <div>MVPServices</div>
-  )
+    <div className="AppBody">
+      <div className="mvp-Body">
+        <HelpCart />
+      </div>
+    </div>
+  );
 }

@@ -42,6 +42,7 @@ import icon24 from "../Icon/icons8-js-480.png";
 import icon25 from "../Icon/icons8-firebase.png";
 import icon26 from "../Icon/icons8-mongodb.png";
 import icon27 from "../Icon/muSQL-removebg-preview.png";
+import HelpCart from "../Cart/HelpCart";
 
 export default function Home() {
   return (
@@ -382,6 +383,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* HelpCart-Part */}
+        <HelpCart/>
 
         {/* SoftwareService-Part */}
         <div className="home-Part-Box">

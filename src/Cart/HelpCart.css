@@ -1,0 +1,20 @@
+.help-body {
+  height: auto;
+  width: 100%;
+}
+.help-mainText {
+  font-size: 30px;
+  color: rgb(49, 49, 143);
+  font-weight: 800;
+}
+.help-DetelsText {
+  font-size: 16px;
+  opacity: 0.6;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .help-mainText {
+    font-size: 25px;
+  }
+}
