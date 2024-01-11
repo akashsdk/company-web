@@ -3,6 +3,8 @@ import "./TeamAugmentation.css";
 import ServicesCart from "../Cart/ServicesCart";
 import HelpCart from "../Cart/HelpCart";
 
+import Footer from '../Components/Footer';
+
 export default function TeamAugmentation() {
   return (
     <div className="AppBody">
@@ -27,6 +29,8 @@ export default function TeamAugmentation() {
           text5="Provide ready-to-go teams as per your requirements"
           text6="Augmented team will seamlessly align with your in-house team to ensure on-time project delivery"
         />
+
+        <Footer />
       </div>
     </div>
   );
