@@ -384,27 +384,25 @@ export default function Home() {
           </div>
         </div>
         {/* HelpCart-Part */}
-        <HelpCart/>
+        <HelpCart
+          text1="Our Working Process"
+          text2="Welcome to our software selling platform, where innovation meets
+          convenience. Our marketplace is designed to cater to your software
+          needs efficiently. Discover a diverse array of cutting-edge
+          solutions crafted by talented developers. From productivity tools
+          to specialized applications, our platform offers seamless
+          navigation and a user-friendly interface. Easily place orders for
+          bespoke software, ensuring a personalized experience tailored to
+          your requirements. Join us and experience a hassle-free journey in
+          acquiring top-notch software solutions, empowering you to achieve
+          your digital aspirations effortlessly."
+          text3=" "
+          text4=" "
+          text5=" "
+          text6=" "
+        />
 
-        {/* SoftwareService-Part */}
-        <div className="home-Part-Box">
-          <div className="home-Part-Div">
-            <p className="home-Part-Text1">Order Now</p>
-            <p className="home-Part-Text2">
-              Welcome to our software selling platform, where innovation meets
-              convenience. Our marketplace is designed to cater to your software
-              needs efficiently. Discover a diverse array of cutting-edge
-              solutions crafted by talented developers. From productivity tools
-              to specialized applications, our platform offers seamless
-              navigation and a user-friendly interface. Easily place orders for
-              bespoke software, ensuring a personalized experience tailored to
-              your requirements. Join us and experience a hassle-free journey in
-              acquiring top-notch software solutions, empowering you to achieve
-              your digital aspirations effortlessly.
-            </p>
-          </div>
-          <CheckOut />
-        </div>
+        
       </div>
     </div>
   );

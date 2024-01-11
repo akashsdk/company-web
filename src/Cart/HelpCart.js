@@ -14,7 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import { Modal, message, Button } from "antd";
 
-export default function HelpCart() {
+export default function HelpCart(props) {
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
@@ -72,20 +72,13 @@ export default function HelpCart() {
   return (
     <div className="help-body">
       {contextHolder}
-      <p className="help-mainText">MVP Development Process</p>
-      <p className="help-DetelsText">
-        Our MVP development service follows the best practices of the agile
-        development process. At our MVP development company, we follow a
-        straightforward process to build MVP with the highest return on
-        investment.
-      </p>
+      <p className="help-mainText">{props.text1}</p>
+      <p className="help-DetelsText">{props.text2}</p>
       <div className="help-TopDiv">
         <div className="help-TopBox">
           <img src={Image1} className="help-TopBoxImg" alt="" />
           <p className="help-TopBoxText1">Business Idea Analysis</p>
-          <p className="help-TopBoxText2">
-            Analyze product idea, target market, and usability testing.
-          </p>
+          <p className="help-TopBoxText2">{props.text3}</p>
           <div className="help-TopBoxDown">
             <p className="help-TopBoxText3">Step-1 </p>
             <ArrowRightOutlined className="help-TopBoxIcon1" />
@@ -96,9 +89,7 @@ export default function HelpCart() {
         <div className="help-TopBox">
           <img src={Image2} className="help-TopBoxImg" alt="" />
           <p className="help-TopBoxText1">Evaluate Costing</p>
-          <p className="help-TopBoxText2">
-            Analyze product idea, target market, and usability testing.
-          </p>
+          <p className="help-TopBoxText2">{props.text4}</p>
           <div className="help-TopBoxDown">
             <p className="help-TopBoxText3">Step-2 </p>
             <ArrowRightOutlined className="help-TopBoxIcon1" />
@@ -109,9 +100,7 @@ export default function HelpCart() {
         <div className="help-TopBox">
           <img src={Image3} className="help-TopBoxImg" alt="" />
           <p className="help-TopBoxText1">Contract Signing</p>
-          <p className="help-TopBoxText2">
-            Analyze product idea, target market, and usability testing.
-          </p>
+          <p className="help-TopBoxText2">{props.text5}</p>
           <div className="help-TopBoxDown">
             <p className="help-TopBoxText3">Step-3</p>
             <ArrowRightOutlined className="help-TopBoxIcon1" />
@@ -122,9 +111,7 @@ export default function HelpCart() {
         <div className="help-TopBox">
           <img src={Image4} className="help-TopBoxImg" alt="" />
           <p className="help-TopBoxText1">Project Development</p>
-          <p className="help-TopBoxText2">
-            Analyze product idea, target market, and usability testing.
-          </p>
+          <p className="help-TopBoxText2">{props.text6}</p>
           <div className="help-TopBoxDown">
             <p className="help-TopBoxText3">Step-3 </p>
             <CheckCircleOutlined className="help-TopBoxIcon1" />

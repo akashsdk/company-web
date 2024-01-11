@@ -19,7 +19,14 @@ export default function TeamAugmentation() {
           By tapping into specialized talent and expertise, team augmentation provides businesses with a unique solution to stay ahead of the competition and scale their business with ease. This effective strategy allows companies to reach their business goals on schedule and within budget while maintaining the flexibility and agility to adapt to changing business needs. With team augmentation, businesses can confidently take on new projects, expand their services, and deliver exceptional results to their clients."
         />
 
-        <HelpCart />
+        <HelpCart
+          text1="Team Augmentation Process"
+          text2="Our team augmentation process is designed with flexibility so that businesses can easily find and deploy the exact skills needed for their project at any given time."
+          text3="Share your talent requirements and team size for the ultimate augmentation"
+          text4="Contract signing for your IT Staff Augmentation"
+          text5="Provide ready-to-go teams as per your requirements"
+          text6="Augmented team will seamlessly align with your in-house team to ensure on-time project delivery"
+        />
       </div>
     </div>
   );
