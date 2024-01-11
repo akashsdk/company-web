@@ -20,7 +20,6 @@ export default function HelpCart() {
     lastName: "",
     email: "",
     phone: "",
-
     text: "",
   });
 
@@ -273,13 +272,17 @@ export default function HelpCart() {
             </div>
 
             <div className="helpMain-RightDiv4">
-             
-
-                
-              <Button onClick={showModal} size='large' danger>Reset</Button>
-              <Button onClick={openMessage} className="helpMain-RightButton" type="primary" size='large'>
-              Send
-          </Button>
+              <Button onClick={showModal} size="large" danger>
+                Reset
+              </Button>
+              <Button
+                onClick={openMessage}
+                className="helpMain-RightButton"
+                type="primary"
+                size="large"
+              >
+                Send
+              </Button>
             </div>
 
             <Modal

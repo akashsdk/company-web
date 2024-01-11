@@ -1,6 +1,7 @@
 .help-body {
   height: auto;
   width: 100%;
+  margin-top: 50px;
 }
 .help-mainText {
   font-size: 30px;
@@ -187,17 +188,17 @@
   outline: none;
 }
 
-.helpMain-RightDiv4{
-    margin-top: 20px;
-    width: 95%;
+.helpMain-RightDiv4 {
+  margin-top: 20px;
+  width: 95%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.helpMain-RightButton{
-    background-color: rgb(49, 49, 143);
-    border: none;
-    margin-left: 20px;
+.helpMain-RightButton {
+  background-color: rgb(49, 49, 143);
+  border: none;
+  margin-left: 20px;
 }
 @media only screen and (max-width: 1000px) {
   .help-mainText {
@@ -232,6 +233,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .help-body {
+    margin-top: 20px;
+  }
   .help-mainText {
     font-size: 25px;
   }
@@ -270,5 +274,4 @@
   .helpMain-RightDiv4 {
     width: 100%;
   }
-
 }
