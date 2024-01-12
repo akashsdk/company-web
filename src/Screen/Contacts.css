@@ -1,13 +1,27 @@
-.contacts-Body {
+.contacts-Body1{
   height: auto;
   width: 90%;
   margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.contacts-Body{
+  height: auto;
+  width: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-Body {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contacts-Left {
-  height: calc(100vh - 100px);
   width: 50%;
   display: flex;
   justify-content: flex-start;
@@ -15,7 +29,6 @@
   flex-direction: column;
 }
 .contacts-Right {
-  height: calc(100vh - 100px);
   width: 50%;
   display: flex;
   justify-content: flex-end;
@@ -183,7 +196,6 @@
 }
 @media only screen and (max-width: 1000px) {
   .contacts-Left {
-    height: calc(100vh - 100px);
     width: 100%;
   }
   .contacts-Right {
@@ -193,7 +205,6 @@
 
 @media only screen and (max-width: 600px) {
   .contacts-Left {
-    height: calc(100vh - 100px);
     width: 100%;
   }
   .contacts-Right {
