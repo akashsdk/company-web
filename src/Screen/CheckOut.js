@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 
 import { CloseOutlined } from "@ant-design/icons";
 import { Input, Space } from "antd";
+const { TextArea } = Input;
 
 export default function CheckOut() {
   // For Name Input
@@ -46,6 +47,19 @@ export default function CheckOut() {
   const handleClearInput3 = () => {
     setInputValue3("");
     setIsFocused3(false);
+  };
+  // For Text Input
+  const [inputValue4, setInputValue4] = useState("");
+  const [isFocused4, setIsFocused4] = useState(false);
+
+  const handleInputChange4 = (e) => {
+    setInputValue4(e.target.value);
+    setIsFocused4(true);
+  };
+
+  const handleClearInput4 = () => {
+    setInputValue4("");
+    setIsFocused4(false);
   };
   return (
     <div className="AppBody">
@@ -125,9 +139,33 @@ export default function CheckOut() {
               </div>
             </div>
 
-            
-
-
+            <div className="Check-Div">
+              <p className="Check-Text2">Text:</p>
+              <div
+                className={`text-input-container ${
+                  isFocused4 ? "focused" : ""
+                }`}
+              >
+                <TextArea
+                  showCount
+                  maxLength={100}
+                  type="text"
+                  value={inputValue4}
+                  onChange={handleInputChange4}
+                  className="Check-Input"
+                  style={{
+                    height: 120,
+                    resize: "none",
+                  }}
+                />
+                {inputValue4 && (
+                  <CloseOutlined
+                    className="Check-InputIcon"
+                    onClick={handleClearInput4}
+                  />
+                )}
+              </div>
+            </div>
           </div>
         </div>
         <Footer />
