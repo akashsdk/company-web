@@ -7,7 +7,6 @@ import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from "../Cart/SoftwareService";
 import HomeWorks from "../Cart/HomeWorks";
 import HomeTechnology from "../Cart/HomeTechnology";
-import CheckOut from "../Components/CheckOut";
 
 import img1 from "../Image/We-Deploy-World.png";
 import img2 from "../Image/pngtree-blue-removebg-preview (1).png";

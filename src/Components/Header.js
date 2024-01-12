@@ -15,6 +15,22 @@ export default function Header() {
     setOpen(false);
   };
 
+  const [textColors, setTextColors] = useState([
+    "black",
+    "black",
+    "black",
+    "black",
+    "black",
+    "black",
+  ]);
+
+  const handleTextClick = (index) => {
+    const updatedColors = textColors.map((_, i) =>
+      i === index ? "red" : "black"
+    );
+    setTextColors(updatedColors);
+  };
+
   return (
     <div className="header-body">
       <div className="headerBody">
@@ -59,36 +75,62 @@ export default function Header() {
         <div className="headerBox-2">
           <div className="headerBox-2-Box">
             <Link to="/" className="headerBox-2-Link">
-              <p className="headerBox-2-Text">Home</p>
+              <p
+                className={`headerBox-2-Text ${textColors[0]}`}
+                onClick={() => handleTextClick(0)}
+              >
+                Home
+              </p>
             </Link>
           </div>
 
           <div className="headerBox-2-Box">
-            <p className="headerBox-2-Text">Services</p>
+            <p
+              className={`headerBox-2-Text ${textColors[1]}`}
+              onClick={() => handleTextClick(1)}
+            >
+              Services
+            </p>
             <DownOutlined className="headerBox-2-Icon" />
           </div>
 
           <div className="headerBox-2-Box">
             <Link to="/Career" className="headerBox-2-Link">
-              <p className="headerBox-2-Text">Career</p>
+              <p
+                className={`headerBox-2-Text ${textColors[2]}`}
+                onClick={() => handleTextClick(2)}
+              >
+                Career
+              </p>
             </Link>
           </div>
 
           <div className="headerBox-2-Box">
             <Link to="/Blog" className="headerBox-2-Link">
-              <p className="headerBox-2-Text">Blog</p>
+              <p
+                className={`headerBox-2-Text ${textColors[3]}`}
+                onClick={() => handleTextClick(3)}
+              >
+                Blog
+              </p>
             </Link>
           </div>
 
           <div className="headerBox-2-Box">
             <Link to="/About-Us" className="headerBox-2-Link">
-              <p className="headerBox-2-Text">About Us</p>
+              <p
+                className={`headerBox-2-Text ${textColors[4]}`}
+                onClick={() => handleTextClick(4)}
+              >
+                About Us
+              </p>
             </Link>
           </div>
         </div>
         <div className="headerBox-3">
-          <Link style={{ textDecoration: "none" }} to="/Contacts">
-            <button className="headerBox-3-Button">
+          <Link style={{ textDecoration: "none" }} to="/Check-Out">
+            <button className={`headerBox-3-Button ${textColors[5]}`}
+                onClick={() => handleTextClick(5)}>
               <p className="headerBox-3-BText">Get Started</p>
             </button>
           </Link>

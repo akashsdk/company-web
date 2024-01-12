@@ -30,10 +30,10 @@
   font-weight: 800;
   text-align: left;
 }
-.contacts-Text2{
-    opacity: .5;
-    text-align: left;
-    margin-top: -20px;
+.contacts-Text2 {
+  opacity: 0.5;
+  text-align: left;
+  margin-top: -20px;
 }
 .contacts-Box1 {
   height: auto;
@@ -78,44 +78,44 @@
   color: rgb(49, 49, 143);
   font-size: 20px;
   font-style: italic;
-  opacity: .5;
+  opacity: 0.5;
 }
 .contacts-Input2::placeholder {
   color: rgb(49, 49, 143);
   font-size: 20px;
   font-style: italic;
-  opacity: .5;
+  opacity: 0.5;
 }
 .contacts-Box7 {
-    height: auto;
-    width: 50%;
-    margin-bottom: 30px;
-  }
-.contacts-Box5{
-    height: auto;
+  height: auto;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.contacts-Box5 {
+  height: auto;
   width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .contacts-Box6 {
-    height: 60px;
-    width: 93%;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.5px solid rgb(49, 49, 143);
-    border-radius: 10px;
-  }
+  height: 60px;
+  width: 93%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid rgb(49, 49, 143);
+  border-radius: 10px;
+}
 
-  .contacts-Input2 {
-    height: 55px;
-    width: 85%;
-    border: none;
-    outline: none;
-    font-size: 24px;
-  }
+.contacts-Input2 {
+  height: 55px;
+  width: 85%;
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
 .contacts-Box4 {
   height: 110px;
   width: 100%;
@@ -133,13 +133,13 @@
   outline: none;
   font-size: 20px;
 }
-.contacts-Button-Div{
+.contacts-Button-Div {
   width: 100%;
-display: flex;
-justify-content: flex-start;
-align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.contacts-Button1{
+.contacts-Button1 {
   height: 60px;
   width: 130px;
   border-radius: 10px;
@@ -150,19 +150,19 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.contacts-Button1:hover{
-  
+.contacts-Button1:hover {
   background-color: red;
   border: 1.5px solid red;
   color: #fff;
 }
 
-.contacts-Button-Text{
+.contacts-Button-Text {
   font-size: 25px;
   font-weight: 700;
 }
-.contacts-Button2{
+.contacts-Button2 {
   height: 60px;
   width: 130px;
   border-radius: 10px;
@@ -174,8 +174,9 @@ align-items: center;
   justify-content: center;
   align-items: center;
   margin-left: 10%;
+  cursor: pointer;
 }
-.contacts-Button2:hover{
+.contacts-Button2:hover {
   background-color: transparent;
   border: 1.5px solid rgb(98, 54, 242);
   color: rgb(98, 54, 242);
@@ -201,7 +202,7 @@ align-items: center;
   .contacts-Text1 {
     font-size: 30px;
   }
-  .contacts-Text2{
+  .contacts-Text2 {
     font-size: 16px;
   }
   .contacts-Box2 {
@@ -256,26 +257,25 @@ align-items: center;
     width: 85%;
     font-size: 18px;
   }
-  .contacts-Button1{
+  .contacts-Button1 {
     height: 45px;
     width: 90px;
     border: 1px solid rgb(248, 48, 48);
   }
-  .contacts-Button1:hover{
-    
+  .contacts-Button1:hover {
     border: 1px solid red;
   }
-  
-  .contacts-Button-Text{
+
+  .contacts-Button-Text {
     font-size: 20px;
     font-weight: 700;
   }
-  .contacts-Button2{
+  .contacts-Button2 {
     height: 45px;
     width: 90px;
     border: 1px solid rgb(98, 54, 242);
   }
-  .contacts-Button2:hover{
+  .contacts-Button2:hover {
     border: 1px solid rgb(98, 54, 242);
   }
 }

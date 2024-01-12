@@ -15,6 +15,7 @@ import AboutUs from './Screen/AboutUs';
 import Career from './Screen/Career';
 import Services from './Screen/Services';
 import Blog from './Screen/Blog';
+import CheckOut from './Screen/CheckOut';
 
 import TeamAugmentation from './SemiScreen/TeamAugmentation';
 import ProjectDevelopment from './SemiScreen/ProjectDevelopment';
@@ -43,6 +44,7 @@ function App() {
           <Route path="/Career" element={<Career />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/Check-Out" element={<CheckOut />} />
 
           <Route path="/Team-Augmentation" element={<TeamAugmentation />} />
           <Route path="/Project-Development" element={<ProjectDevelopment />} />
