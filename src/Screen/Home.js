@@ -7,6 +7,7 @@ import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from "../Cart/SoftwareService";
 import HomeWorks from "../Cart/HomeWorks";
 import HomeTechnology from "../Cart/HomeTechnology";
+import Footer from "../Components/Footer";
 
 import img1 from "../Image/We-Deploy-World.png";
 import img2 from "../Image/pngtree-blue-removebg-preview (1).png";
@@ -401,7 +402,7 @@ export default function Home() {
           text6=" "
         />
 
-        
+        <Footer />
       </div>
     </div>
   );
