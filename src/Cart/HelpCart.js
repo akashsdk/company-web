@@ -77,7 +77,7 @@ export default function HelpCart(props) {
       <div className="help-TopDiv">
         <div className="help-TopBox">
           <img src={Image1} className="help-TopBoxImg" alt="" />
-          <p className="help-TopBoxText1">Business Idea Analysis</p>
+          <p className="help-TopBoxText1">Idea Analysis</p>
           <p className="help-TopBoxText2">{props.text3}</p>
           <div className="help-TopBoxDown">
             <p className="help-TopBoxText3">Step-1 </p>
@@ -113,7 +113,7 @@ export default function HelpCart(props) {
           <p className="help-TopBoxText1">Project Development</p>
           <p className="help-TopBoxText2">{props.text6}</p>
           <div className="help-TopBoxDown">
-            <p className="help-TopBoxText3">Step-3 </p>
+            <p className="help-TopBoxText3">Step-4 </p>
             <CheckCircleOutlined className="help-TopBoxIcon1" />
             <CheckCircleOutlined className="help-TopBoxIcon2" />
           </div>

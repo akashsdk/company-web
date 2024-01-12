@@ -7,3 +7,91 @@
   align-items: center;
   flex-direction: column;
 }
+.Check-Body {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Check-HeaderText {
+  font-size: 40px;
+  color: rgb(49, 49, 143);
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 0pc;
+}
+
+.Check-Text1 {
+  font-size: 24px;
+  width: 70%;
+  text-align: justify;
+  opacity: 0.7;
+}
+.Check-BodyBox {
+  height: auto;
+  width: 70%;
+  border: 1.5px solid rgb(49, 49, 143);
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Check-Div {
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Check-Text2 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+
+/* TextInput.css */
+.text-input-container {
+  width: 100%;
+  margin-top: -15px;
+
+}
+
+
+
+.focused input {
+  border-color: rgb(49, 49, 143);
+}
+
+.Check-Input {
+  font-size: 25px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  border: 2px solid red;
+  transition: border-color 0.3s ease;
+}
+.Check-InputIcon{
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 28%;
+  font-size: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .Check-HeaderText {
+    font-size: 40px;
+  }
+  .Check-Text1 {
+    font-size: 24px;
+    width: 100%;
+  }
+  .Check-BodyBox {
+    height: auto;
+    width: 100%;
+  }
+}

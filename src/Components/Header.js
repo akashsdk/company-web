@@ -22,6 +22,7 @@ export default function Header() {
     "black",
     "black",
     "black",
+    "black",
   ]);
 
   const handleTextClick = (index) => {
