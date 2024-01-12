@@ -56,40 +56,31 @@
   justify-content: flex-end;
   align-items: center;
 }
-.headerBox-2-Box{
+.headerBox-2-Box {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   color: #000;
-
 }
-.headerBox-2-Text{
+.headerBox-2-Text {
   font-size: 18px;
   font-weight: 700;
-
 }
-.headerBox-2-Icon{
+.headerBox-2-Icon {
   margin-top: 5px;
   margin-left: 5px;
 }
-.headerBox-2-Link{
+.headerBox-2-Link {
   text-decoration: none;
   color: #000;
 }
-.headerBox-2-Box:hover{
+.headerBox-2-Box:hover {
   color: rgb(98, 54, 242);
 }
-.headerBox-2-Link:hover{
+.headerBox-2-Link:hover {
   color: rgb(98, 54, 242);
 }
-
-
-
-
-
-
-
 
 .headerBox-3-Button {
   height: 70px;
