@@ -108,7 +108,7 @@ export default function Home() {
             </p>
           </div>
           <div className="home-Part-Flex2">
-            <Link className="home-Part-Link2" to="/Home-TeamAugmentation">
+            <Link className="home-Part-Link2" to="/Team-Augmentation">
               <HomeWorks
                 img={icon10}
                 text1="Team Augmentation"
@@ -117,7 +117,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link className="home-Part-Link2" to="/Home-ProjectDevelopment">
+            <Link className="home-Part-Link2" to="/Project-Development">
               <HomeWorks
                 img={icon11}
                 text1="Project Development"
@@ -126,7 +126,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link className="home-Part-Link2" to="/Home-MVP-Services">
+            <Link className="home-Part-Link2" to="/MVP-Services">
               <HomeWorks
                 img={icon12}
                 text1="MVP Services"
@@ -135,7 +135,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link className="home-Part-Link2" to="/Home-OffshoreDev">
+            <Link className="home-Part-Link2" to="/Offshore-Development">
               <HomeWorks
                 img={icon13}
                 text1="Offshore Development"
