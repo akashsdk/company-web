@@ -2,8 +2,27 @@ import React, { useState } from "react";
 import "./Header.css";
 
 import { Link } from "react-router-dom";
-import { Button, Drawer } from "antd";
-import { MenuOutlined, UpOutlined, DownOutlined } from "@ant-design/icons";
+import { Button, Drawer, Menu } from "antd";
+import {
+  MenuOutlined,
+  UpOutlined,
+  DownOutlined,
+  HomeOutlined,
+  ContactsOutlined,
+  DesktopOutlined,
+  MacCommandOutlined,
+  AppstoreOutlined,
+  CustomerServiceOutlined,
+} from "@ant-design/icons";
+
+function getItem(label, key, icon, children) {
+  return {
+    key,
+    icon,
+    children,
+    label,
+  };
+}
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -33,6 +52,69 @@ export default function Header() {
     setOpen(false);
   };
 
+  const items = [
+    getItem(
+      <Link onClick={onClose} to="/">
+        Home
+      </Link>,
+      "1",
+      <HomeOutlined />
+    ),
+    getItem("Services", "sub1", <AppstoreOutlined />, [
+      getItem(
+        <Link onClick={onClose} to="/team-augmentation">
+          Team Augmentation
+        </Link>,
+        "2"
+      ),
+      getItem(
+        <Link onClick={onClose} to="/project-development">
+          Project Development
+        </Link>,
+        "3"
+      ),
+      getItem(
+        <Link onClick={onClose} to="/mvp-services">
+          MVP Services
+        </Link>,
+        "4"
+      ),
+      getItem(
+        <Link onClick={onClose} to="/offshore-development">
+          Offshore Development
+        </Link>,
+        "5"
+      ),
+    ]),
+    getItem(
+      <Link onClick={onClose} to="/career">
+        Career
+      </Link>,
+      "6",
+      <ContactsOutlined />
+    ),
+    getItem(
+      <Link onClick={onClose} to="/blog">
+        Blog
+      </Link>,
+      "7",
+      <MacCommandOutlined />
+    ),
+    getItem(
+      <Link onClick={onClose} to="/about-us">
+        About Us
+      </Link>,
+      "8",
+      <DesktopOutlined />
+    ),
+    getItem(
+      <Link onClick={onClose} to="/contacts">
+        Contact Us
+      </Link>,
+      "9",
+      <CustomerServiceOutlined />
+    ),
+  ];
   return (
     <div className="header-body">
       <div className="headerBody">
@@ -71,7 +153,18 @@ export default function Header() {
             </div>
           }
         >
-          <div></div>
+          <div>
+            <Menu
+              style={{
+                width: "100%",
+              }}
+              defaultSelectedKeys={["1"]}
+              defaultOpenKeys={["sub1"]}
+              mode="inline"
+              theme="light"
+              items={items}
+            />
+          </div>
         </Drawer>
 
         {/* For mim size 1000 */}
@@ -125,7 +218,7 @@ export default function Header() {
           </div>
 
           <div className="headerBox-2-Box">
-            <Link to="/Career" className="headerBox-2-Link">
+            <Link to="/career" className="headerBox-2-Link">
               <p
                 className={`headerBox-2-Text ${textColors[2]}`}
                 onClick={() => handleTextClick(2)}
@@ -136,7 +229,7 @@ export default function Header() {
           </div>
 
           <div className="headerBox-2-Box">
-            <Link to="/Blog" className="headerBox-2-Link">
+            <Link to="/blog" className="headerBox-2-Link">
               <p
                 className={`headerBox-2-Text ${textColors[3]}`}
                 onClick={() => handleTextClick(3)}
@@ -147,7 +240,7 @@ export default function Header() {
           </div>
 
           <div className="headerBox-2-Box">
-            <Link to="/About-Us" className="headerBox-2-Link">
+            <Link to="/about-us" className="headerBox-2-Link">
               <p
                 className={`headerBox-2-Text ${textColors[4]}`}
                 onClick={() => handleTextClick(4)}
