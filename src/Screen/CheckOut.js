@@ -149,10 +149,9 @@ export default function CheckOut() {
                   type="text"
                   value={inputValue4}
                   onChange={handleInputChange4}
-                  placeholder="message"
+                  placeholder="Message"
                   className="Check-Input2"
                 />
-                
                 {inputValue4 && (
                   <CloseOutlined
                     className="Check-InputIcon2"
@@ -161,6 +160,8 @@ export default function CheckOut() {
                 )}
               </div>
             </div>
+
+            
 
             <div style={{height:'50px'}}></div>
           </div>

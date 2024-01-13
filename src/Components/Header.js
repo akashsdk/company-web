@@ -30,6 +30,7 @@ export default function Header() {
       i === index ? "red" : "black"
     );
     setTextColors(updatedColors);
+    setOpen(false);
   };
 
   return (
@@ -46,24 +47,28 @@ export default function Header() {
               icon={<MenuOutlined />}
             />
           </div>
-          <div className="header-MenuBox">Name&Icon</div>
+          <div className="header-MenuBox">
+            <Link to="/">Name&Icon</Link>
+          </div>
           <div className="header-MenuBox2">Icon</div>
         </div>
 
         <Drawer
-          title="App Name"
           placement="left"
           width={500}
           onClose={onClose}
           open={open}
           extra={
-            <Space>
-              <Button
-                shape="circle"
-                onClick={onClose}
-                icon={<CloseOutlined />}
-              />
-            </Space>
+            <div className="header-DrawerHeader">
+              <Link style={{ textDecoration: "none" }} to="/Check-Out">
+                <button
+                  className={`headerBox-3-Button2 ${textColors[5]}`}
+                  onClick={() => handleTextClick(5)}
+                >
+                  <p className="headerBox-3-BText2">Get Started</p>
+                </button>
+              </Link>
+            </div>
           }
         >
           <p>Some contents...</p>
@@ -130,8 +135,10 @@ export default function Header() {
         </div>
         <div className="headerBox-3">
           <Link style={{ textDecoration: "none" }} to="/Check-Out">
-            <button className={`headerBox-3-Button ${textColors[5]}`}
-                onClick={() => handleTextClick(5)}>
+            <button
+              className={`headerBox-3-Button ${textColors[5]}`}
+              onClick={() => handleTextClick(5)}
+            >
               <p className="headerBox-3-BText">Get Started</p>
             </button>
           </Link>

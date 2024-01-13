@@ -53,14 +53,24 @@
   opacity: 0.8;
 }
 
+.text-input-container {
+  width: 100%;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.focused input {
+  border-color: rgb(49, 49, 143);
+}
 
-
-
-
+.focused textarea {
+  border-color: rgb(49, 49, 143);
+}
 
 .Check-Input {
-  font-size: 25px;
+  font-size: 18px;
   width: 100%;
   border-radius: 5px;
   outline: none;
@@ -68,16 +78,14 @@
   border: 2px solid red;
   transition: border-color 0.3s ease;
 }
-.Check-InputIcon{
-  position: absolute;
-  margin-top: -35px;
-  margin-left: 28%;
+.Check-InputIcon {
   font-size: 20px;
+  margin-left: -30px;
 }
 
 .Check-Input2 {
   height: 100px;
-  font-size: 25px;
+  font-size: 18px;
   width: 100%;
   border-radius: 5px;
   outline: none;
@@ -85,20 +93,10 @@
   border: 2px solid red;
   transition: border-color 0.3s ease;
 }
-.Check-InputIcon2{
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 28%;
+.Check-InputIcon2 {
   font-size: 20px;
-}
-/* TextInput.css */
-.text-input-container {
-  width: 100%;
-  margin-top: -15px;
-
-}
-.focused input {
-  border-color: rgb(49, 49, 143);
+  margin-top: -70px;
+  margin-left: -30px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -112,5 +110,24 @@
   .Check-BodyBox {
     height: auto;
     width: 100%;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  .Check-HeaderText {
+    font-size: 25px;
+  }
+  .Check-Text1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .Check-Input {
+    font-size: 14px;
+  }
+  .Check-Input2 {
+    font-size: 14px;
+  }
+  .Check-Text2 {
+    font-size: 18px;
   }
 }

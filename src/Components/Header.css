@@ -97,6 +97,7 @@
 }
 .headerBox-3-BText {
   font-size: 20px;
+  font-weight: 600;
 }
 .headerBox-3-Button:hover {
   background-color: rgb(98, 54, 242);
@@ -116,10 +117,43 @@
   margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-
-
+.header-DrawerHeader{
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerBox-3-Button2 {
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid rgb(98, 54, 242);
+  color: rgb(98, 54, 242);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerBox-3-BText2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.headerBox-3-Button2:hover {
+  background-color: rgb(98, 54, 242);
+  border: 2px solid rgb(98, 54, 242);
+  color: #fff;
+}
+.headerBox-3-Button2.red {
+  background-color: rgb(98, 54, 242);
+  border: 2px solid rgb(98, 54, 242);
+  color: #fff;
+}
 
 @media only screen and (max-width: 1000px) {
+  .headerBody {
+    height: 80px;
+  }
   .headerBox {
     width: 100%;
     display: flex;
@@ -136,3 +170,4 @@
     display: none;
   }
 }
+

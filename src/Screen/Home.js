@@ -396,10 +396,10 @@ export default function Home() {
           your requirements. Join us and experience a hassle-free journey in
           acquiring top-notch software solutions, empowering you to achieve
           your digital aspirations effortlessly."
-          text3=" "
-          text4=" "
-          text5=" "
-          text6=" "
+          text3="Analyze business and competitors and user reviews."
+          text4="Contract signing with stakeholders to develop the product."
+          text5="Designing, hypothesis testing, frontend and backend development."
+          text6="Deploying the finished products, Maintenance and updates."
         />
 
         <Footer />
