@@ -71,10 +71,10 @@
 .headerBox-2-Text.red {
   color: rgb(98, 54, 242);
 }
-.headerBox-2-Icon {
-  margin-top: 5px;
-  margin-left: 5px;
-}
+
+
+
+
 .headerBox-2-Link {
   text-decoration: none;
   color: #000;
@@ -125,7 +125,7 @@
 }
 .headerBox-3-Button2 {
   height: 50px;
-  width: 120px;
+  width: 130px;
   border-radius: 10px;
   background-color: transparent;
   border: 2px solid rgb(98, 54, 242);
@@ -148,6 +148,74 @@
   background-color: rgb(98, 54, 242);
   border: 2px solid rgb(98, 54, 242);
   color: #fff;
+}
+
+
+
+
+
+
+
+.headerBox-2-Icon {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.headerBox-2-Icon2 {
+  margin-top: 5px;
+  margin-left: 5px;
+  display: none;
+}
+
+
+
+/* dropdown menu */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  color: #000;
+}
+
+.dropdown-content {
+  display: none;
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 220px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dropdown:hover .headerBox-2-Icon2 {
+  display: block;
+}
+.dropdown:hover .headerBox-2-Icon {
+  display: none;
+}
+.dropdown-content-Link{
+  height: 40px;
+  width: 100%;
+  background-color: rgb(232, 232, 250);
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.dropdown-content-Text{
+  font-weight: 700;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1000px) {

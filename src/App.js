@@ -46,10 +46,14 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Check-Out" element={<CheckOut />} />
 
-          <Route path="/Team-Augmentation" element={<TeamAugmentation />} />
-          <Route path="/Project-Development" element={<ProjectDevelopment />} />
-          <Route path="/MVP-Services" element={<MVPServices />} />
-          <Route path="/Offshore-Development" element={<OffshoreDev />} />
+          <Route path="/team-augmentation" element={<TeamAugmentation />} />
+          <Route path="/project-development" element={<ProjectDevelopment />} />
+          <Route path="/mvp-services" element={<MVPServices />} />
+          <Route path="/offshore-development" element={<OffshoreDev />} />
+          <Route path="/home/team-augmentation" element={<TeamAugmentation />} />
+          <Route path="/home/project-development" element={<ProjectDevelopment />} />
+          <Route path="/home/mvp-services" element={<MVPServices />} />
+          <Route path="/home/offshore-development" element={<OffshoreDev />} />
         </Routes>
       </div>
       <FloatButton.Group

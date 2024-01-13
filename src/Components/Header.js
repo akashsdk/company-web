@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Header.css";
 
 import { Link } from "react-router-dom";
-import { Button, Drawer, Space } from "antd";
-import { MenuOutlined, CloseOutlined, DownOutlined } from "@ant-design/icons";
+import { Button, Drawer } from "antd";
+import { MenuOutlined, UpOutlined, DownOutlined } from "@ant-design/icons";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -71,9 +71,7 @@ export default function Header() {
             </div>
           }
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <div></div>
         </Drawer>
 
         {/* For mim size 1000 */}
@@ -90,14 +88,40 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="headerBox-2-Box">
-            <p
-              className={`headerBox-2-Text ${textColors[1]}`}
-              onClick={() => handleTextClick(1)}
-            >
-              Services
-            </p>
+          <div className="dropdown">
+            <p className={`headerBox-2-Text ${textColors[1]}`}>Services</p>
             <DownOutlined className="headerBox-2-Icon" />
+            <UpOutlined className="headerBox-2-Icon2" />
+            <div className="dropdown-content">
+              <Link
+                onClick={() => handleTextClick(1)}
+                to="/team-augmentation"
+                className="dropdown-content-Link"
+              >
+                <p className="dropdown-content-Text">Team Augmentation</p>
+              </Link>
+              <Link
+                onClick={() => handleTextClick(1)}
+                to="/project-development"
+                className="dropdown-content-Link"
+              >
+                <p className="dropdown-content-Text">Project Development</p>
+              </Link>
+              <Link
+                onClick={() => handleTextClick(1)}
+                to="/mvp-services"
+                className="dropdown-content-Link"
+              >
+                <p className="dropdown-content-Text">MVP Services</p>
+              </Link>
+              <Link
+                onClick={() => handleTextClick(1)}
+                to="/offshore-development"
+                className="dropdown-content-Link"
+              >
+                <p className="dropdown-content-Text">Offshore Development</p>
+              </Link>
+            </div>
           </div>
 
           <div className="headerBox-2-Box">
