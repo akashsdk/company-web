@@ -5,7 +5,6 @@ import Footer from "../Components/Footer";
 
 import { CloseOutlined } from "@ant-design/icons";
 import { Input, Space } from "antd";
-const { TextArea } = Input;
 
 export default function CheckOut() {
   // For Name Input
@@ -140,32 +139,30 @@ export default function CheckOut() {
             </div>
 
             <div className="Check-Div">
-              <p className="Check-Text2">Text:</p>
+              <p className="Check-Text2">Message:</p>
               <div
                 className={`text-input-container ${
                   isFocused4 ? "focused" : ""
                 }`}
               >
-                <TextArea
-                  showCount
-                  maxLength={100}
+                <textarea
                   type="text"
                   value={inputValue4}
                   onChange={handleInputChange4}
-                  className="Check-Input"
-                  style={{
-                    height: 120,
-                    resize: "none",
-                  }}
+                  placeholder="message"
+                  className="Check-Input2"
                 />
+                
                 {inputValue4 && (
                   <CloseOutlined
-                    className="Check-InputIcon"
+                    className="Check-InputIcon2"
                     onClick={handleClearInput4}
                   />
                 )}
               </div>
             </div>
+
+            <div style={{height:'50px'}}></div>
           </div>
         </div>
         <Footer />
