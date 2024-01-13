@@ -179,7 +179,10 @@
   width: 100px;
   color: #000;
 }
+.dropdown:hover {
+  color: rgb(98, 54, 242);
 
+}
 .dropdown-content {
   display: none;
   height: 170px;
