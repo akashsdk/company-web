@@ -167,13 +167,73 @@
   z-index: 1;
   margin-top: -60px;
   border-radius: 10px;
-  border: 1px solid rgb(98, 54, 242);
-  box-shadow: rgb(98, 54, 242) 3px 3px 3px;
+  background-color: rgb(98, 54, 242);
 }
 .careerBox.center2 {
   height: 50px;
 }
+.careerBox3-Box{
+  height: 220px;
+  width: 110%;
+  margin-top: -10px;
+  margin-left: -5%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.careerBox3-text1{
+  font-size: 23px;
+  color: rgb(98, 54, 242);
+  margin-bottom: 0px;
+}
+.careerBox3-Box2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.careerBox3-Icon1{
+  font-size: 20px;
+  opacity: .6;
+}
+.careerBox3-text2{
+  font-size: 20px;
+  opacity: .6;
+  margin-left: 5px;
+}
+.careerBox3-text3{
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.careerBox3-button{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(98, 54, 242);
+}
+.careerBox3-text4{
+  font-size: 18px;
+}
+.careerBox3-Icon2{
+  font-size: 18px;
+  margin-left: 10px;
+}
+.careerBox3-button:hover{
+  color: rgb(255, 40, 40);
+
+}
+.careerBox3-text5{
+  font-size: 23px;
+  color: rgb(98, 54, 242);
+  margin-top: 10px;  
+}
 
 @media only screen and (max-width: 1000px) {
   .Career-Box1 {

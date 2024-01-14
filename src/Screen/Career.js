@@ -5,6 +5,8 @@ import Footer from "../Components/Footer";
 import img1 from "../Image/we-are-hiring.png";
 import img2 from "../Image/why join with us.png";
 
+import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
+
 export default function Career() {
   const [activeBox, setActiveBox] = useState(1);
 
@@ -69,11 +71,77 @@ export default function Career() {
           </p>
 
           <div className="careerBox3">
-          <div className="careerBox-slider">
-      <div className={`careerBox ${activeBox === 1 ? 'center' : 'center2'}`}>Box 1</div>
-      <div className={`careerBox ${activeBox === 2 ? 'center' : 'center2'}`}>Box 2</div>
-      <div className={`careerBox ${activeBox === 3 ? 'center' : 'center2'}`}>Box 3</div>
-    </div>
+            <div className="careerBox-slider">
+              <div
+                className={`careerBox ${
+                  activeBox === 1 ? "center" : "center2"
+                }`}
+              >
+                {activeBox === 1 ? (
+                  <div className="careerBox3-Box">
+                    <p className="careerBox3-text1">Senior Node.js Developer</p>
+
+                    <div className="careerBox3-Box2">
+                      <EnvironmentOutlined className="careerBox3-Icon1" />
+                      <p className="careerBox3-text2">Remote</p>
+                      <p className="careerBox3-text3">Exp: 3+ Years</p>
+                    </div>
+                    <button className="careerBox3-button">
+                      <p className="careerBox3-text4">Apply Now</p>
+                      <ArrowRightOutlined className="careerBox3-Icon2" />
+                    </button>
+                  </div>
+                ) : (
+                  <p className="careerBox3-text5">Senior Node.js Developer</p>
+                )}
+              </div>
+              <div
+                className={`careerBox ${
+                  activeBox === 2 ? "center" : "center2"
+                }`}
+              >
+                {activeBox === 2 ? (
+                  <div className="careerBox3-Box">
+                    <p className="careerBox3-text1">Senior Software Engineer (MERN)</p>
+
+                    <div className="careerBox3-Box2">
+                      <EnvironmentOutlined className="careerBox3-Icon1" />
+                      <p className="careerBox3-text2">Remote</p>
+                      <p className="careerBox3-text3">Exp: 4+ Years</p>
+                    </div>
+                    <button className="careerBox3-button">
+                      <p className="careerBox3-text4">Apply Now</p>
+                      <ArrowRightOutlined className="careerBox3-Icon2" />
+                    </button>
+                  </div>
+                ) : (
+                  <p className="careerBox3-text5">Senior Software Engineer (MERN)</p>
+                )}
+              </div>
+              <div
+                className={`careerBox ${
+                  activeBox === 3 ? "center" : "center2"
+                }`}
+              >
+                {activeBox === 3 ? (
+                  <div className="careerBox3-Box">
+                    <p className="careerBox3-text1">Senior UX & UI Designer</p>
+
+                    <div className="careerBox3-Box2">
+                      <EnvironmentOutlined className="careerBox3-Icon1" />
+                      <p className="careerBox3-text2">Remote</p>
+                      <p className="careerBox3-text3">Exp: 2+ Years</p>
+                    </div>
+                    <button className="careerBox3-button">
+                      <p className="careerBox3-text4">Apply Now</p>
+                      <ArrowRightOutlined className="careerBox3-Icon2" />
+                    </button>
+                  </div>
+                ) : (
+                  <p className="careerBox3-text5">Senior UX & UI Designer </p>
+                )}
+              </div>
+            </div>
           </div>
         </div>
 
