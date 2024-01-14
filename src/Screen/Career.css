@@ -7,5 +7,50 @@
   align-items: center;
   flex-direction: column;
 }
+.Career-Box1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Career-Box1-Left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Career-Box1Left-text1{
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(49, 49, 143);
+  margin-bottom: 0px;
+}
+.Career-Box1Left-text2{
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  opacity: .6;
+  margin-bottom: 0px;
+}
+.Career-Box1Left-text3{
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(49, 49, 143);
+  text-align: left;
+}
+.Career-Box1Left-Button{
 
+}
+.Career-Box1Left-text4{
 
+}
+.Career-Box1-Right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  
+}
