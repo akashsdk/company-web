@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Career.css";
 import Footer from "../Components/Footer";
 
+import img1 from "../Image/we-are-hiring.png";
+import img2 from "../Image/why join with us.png";
+
 export default function Career() {
   return (
     <div className="AppBody">
@@ -19,11 +22,34 @@ export default function Career() {
               environment with opportunities for growth. Be part of a passionate
               and cohesive team delivering innovative software solutions.
             </p>
-            <button className="Career-Box1Left-Button"> 
+            <button className="Career-Box1Left-Button">
               <p className="Career-Box1Left-text4">Apply Now</p>
             </button>
           </div>
-          <div className="Career-Box1-Right">Right</div>
+          <div className="Career-Box1-Right">
+            <img className="Career-Box1Right-Img" src={img1} alt="" />
+          </div>
+        </div>
+
+        <div className="Career-Box2">
+          <div className="Career-Box2-Left"> 
+          <img className="Career-Box2Left-Img" src={img2} alt=""/>
+          </div>
+          <div className="Career-Box2-Right">
+            <p className="Career-Box2Left-text1">Why! Join with us?</p>
+            <p  className="Career-Box2Left-text2"> 
+              If you are looking for a company that values creativity,
+              innovation, and collaboration, then 'web site name' is the place for
+              you. We offer a dynamic work environment that promotes
+              professional growth and encourages individuals to challenge
+              themselves. Our team is composed of talented individuals from
+              diverse backgrounds who are committed to creating exceptional
+              software solutions for our clients. By joining 'web site name', you will
+              have the opportunity to work with cutting-edge technologies,
+              collaborate with a talented team of professionals, and make a
+              meaningful impact in the industry.
+            </p>
+          </div>
         </div>
 
         <Footer />
