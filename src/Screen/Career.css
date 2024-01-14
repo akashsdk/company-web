@@ -75,7 +75,7 @@
 .Career-Box2{
   height: auto;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,11 +83,11 @@
 .Career-Box2-Left{
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .Career-Box2Left-Img{
-  height: 450px;
+  height: 500px;
 }
 .Career-Box2-Right{
   width: 50%;
@@ -131,6 +131,10 @@
   }
   .Career-Box1Left-text4{
     font-size: 18px;
+  }
+  
+  .Career-Box2{
+    margin-top: 0px;
   }
   .Career-Box2-Left{
     display: none;
