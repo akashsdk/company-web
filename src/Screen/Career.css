@@ -20,26 +20,26 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.Career-Box1Left-text1{
+.Career-Box1Left-text1 {
   font-size: 35px;
   font-weight: 600;
   color: rgb(49, 49, 143);
   margin-bottom: 0px;
 }
-.Career-Box1Left-text2{
+.Career-Box1Left-text2 {
   font-size: 25px;
   font-weight: 500;
   text-align: left;
-  opacity: .6;
+  opacity: 0.6;
   margin-bottom: 0px;
 }
-.Career-Box1Left-text3{
+.Career-Box1Left-text3 {
   font-size: 25px;
   font-weight: 600;
   color: rgb(49, 49, 143);
   text-align: left;
 }
-.Career-Box1Left-Button{
+.Career-Box1Left-Button {
   margin-top: 130px;
   height: 70px;
   width: 180px;
@@ -53,12 +53,12 @@
   align-items: center;
   cursor: pointer;
 }
-.Career-Box1Left-Button:hover{
+.Career-Box1Left-Button:hover {
   background-color: transparent;
   border: 2px solid rgb(98, 54, 242);
   color: rgb(98, 54, 242);
 }
-.Career-Box1Left-text4{
+.Career-Box1Left-text4 {
   font-size: 20px;
   font-weight: 600;
 }
@@ -68,11 +68,11 @@
   justify-content: center;
   align-items: center;
 }
-.Career-Box1Right-Img{
+.Career-Box1Right-Img {
   height: auto;
 }
 
-.Career-Box2{
+.Career-Box2 {
   height: auto;
   width: 100%;
   margin-top: 100px;
@@ -80,36 +80,36 @@
   justify-content: center;
   align-items: center;
 }
-.Career-Box2-Left{
+.Career-Box2-Left {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.Career-Box2Left-Img{
+.Career-Box2Left-Img {
   height: 500px;
 }
-.Career-Box2-Right{
+.Career-Box2-Right {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
-.Career-Box2Left-text1{
+.Career-Box2Left-text1 {
   font-size: 30px;
   font-weight: 600;
   color: rgb(49, 49, 143);
   margin-bottom: 10px;
 }
-.Career-Box2Left-text2{
+.Career-Box2Left-text2 {
   font-size: 20px;
   font-weight: 500;
   text-align: justify;
-  opacity: .6;
+  opacity: 0.6;
 }
 
-.Career-Box3{
+.Career-Box3 {
   height: auto;
   width: 100%;
   margin-top: 100px;
@@ -118,34 +118,25 @@
   align-items: center;
   flex-direction: column;
 }
-.Career-Box3-text1{
+.Career-Box3-text1 {
   font-size: 30px;
   font-weight: 600;
   color: rgb(49, 49, 143);
 }
-.Career-Box3-text2{
+.Career-Box3-text2 {
   font-size: 20px;
   font-weight: 500;
-  opacity: .6;
+  opacity: 0.6;
   margin-top: -10px;
 }
 
-
-
-
-
-
-
-
-
 /* BoxSlider.css */
-.careerBox3{
+.careerBox3 {
   height: 450px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .careerBox-slider {
   display: flex;
@@ -162,21 +153,22 @@
 }
 
 .careerBox.center {
+  width: 100%;
   height: 200px;
-  transform: scale(1.2);
   z-index: 1;
   margin-top: -60px;
   border-radius: 10px;
   background-color: rgb(98, 54, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .careerBox.center2 {
   height: 50px;
 }
-.careerBox3-Box{
-  height: 220px;
+.careerBox3-Box {
+  height: 230px;
   width: 110%;
-  margin-top: -10px;
-  margin-left: -5%;
   background-color: #fff;
   border-radius: 10px;
   display: flex;
@@ -184,32 +176,31 @@
   align-items: center;
   flex-direction: column;
 }
-.careerBox3-text1{
+.careerBox3-text1 {
   font-size: 23px;
   color: rgb(98, 54, 242);
   margin-bottom: 0px;
 }
-.careerBox3-Box2{
+.careerBox3-Box2 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.careerBox3-Icon1{
+.careerBox3-Icon1 {
   font-size: 20px;
-  opacity: .6;
+  opacity: 0.6;
 }
-.careerBox3-text2{
+.careerBox3-text2 {
   font-size: 20px;
-  opacity: .6;
+  opacity: 0.6;
   margin-left: 5px;
 }
-.careerBox3-text3{
+.careerBox3-text3 {
   font-size: 20px;
   margin-left: 5px;
   font-weight: 600;
 }
-.careerBox3-button{
+.careerBox3-button {
   border: none;
   background-color: transparent;
   display: flex;
@@ -218,21 +209,46 @@
   cursor: pointer;
   color: rgb(98, 54, 242);
 }
-.careerBox3-text4{
+.careerBox3-text4 {
   font-size: 18px;
 }
-.careerBox3-Icon2{
+.careerBox3-Icon2 {
   font-size: 18px;
   margin-left: 10px;
 }
-.careerBox3-button:hover{
+.careerBox3-button:hover {
   color: rgb(255, 40, 40);
-
 }
-.careerBox3-text5{
+.careerBox3-text5 {
   font-size: 23px;
   color: rgb(98, 54, 242);
-  margin-top: 10px;  
+  margin-top: 10px;
+}
+/* part-4 */
+.Career-Box4 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Career-Box4-Flex {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* part-5 */
+.Career-Box5 {
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -242,47 +258,76 @@
   .Career-Box1-Left {
     width: 100%;
   }
-  .Career-Box1Left-text1{
+  .Career-Box1Left-text1 {
     font-size: 25px;
   }
-  .Career-Box1Left-text2{
+  .Career-Box1Left-text2 {
     font-size: 20px;
   }
-  .Career-Box1Left-text3{
+  .Career-Box1Left-text3 {
     font-size: 20px;
   }
-  .Career-Box1Left-Button{
+  .Career-Box1Left-Button {
     margin-top: 30px;
     height: 50px;
     width: 150px;
   }
-  .Career-Box1Left-text4{
+  .Career-Box1Left-text4 {
     font-size: 18px;
   }
 
-  .Career-Box2{
+  .Career-Box2 {
     margin-top: 0px;
   }
-  .Career-Box2-Left{
+  .Career-Box2-Left {
     display: none;
   }
-  .Career-Box2-Right{
+  .Career-Box2-Right {
     width: 100%;
   }
-  .Career-Box2Left-text1{
+  .Career-Box1Right-Img {
+    height: 350px;
+  }
+  .Career-Box2Left-text1 {
     font-size: 25px;
   }
-  .Career-Box2Left-text2{
+  .Career-Box2Left-text2 {
     font-size: 18px;
   }
 
-  .Career-Box3{
+  .Career-Box3 {
     margin-top: 20px;
   }
-  .Career-Box3-text1{
+  .Career-Box3-text1 {
     font-size: 25px;
   }
-  .Career-Box3-text2{
+  .Career-Box3-text2 {
     font-size: 18px;
+  }
+  .careerBox3 {
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .careerBox-slider {
+    flex-direction: column;
+  }
+  .careerBox3-Box {
+    height: 200px;
+    width: 100%;
+  }
+
+  .careerBox.center {
+    width: 100%;
+    margin-left: -5%;
+  }
+  .Career-Box4-Flex {
+    flex-direction: column;
+  }
+
+  /* part-5 */
+  .Career-Box5 {
+    margin-top: 20px;
   }
 }

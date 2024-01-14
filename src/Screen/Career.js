@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Career.css";
 import Footer from "../Components/Footer";
+import SoftwareService from "../Cart/SoftwareService";
 
 import img1 from "../Image/we-are-hiring.png";
 import img2 from "../Image/why join with us.png";
+
+import icon1 from "../Icon/Flexible Time.png";
+import icon2 from "../Icon/Knowledge Share.png";
+import icon3 from "../Icon/career-promotion.png";
+import icon4 from "../Icon/protect.png";
+import icon5 from "../Icon/Insurance.png";
+import icon6 from "../Icon/inspiration.png";
 
 import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
 
@@ -20,6 +28,7 @@ export default function Career() {
   return (
     <div className="AppBody">
       <div className="Career-Body">
+        {/* part-1 */}
         <div className="Career-Box1">
           <div className="Career-Box1-Left">
             <p className="Career-Box1Left-text1">Join with us</p>
@@ -42,6 +51,7 @@ export default function Career() {
           </div>
         </div>
 
+        {/* part-2 */}
         <div className="Career-Box2">
           <div className="Career-Box2-Left">
             <img className="Career-Box2Left-Img" src={img2} alt="" />
@@ -63,6 +73,7 @@ export default function Career() {
           </div>
         </div>
 
+        {/* part-3 */}
         <div className="Career-Box3">
           <p className="Career-Box3-text1">Open Position</p>
           <p className="Career-Box3-text2">
@@ -102,7 +113,9 @@ export default function Career() {
               >
                 {activeBox === 2 ? (
                   <div className="careerBox3-Box">
-                    <p className="careerBox3-text1">Senior Software Engineer (MERN)</p>
+                    <p className="careerBox3-text1">
+                      Senior Software Engineer (MERN)
+                    </p>
 
                     <div className="careerBox3-Box2">
                       <EnvironmentOutlined className="careerBox3-Icon1" />
@@ -115,7 +128,9 @@ export default function Career() {
                     </button>
                   </div>
                 ) : (
-                  <p className="careerBox3-text5">Senior Software Engineer (MERN)</p>
+                  <p className="careerBox3-text5">
+                    Senior Software Engineer (MERN)
+                  </p>
                 )}
               </div>
               <div
@@ -143,6 +158,37 @@ export default function Career() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* part-4 */}
+        <div className="Career-Box4">
+          <p className="Career-Box3-text1">Benefits and Opportunities</p>
+          <p className="Career-Box3-text2">
+            At 'web site name', we believe in empowering our team to reach their
+            full potential. We offer a rich array of benefits and opportunities
+            for professional and personal growth.
+          </p>
+
+          <div className="Career-Box4-Flex">
+            <SoftwareService img={icon1} text1="Flexible Time" text2="" />
+            <SoftwareService img={icon2} text1="Knowledge Share" text2="" />
+            <SoftwareService img={icon3} text1="Growth Opportunity" text2="" />
+          </div>
+
+          <div className="Career-Box4-Flex">
+            <SoftwareService img={icon6} text1="Inspiring Culture" text2="" />
+            <SoftwareService img={icon5} text1="Yearly Bonuses" text2="" />
+            <SoftwareService img={icon4} text1="Life Insurance" text2="" />
+          </div>
+        </div>
+
+        {/* part-4 */}
+        <div className="Career-Box5">
+          <p className="Career-Box3-text1">How to Join Our Dynamic Team</p>
+          <p className="Career-Box3-text2">
+            Become a part of the (web site name) family through our thorough
+            4-step hiring process.
+          </p>
         </div>
 
         <Footer />
