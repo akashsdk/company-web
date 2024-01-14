@@ -6,6 +6,15 @@ import img1 from "../Image/we-are-hiring.png";
 import img2 from "../Image/why join with us.png";
 
 export default function Career() {
+  const [activeBox, setActiveBox] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveBox((prevBox) => (prevBox % 3) + 1);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="AppBody">
       <div className="Career-Body">
@@ -32,23 +41,39 @@ export default function Career() {
         </div>
 
         <div className="Career-Box2">
-          <div className="Career-Box2-Left"> 
-          <img className="Career-Box2Left-Img" src={img2} alt=""/>
+          <div className="Career-Box2-Left">
+            <img className="Career-Box2Left-Img" src={img2} alt="" />
           </div>
           <div className="Career-Box2-Right">
             <p className="Career-Box2Left-text1">Why! Join with us?</p>
-            <p  className="Career-Box2Left-text2"> 
+            <p className="Career-Box2Left-text2">
               If you are looking for a company that values creativity,
-              innovation, and collaboration, then 'web site name' is the place for
-              you. We offer a dynamic work environment that promotes
+              innovation, and collaboration, then 'web site name' is the place
+              for you. We offer a dynamic work environment that promotes
               professional growth and encourages individuals to challenge
               themselves. Our team is composed of talented individuals from
               diverse backgrounds who are committed to creating exceptional
-              software solutions for our clients. By joining 'web site name', you will
-              have the opportunity to work with cutting-edge technologies,
-              collaborate with a talented team of professionals, and make a
-              meaningful impact in the industry.
+              software solutions for our clients. By joining 'web site name',
+              you will have the opportunity to work with cutting-edge
+              technologies, collaborate with a talented team of professionals,
+              and make a meaningful impact in the industry.
             </p>
+          </div>
+        </div>
+
+        <div className="Career-Box3">
+          <p className="Career-Box3-text1">Open Position</p>
+          <p className="Career-Box3-text2">
+            We have challenging projects for gifted professionals. Let’s create
+            great products together!
+          </p>
+
+          <div className="careerBox3">
+          <div className="careerBox-slider">
+      <div className={`careerBox ${activeBox === 1 ? 'center' : 'center2'}`}>Box 1</div>
+      <div className={`careerBox ${activeBox === 2 ? 'center' : 'center2'}`}>Box 2</div>
+      <div className={`careerBox ${activeBox === 3 ? 'center' : 'center2'}`}>Box 3</div>
+    </div>
           </div>
         </div>
 

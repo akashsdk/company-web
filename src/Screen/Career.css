@@ -108,6 +108,73 @@
   text-align: justify;
   opacity: .6;
 }
+
+.Career-Box3{
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Career-Box3-text1{
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(49, 49, 143);
+}
+.Career-Box3-text2{
+  font-size: 20px;
+  font-weight: 500;
+  opacity: .6;
+  margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+/* BoxSlider.css */
+.careerBox3{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.careerBox-slider {
+  display: flex;
+  width: 90%;
+}
+
+.careerBox {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid rgb(98, 54, 242);
+  text-align: center;
+  transition: transform 0.5s, z-index 0.5s;
+}
+
+.careerBox.center {
+  height: 200px;
+  transform: scale(1.2);
+  z-index: 1;
+  margin-top: -60px;
+  border-radius: 10px;
+  border: 1px solid rgb(98, 54, 242);
+  box-shadow: rgb(98, 54, 242) 3px 3px 3px;
+}
+.careerBox.center2 {
+  height: 50px;
+}
+
+
 @media only screen and (max-width: 1000px) {
   .Career-Box1 {
     flex-direction: column;
@@ -132,7 +199,7 @@
   .Career-Box1Left-text4{
     font-size: 18px;
   }
-  
+
   .Career-Box2{
     margin-top: 0px;
   }
@@ -141,5 +208,21 @@
   }
   .Career-Box2-Right{
     width: 100%;
+  }
+  .Career-Box2Left-text1{
+    font-size: 25px;
+  }
+  .Career-Box2Left-text2{
+    font-size: 18px;
+  }
+
+  .Career-Box3{
+    margin-top: 20px;
+  }
+  .Career-Box3-text1{
+    font-size: 25px;
+  }
+  .Career-Box3-text2{
+    font-size: 18px;
   }
 }
