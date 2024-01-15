@@ -240,6 +240,7 @@
   justify-content: center;
   align-items: center;
 }
+
 /* part-5 */
 .Career-Box5 {
   height: auto;
@@ -249,6 +250,68 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.Career-Box5-Div1 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.Career-Box5-Div2 {
+  height: 350px;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.Career-Box5-Div2:hover {
+  box-shadow: rgb(98, 54, 242) 0px 0px 0px 3px ;
+}
+
+.Career-Box5-Div4 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Career-Box5-img {
+  height: 120px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+.Career-Box5-Text2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(98, 54, 242);
+}
+.Career-Box5-Text3 {
+  margin-top: -10px;
+  font-size: 16px;
+  opacity: 0.6;
+  align-items: center;
+}
+
+/* part-6 */
+.Career-Box6{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.Career-Box6-From{
+  height: auto;
+  width: 95%;
+  border: 1.5px solid rgb(98, 54, 242);
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -329,5 +392,45 @@
   /* part-5 */
   .Career-Box5 {
     margin-top: 20px;
+  }
+  .Career-Box5-Div1 {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .Career-Box5-Div2 {
+    height: 200px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Career-Box5-Div4 {
+    width: 100%;
+    flex-direction: row;
+  }
+  .Career-Box5-Div3{
+    width: 70%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .Career-Box5-Text2 {
+    font-size: 20px;
+  }
+  .Career-Box5-Text3 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .Career-Box5-img {
+    width: 30%;
+  }
+   /* part-6 */
+   .Career-Box6{
+    margin-top: 40px;
   }
 }

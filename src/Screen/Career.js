@@ -5,6 +5,10 @@ import SoftwareService from "../Cart/SoftwareService";
 
 import img1 from "../Image/we-are-hiring.png";
 import img2 from "../Image/why join with us.png";
+import img3 from "../Image/application-form-removebg-preview.png";
+import img4 from "../Image/Assessment.png";
+import img5 from "../Image/Interview-removebg-preview.png";
+import img6 from "../Image/Welcoming-removebg-preview.png";
 
 import icon1 from "../Icon/Flexible Time.png";
 import icon2 from "../Icon/Knowledge Share.png";
@@ -182,13 +186,89 @@ export default function Career() {
           </div>
         </div>
 
-        {/* part-4 */}
+        {/* part-5 */}
         <div className="Career-Box5">
           <p className="Career-Box3-text1">How to Join Our Dynamic Team</p>
           <p className="Career-Box3-text2">
             Become a part of the (web site name) family through our thorough
             4-step hiring process.
           </p>
+          <div className="Career-Box5-Div1">
+            <div className="Career-Box5-Div2">
+              <div className="Career-Box5-Div4">
+                <img className="Career-Box5-img" src={img3} alt="" />
+                <div className="Career-Box5-Div3">
+                  <p className="Career-Box5-Text2">Apply</p>
+                  <p className="Career-Box5-Text3">
+                    Do you want to be a part of the (web site name) team? Go
+                    through our job openings and submit your application.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="Career-Box5-Div2">
+              <div className="Career-Box5-Div4">
+                <img className="Career-Box5-img" src={img4} alt="" />
+                <div className="Career-Box5-Div3">
+                  <p className="Career-Box5-Text2">Assessment</p>
+                  <p className="Career-Box5-Text3">
+                    If your skills and experience match our needs, we'll reach
+                    out to you for a skills assessment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="Career-Box5-Div2">
+              <div className="Career-Box5-Div4">
+                <img className="Career-Box5-img" src={img5} alt="" />
+                <div className="Career-Box5-Div3">
+                  <p className="Career-Box5-Text2">Interview</p>
+                  <p className="Career-Box5-Text3">
+                    After a successful assessment, we'll invite you for a formal
+                    interview to discuss your qualifications and experience in
+                    more detail.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="Career-Box5-Div2">
+              <div className="Career-Box5-Div4">
+                <img className="Career-Box5-img" src={img6} alt="" />
+                <div className="Career-Box5-Div3">
+                  <p className="Career-Box5-Text2">Welcoming You to Our Team</p>
+                  <p className="Career-Box5-Text3">
+                    Based on your performance in the assessment and interview,
+                    we'll make a job offer and welcome you to our dedicated and
+                    passionate team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* part-6 */}
+        <div className="Career-Box6">
+          <p className="Career-Box3-text1">Send Us Your Resume</p>
+          <div className="Career-Box6-From">
+            <div>
+              <div>
+                <p>
+                  First Name:<p>*</p>
+                </p>
+                <input placeholder="First Name" />
+              </div>
+              <div>
+                <p>
+                  Last Name:<p>*</p>
+                </p>
+                <input placeholder="Last Name" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <Footer />
