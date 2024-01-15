@@ -332,7 +332,33 @@
   border: 1px solid rgb(187, 182, 182);
   border-radius: 7px;
 }
+.Career-Box6-ButtonDiv{
+  width: 90%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
+}
+.Career-Box6-FileDiv{
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Career-Box6-FileText{
+font-size: 20px;
+}
+.Career-Box6-FileSelect{
+  font-size: 16px;
+}
 @media only screen and (max-width: 1000px) {
   .Career-Box1 {
     flex-direction: column;

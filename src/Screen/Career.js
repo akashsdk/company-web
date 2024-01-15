@@ -17,7 +17,7 @@ import icon4 from "../Icon/protect.png";
 import icon5 from "../Icon/Insurance.png";
 import icon6 from "../Icon/inspiration.png";
 
-import { Input, Button } from "antd";
+import { Input, Button, Tooltip, Modal } from "antd";
 import {
   ArrowRightOutlined,
   EnvironmentOutlined,
@@ -56,52 +56,94 @@ export default function Career() {
   const handleSelectChange3 = (e) => {
     setSelectedOption3(e.target.value);
   };
+  // selected-File
+  const [selectFile, setSelectFile] = useState("");
 
-
-  const [input1, setInput1] = useState('');
-  const [input2, setInput2] = useState('');
-  const [input3, setInput3] = useState('');
-  const [input4, setInput4] = useState('');
-  const [input5, setInput5] = useState('');
-  const [input6, setInput6] = useState('');
-  const [input7, setInput7] = useState('');
+  const handleSelectFile = (e) => {
+    setSelectFile(e.target.value);
+  };
+  // input
+  const [input1, setInput1] = useState("");
+  const [input2, setInput2] = useState("");
+  const [input3, setInput3] = useState("");
+  const [input4, setInput4] = useState("");
+  const [input5, setInput5] = useState("");
+  const [input6, setInput6] = useState("");
+  const [input7, setInput7] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'input1') {
+    if (name === "input1") {
       setInput1(value);
-    } else if (name === 'input2') {
+    } else if (name === "input2") {
       setInput2(value);
-    } else if (name === 'input3') {
+    } else if (name === "input3") {
       setInput3(value);
-    } else if (name === 'input4') {
+    } else if (name === "input4") {
       setInput4(value);
-    } else if (name === 'input5') {
+    } else if (name === "input5") {
       setInput5(value);
-    } else if (name === 'input6') {
+    } else if (name === "input6") {
       setInput6(value);
-    } else if (name === 'input7') {
+    } else if (name === "input7") {
       setInput7(value);
     }
   };
 
-  const handleReset = () => {
-    setInput1('');
-    setInput2('');
-    setInput3('');
-    setInput4('');
-    setInput5('');
-    setInput6('');
-    setInput7('');
-    setSelectedOption('');
-    setSelectedOption2('');
-    setSelectedOption3('');
-  };
-
   const handleSend = () => {
     // Implement your logic for sending the form data
-    console.log('Form data sent:', { input1, input2, input3, input4, input5, input6, input7, selectedOption, selectedOption2, selectedOption3   });
+    console.log("Form data sent:", {
+      input1,
+      input2,
+      input3,
+      input4,
+      input5,
+      input6,
+      input7,
+      selectedOption,
+      selectedOption2,
+      selectedOption3,
+      selectFile,
+    });
   };
+
+  const isButtonDisabled =
+    input1 === "" ||
+    input2 === "" ||
+    input3 === "" ||
+    input4 === "" ||
+    input5 === "" ||
+    input6 === "" ||
+    input7 === "" ||
+    selectedOption === "" ||
+    selectedOption2 === "" ||
+    selectedOption3 === "" ||
+    selectFile === "";
+
+  const text = <span>please! fill up the form</span>;
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+    setInput1("");
+    setInput2("");
+    setInput3("");
+    setInput4("");
+    setInput5("");
+    setInput6("");
+    setInput7("");
+    setSelectedOption("");
+    setSelectedOption2("");
+    setSelectedOption3("");
+    setSelectFile("");
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="AppBody">
       <div className="Career-Body">
@@ -333,14 +375,18 @@ export default function Career() {
                 size="large"
                 placeholder="First Name "
                 prefix={<UserOutlined />}
-                name="input1" value={input1} onChange={handleInputChange}
+                name="input1"
+                value={input1}
+                onChange={handleInputChange}
               />
               <Input
                 className="Career-Box6-Input"
                 size="large"
                 placeholder="Last Name"
                 prefix={<UserOutlined />}
-                name="input2" value={input2} onChange={handleInputChange}
+                name="input2"
+                value={input2}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -350,14 +396,18 @@ export default function Career() {
                 size="large"
                 placeholder="Email ID"
                 prefix={<MailOutlined />}
-                name="input3" value={input3} onChange={handleInputChange}
+                name="input3"
+                value={input3}
+                onChange={handleInputChange}
               />
               <Input
                 className="Career-Box6-Input"
                 size="large"
                 placeholder="Phone Number"
                 prefix={<PhoneOutlined />}
-                name="input4" value={input4} onChange={handleInputChange}
+                name="input4"
+                value={input4}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -367,7 +417,9 @@ export default function Career() {
                 size="large"
                 placeholder="Passport/NID Number"
                 prefix={<IdcardOutlined />}
-                name="input5" value={input5} onChange={handleInputChange}
+                name="input5"
+                value={input5}
+                onChange={handleInputChange}
               />
               <select
                 className="Career-Box6-Select"
@@ -427,25 +479,55 @@ export default function Career() {
                 size="large"
                 placeholder="Github Account Link"
                 prefix={<GithubOutlined />}
-                name="input6" value={input6} onChange={handleInputChange}
+                name="input6"
+                value={input6}
+                onChange={handleInputChange}
               />
               <Input
                 className="Career-Box6-Input"
                 size="large"
                 placeholder="Address"
                 prefix={<EnvironmentOutlined />}
-                name="input7" value={input7} onChange={handleInputChange}
+                name="input7"
+                value={input7}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="Career-Box6-FileDiv">
+              <p className="Career-Box6-FileText">Resume:</p>
+              <input
+              className="Career-Box6-FileSelect"
+                type="file"
+                accept=".pdf"
+                value={selectFile}
+                onChange={handleSelectFile}
               />
             </div>
 
-            <div className="Career-Box6-Div1">
-              <Button onClick={handleReset} size="large" danger>
+            <div className="Career-Box6-ButtonDiv">
+              <Button onClick={showModal} size="large" danger>
                 Reset
               </Button>
-              <Button onClick={handleSend} type="primary" size="large">
-                Send
-              </Button>
+
+              <Tooltip placement="topLeft" title={isButtonDisabled ? text : ""}>
+                <Button
+                  onClick={handleSend}
+                  type="primary"
+                  size="large"
+                  disabled={isButtonDisabled}
+                  style={{ marginLeft: "30px" }}
+                >
+                  Send
+                </Button>
+              </Tooltip>
             </div>
+
+            <Modal
+              title="Confirm to Reset !"
+              open={isModalOpen}
+              onOk={handleOk}
+              onCancel={handleCancel}
+            ></Modal>
           </div>
         </div>
 
