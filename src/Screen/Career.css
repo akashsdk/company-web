@@ -313,6 +313,25 @@
   border: 1.5px solid rgb(98, 54, 242);
   border-radius: 10px;
 }
+.Career-Box6-Div1{
+  width: 90%;
+  margin-top: 50px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Career-Box6-Input{
+  width: 48%;
+  border: 1px solid rgb(187, 182, 182);
+}
+.Career-Box6-Select{
+  height: 40px;
+  width: 48%;
+  font-size: 16px;
+  border: 1px solid rgb(187, 182, 182);
+  border-radius: 7px;
+}
 
 @media only screen and (max-width: 1000px) {
   .Career-Box1 {
@@ -431,6 +450,23 @@
   }
    /* part-6 */
    .Career-Box6{
+    margin-top: 40px;
+  }
+  .Career-Box6-Div1{
+    width: 90%;
+    margin-top: 0px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Career-Box6-Input{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .Career-Box6-Select{
+    width: 100%;
     margin-top: 40px;
   }
 }

@@ -17,7 +17,16 @@ import icon4 from "../Icon/protect.png";
 import icon5 from "../Icon/Insurance.png";
 import icon6 from "../Icon/inspiration.png";
 
-import { ArrowRightOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import { Input } from "antd";
+import {
+  ArrowRightOutlined,
+  EnvironmentOutlined,
+  UserOutlined,
+  MailOutlined,
+  PhoneOutlined,
+  IdcardOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
 
 export default function Career() {
   const [activeBox, setActiveBox] = useState(1);
@@ -29,6 +38,24 @@ export default function Career() {
 
     return () => clearInterval(interval);
   }, []);
+  // selectedOption-1
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleSelectChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
+  // selectedOption-2
+  const [selectedOption2, setSelectedOption2] = useState("");
+
+  const handleSelectChange2 = (e) => {
+    setSelectedOption2(e.target.value);
+  };
+  // selectedOption-3
+  const [selectedOption3, setSelectedOption3] = useState("");
+
+  const handleSelectChange3 = (e) => {
+    setSelectedOption3(e.target.value);
+  };
   return (
     <div className="AppBody">
       <div className="Career-Body">
@@ -254,20 +281,114 @@ export default function Career() {
         <div className="Career-Box6">
           <p className="Career-Box3-text1">Send Us Your Resume</p>
           <div className="Career-Box6-From">
-            <div>
-              <div>
-                <p>
-                  First Name:<p>*</p>
-                </p>
-                <input placeholder="First Name" />
-              </div>
-              <div>
-                <p>
-                  Last Name:<p>*</p>
-                </p>
-                <input placeholder="Last Name" />
-              </div>
+            <div className="Career-Box6-Div1">
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="First Name "
+                prefix={<UserOutlined />}
+              />
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="Last Name"
+                prefix={<UserOutlined />}
+              />
             </div>
+
+            <div className="Career-Box6-Div1">
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="Email ID"
+                prefix={<MailOutlined />}
+              />
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="Phone Number"
+                prefix={<PhoneOutlined />}
+              />
+            </div>
+
+            <div className="Career-Box6-Div1">
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="Passport/NID Number"
+                prefix={<IdcardOutlined />}
+              />
+              <select
+                className="Career-Box6-Select"
+                value={selectedOption}
+                onChange={handleSelectChange}
+              >
+                <option value="">Position</option>
+                <option value="option1">Software Engineer</option>
+                <option value="option2">Sr. Software Engineer</option>
+                <option value="option3">UX Designer</option>
+                <option value="option4">Sr. UX Designer</option>
+                <option value="option5">Graphic Designer</option>
+                <option value="option6">Sr. Graphic Designer</option>
+                <option value="option7">Digital Marketer</option>
+                <option value="option8">Content Writer</option>
+              </select>
+            </div>
+
+            <div className="Career-Box6-Div1">
+              <select
+                className="Career-Box6-Select"
+                value={selectedOption2}
+                onChange={handleSelectChange2}
+              >
+                <option value="">Category</option>
+                <option value="option1">JavaScript</option>
+                <option value="option2">Java</option>
+                <option value="option3">Golang</option>
+                <option value="option4">PHP</option>
+                <option value="option5">Node Js</option>
+                <option value="option6">DevOps</option>
+                <option value="option7">Database</option>
+                <option value="option8">SQA</option>
+                <option value="option9">Game Development</option>
+                <option value="option10">Server Security</option>
+                <option value="option11">Other's</option>
+              </select>
+
+              <select
+                className="Career-Box6-Select"
+                value={selectedOption3}
+                onChange={handleSelectChange3}
+              >
+                <option value="">Experience </option>
+                <option value="option1">2 Years</option>
+                <option value="option2">3 Years</option>
+                <option value="option3">4 Years</option>
+                <option value="option4">5 Years</option>
+                <option value="option5">5 Years +</option>
+                <option value="option6">Fresher or Internship</option>
+              </select>
+            </div>
+
+            <div className="Career-Box6-Div1">
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="Github Account Link"
+                prefix={<GithubOutlined />}
+              />
+              <Input
+                className="Career-Box6-Input"
+                size="large"
+                placeholder="Address"
+                prefix={<EnvironmentOutlined />}
+              />
+            </div>
+
+            <div className="Career-Box6-Div1">
+
+            </div>
+
           </div>
         </div>
 
