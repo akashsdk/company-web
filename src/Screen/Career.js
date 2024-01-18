@@ -161,6 +161,7 @@ export default function Career() {
               environment with opportunities for growth. Be part of a passionate
               and cohesive team delivering innovative software solutions.
             </p>
+
             <button className="Career-Box1Left-Button">
               <p className="Career-Box1Left-text4">Apply Now</p>
             </button>
@@ -393,6 +394,7 @@ export default function Career() {
             <div className="Career-Box6-Div1">
               <Input
                 className="Career-Box6-Input"
+                type="email"
                 size="large"
                 placeholder="Email ID"
                 prefix={<MailOutlined />}
@@ -403,6 +405,7 @@ export default function Career() {
               <Input
                 className="Career-Box6-Input"
                 size="large"
+                type="number"
                 placeholder="Phone Number"
                 prefix={<PhoneOutlined />}
                 name="input4"
@@ -414,6 +417,7 @@ export default function Career() {
             <div className="Career-Box6-Div1">
               <Input
                 className="Career-Box6-Input"
+                
                 size="large"
                 placeholder="Passport/NID Number"
                 prefix={<IdcardOutlined />}
@@ -496,7 +500,7 @@ export default function Career() {
             <div className="Career-Box6-FileDiv">
               <p className="Career-Box6-FileText">Resume:</p>
               <input
-              className="Career-Box6-FileSelect"
+                className="Career-Box6-FileSelect"
                 type="file"
                 accept=".pdf"
                 value={selectFile}

@@ -1,34 +1,18 @@
-import React, { useState, useEffect } from "react";
-import './Blog.css';
-import Footer from '../Components/Footer';
+import React from "react";
+import "./Blog.css";
+import Footer from "../Components/Footer";
 
 export default function Blog() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const hasBoxBeenShown = localStorage.getItem("hasBoxBeenShown");
-
-    if (!hasBoxBeenShown) {
-      setIsVisible(true);
-    }
-  }, []);
-
-  const handleClose = () => {
-    setIsVisible(false);
-    localStorage.setItem("hasBoxBeenShown", "true");
-  };
   return (
-    <div className="AppBody" >
+    <div className="AppBody">
       <div className="Blog-Body">
-        <p>Blog</p>
-        {isVisible && (
-          <div>
-            <p>This is the box content</p>
-            <button onClick={handleClose}>Close</button>
-          </div>
-        )}
+        {/* Part-1 */}
+        <div className="blogPart1-Body">
+          <div className="blogPart1-left">left</div>
+          <div className="blogPart1-right">right</div>
+        </div>
         <Footer />
       </div>
-      </div>
-  )
+    </div>
+  );
 }

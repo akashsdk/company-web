@@ -7,3 +7,19 @@
   align-items: center;
   flex-direction: column;
 }
+/* Part-1 */
+.blogPart1-Body{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogPart1-left{
+  height: auto;
+  width: 50%;
+}
+.blogPart1-right{
+  height: auto;
+  width: 50%;
+}
