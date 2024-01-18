@@ -14,30 +14,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.blogPart1-left{
-  height: auto;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-.blogPart1-right{
-  height: auto;
-  width: 50%;
 }
 .blogPart1-text1{
   font-size: 30px;
   color: rgb(49, 49, 143);
   font-weight: 800;
-  text-decoration: underline aqua;
+  margin-top: 20px;
+}
+.blogPart1-div1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
 }
 .blogPart1-div{
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 .blogPart1-img{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
+}
+.blogPart1-text2{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: rgb(49, 49, 143);
+}
+
+.blogPart1-text3{
+  font-weight: 600;
+  text-align: justify;
+  opacity: .6;
+  font-size: 18px;
 }
