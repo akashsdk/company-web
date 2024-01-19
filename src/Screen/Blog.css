@@ -56,3 +56,14 @@
   opacity: .6;
   font-size: 18px;
 }
+.blogPart1-div3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.blogPart1-Icon1{
+  font-size: 27px;
+}

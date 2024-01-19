@@ -2,7 +2,13 @@ import React from "react";
 import "./Blog.css";
 import Footer from "../Components/Footer";
 
-import { Image } from "antd";
+import { Image, Tooltip, Button } from "antd";
+import {
+  LinkedinOutlined,
+  FacebookOutlined,
+  GlobalOutlined,
+  InstagramOutlined,
+} from "@ant-design/icons";
 
 import photo1 from "../Image/Profile.jpg";
 import photo2 from "../Image/neon img.jpg";
@@ -69,7 +75,36 @@ export default function Blog() {
             [Your Company Name]
           </p>
           <div className="blogPart1-div3">
-
+            <Tooltip title="Linkedin">
+              <Button
+                type="link"
+                className=""
+                href="https://www.linkedin.com/in/tasnimsakash/"
+                target="_blank"
+              >
+                <LinkedinOutlined className="blogPart1-Icon1" />
+              </Button>
+            </Tooltip>
+            <Tooltip title="Facebook">
+              <Button
+                type="link"
+                className=""
+                href="https://web.facebook.com/tasnimSakash/"
+                target="_blank"
+              >
+                <FacebookOutlined className="blogPart1-Icon1" />
+              </Button>
+            </Tooltip>
+            <Tooltip title="Website">
+              <Button
+                type="link"
+                className=""
+                href="https://my-portfolio-d43ec.web.app/"
+                target="_blank"
+              >
+                <GlobalOutlined className="blogPart1-Icon1" />
+              </Button>
+            </Tooltip>
           </div>
         </div>
 
@@ -124,7 +159,36 @@ export default function Blog() {
             <br />
             [Your Company Name]
           </p>
+          <div className="blogPart1-div3">
+            <Tooltip title="Linkedin">
+              <Button type="link" className="" href="" target="_blank">
+                <LinkedinOutlined className="blogPart1-Icon1" />
+              </Button>
+            </Tooltip>
+            <Tooltip title="Facebook">
+              <Button
+                type="link"
+                className=""
+                href="https://web.facebook.com/neon.nabil.3"
+                target="_blank"
+              >
+                <FacebookOutlined className="blogPart1-Icon1" />
+              </Button>
+            </Tooltip>
+            <Tooltip title="Instagram">
+              <Button
+                type="link"
+                className=""
+                href="https://www.instagram.com/nabilneon/"
+                target="_blank"
+              >
+                <InstagramOutlined className="blogPart1-Icon1" />
+              </Button>
+            </Tooltip>
+          </div>
         </div>
+
+        {/* Part-2 */}
         <Footer />
       </div>
     </div>
