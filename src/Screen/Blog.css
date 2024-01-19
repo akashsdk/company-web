@@ -44,7 +44,12 @@
   margin-top: 30px;
   color: rgb(49, 49, 143);
 }
-
+.blogPart1-text-2{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: -30px;
+  color: rgb(49, 49, 143);
+}
 .blogPart1-text3{
   font-weight: 600;
   text-align: justify;

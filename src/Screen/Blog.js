@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import { Image } from "antd";
 
 import photo1 from "../Image/Profile.jpg";
+import photo2 from "../Image/neon img.jpg";
 
 export default function Blog() {
   return (
@@ -20,48 +21,108 @@ export default function Blog() {
           </div>
           <p className="blogPart1-text2">Tasnim Shahriar Akash</p>
           <p className="blogPart1-text3">
-            Dear Valued Clients, <br /> <br />
+            Dear Valued Clients,
+            <br />
+            <br />
             I am delighted to extend a warm welcome to you on behalf of our
             dynamic team at [Your Company Name], where innovation meets
             excellence. As the Chairman of this esteemed software company, it is
-            my privilege to connect with each and every one of you. <br />{" "}
+            my privilege to connect with each and every one of you.
+            <br />
             <br />
             At [Your Company Name], we are driven by a commitment to deliver
             cutting-edge solutions that transcend expectations. We understand
             that in today's rapidly evolving digital landscape, your needs are
             unique, and we are dedicated to crafting bespoke software solutions
-            tailored to meet and exceed those needs. <br /> <br />
+            tailored to meet and exceed those needs.
+            <br />
+            <br />
             Our journey is guided by a passion for innovation, a commitment to
             quality, and a relentless pursuit of customer satisfaction. We
             believe in the transformative power of technology and its ability to
             simplify complexities, empower businesses, and elevate user
-            experiences. <br /> <br />
+            experiences.
+            <br />
+            <br />
             As we continue to pioneer advancements in the software industry, we
             invite you to embark on this journey with us. Your success is our
             success, and we are devoted to fostering enduring partnerships that
             stand the test of time. Whether you are a seasoned partner or
             exploring our offerings for the first time, we are here to serve you
-            with unwavering dedication. <br /> <br />
+            with unwavering dedication.
+            <br />
+            <br />
             Thank you for choosing [Your Company Name]. We look forward to
             contributing to your success and creating a future shaped by
             innovation, collaboration, and unparalleled technological solutions.
-            Warm regards, <br /> <br />
-            [Your Full Name] <br /> <br />
-            Chairman <br /> <br />
+            <br />
+            <br />
+            Warm regards,
+            <br />
+            <br />
+            Tasnim Shahriar Akash
+            <br />
+            <br />
+            Chairman
+            <br />
+            <br />
             [Your Company Name]
           </p>
+          <div className="blogPart1-div3">
+
+          </div>
         </div>
 
         <p className="blogPart1-text1">MESSAGE FROM THE CEO</p>
         <div className="blogPart1-Body">
           <div className="blogPart1-div1">
             <div className="blogPart1-div">
-              <Image className="blogPart1-img" src={''} />
+              <Image className="blogPart1-img" src={photo2} />
             </div>
           </div>
-          <p className="blogPart1-text2">Nabil Ul Tanvir Neon</p>
+          <p className="blogPart1-text-2">Nabil Ul Tanvir Neon</p>
           <p className="blogPart1-text3">
-            
+            Dear Esteemed Clients,
+            <br />
+            <br />
+            As the CEO of [Your Company Name], it is my pleasure to extend a
+            heartfelt welcome to you. At our core, we believe in the
+            transformative power of technology and its ability to redefine the
+            way businesses operate and thrive. I am thrilled to lead a team of
+            dedicated professionals who are committed to delivering innovative
+            and reliable software solutions.
+            <br />
+            <br />
+            Our mission at [Your Company Name] is to empower your business with
+            technology that not only meets but exceeds your expectations. In
+            today's fast-paced digital landscape, staying ahead is not just an
+            advantage—it's a necessity. We understand the challenges you face,
+            and we are here to provide robust, scalable, and future-ready
+            software solutions that propel your success.
+            <br />
+            <br />
+            At every step, we prioritize customer satisfaction, ensuring that
+            our products not only meet technical specifications but also address
+            the unique needs of your business. As we embrace the latest industry
+            trends and advancements, we remain unwavering in our commitment to
+            delivering excellence.
+            <br />
+            <br />
+            Thank you for considering [Your Company Name] as your technology
+            partner. We look forward to fostering a collaborative relationship,
+            driving innovation, and contributing to your growth story.
+            <br />
+            <br />
+            Best regards,
+            <br />
+            <br />
+            Nabil Ul Tanvir Neon
+            <br />
+            <br />
+            CEO
+            <br />
+            <br />
+            [Your Company Name]
           </p>
         </div>
         <Footer />
