@@ -1,0 +1,32 @@
+.footer-Body{
+    height: auto;
+    width: 100%;
+    background-color: rgb(98, 54, 242);
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #fff;
+}
+.footer-Top{
+    color: #fff;
+}
+.footer-Mdi{
+
+}
+.footer-Down{
+height: 80px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer-Down-Line{
+    height: 1px;
+width: 100%;
+background-color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-Body{
+        margin-top:40px;
+    }
+}
