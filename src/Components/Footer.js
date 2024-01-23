@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Button, Dropdown } from "antd";
-import { CaretUpOutlined } from "@ant-design/icons";
+import { CaretUpOutlined, CaretDownOutlined } from "@ant-design/icons";
 
 const items = [
   {
@@ -48,7 +48,10 @@ export default function Footer() {
       <div className="footer-Top">
         <h1>Icon and Name</h1>
       </div>
-      <div className="footer-Mdi">Mid</div>
+      <div className="footer-Mdi">
+        <div>side</div>
+        <div>Right</div>
+        </div>
       <div className="footer-Down-Line" />
       <div className="footer-Down">
         <p style={{marginLeft:'10px'}}>
@@ -62,9 +65,10 @@ export default function Footer() {
             placement="topRight"
             arrow
           >
-            <button className="">
-              <p>topRight</p>
-              <CaretUpOutlined />
+            <button className="footer-Down-Button">
+              <p className="footer-Down-Text2">English</p>
+              <CaretUpOutlined className="footer-Down-Icon"/>
+              <CaretDownOutlined className="footer-Down-Icon2"/>
             </button>
           </Dropdown>
       </div>
