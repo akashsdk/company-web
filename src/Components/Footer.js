@@ -51,11 +51,10 @@ export default function Footer() {
       <div className="footer-Mdi">Mid</div>
       <div className="footer-Down-Line" />
       <div className="footer-Down">
-        <p>
+        <p style={{marginLeft:'10px'}}>
           Copyright &copy; {new Date().getFullYear()} name | All rights
           reserved.
         </p>
-        <div>
           <Dropdown
             menu={{
               items,
@@ -63,12 +62,11 @@ export default function Footer() {
             placement="topRight"
             arrow
           >
-            <button>
+            <button className="">
               <p>topRight</p>
               <CaretUpOutlined />
             </button>
           </Dropdown>
-        </div>
       </div>
     </div>
   );
