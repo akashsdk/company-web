@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Button, Dropdown } from "antd";
+import { Button, Dropdown, Tooltip } from "antd";
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -117,40 +117,46 @@ export default function Footer() {
 
           <div className="footer-Mdi-box3">
             <p className="footer-MdiBox2-Text1">SOCIAL MEDIA</p>
-            <div style={{display:'flex'}}>
-              <Link className="footer-Mdi-Link">
-                <div className="footer-Mdi-IconDiv">
-                  <img className="footer-Mdi-Icon" src={icon1} alt="" />
-                </div>
-              </Link>
+            <div style={{ display: "flex" }}>
+              <Tooltip placement="topLeft" title="Facebook" color="#316FF6">
+                <Link className="footer-Mdi-Link">
+                  <div className="footer-Mdi-IconDiv">
+                    <img className="footer-Mdi-Icon" src={icon1} alt="" />
+                  </div>
+                </Link>
+              </Tooltip>
 
-
+              <Tooltip title="Instagram" color="#d62976">
               <Link className="footer-Mdi-Link">
                 <div className="footer-Mdi-IconDiv">
                   <img className="footer-Mdi-Icon" src={icon2} alt="" />
                 </div>
               </Link>
+              </Tooltip>
 
-
+              <Tooltip title="Twitter X" color="Black">
               <Link className="footer-Mdi-Link">
                 <div className="footer-Mdi-IconDiv">
                   <img className="footer-Mdi-Icon" src={icon3} alt="" />
                 </div>
               </Link>
+              </Tooltip>
 
-
+              <Tooltip title="What's App" color="#075E54">
               <Link className="footer-Mdi-Link">
                 <div className="footer-Mdi-IconDiv">
                   <img className="footer-Mdi-Icon" src={icon4} alt="" />
                 </div>
               </Link>
+              </Tooltip>
 
-
+              <Tooltip placement="topRight" title="YouTube" color="#FF0000">
               <Link className="footer-Mdi-Link">
                 <div className="footer-Mdi-IconDiv">
                   <img className="footer-Mdi-Icon" src={icon5} alt="" />
                 </div>
               </Link>
+              </Tooltip>
             </div>
           </div>
         </div>
