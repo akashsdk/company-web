@@ -62,6 +62,7 @@ export default function Footer() {
         <div>side</div>
         <div className="footer-Mdi-Box">
           <div className="footer-Mdi-box1">Box1</div>
+
           <div className="footer-Mdi-box2">
             <div className="footer-MdiBox2-Div">
               <p className="footer-MdiBox2-Text1">HELP</p>
@@ -81,7 +82,7 @@ export default function Footer() {
 
             <div className="footer-MdiBox2-Div">
               <p className="footer-MdiBox2-Text1">COMPANY</p>
-              <Link className="footer-MdiBox2-Link">
+              <Link to="/" className="footer-MdiBox2-Link">
                 <HomeOutlined className="footer-MdiBox2-Icon" />
                 <p className="footer-MdiBox2-Text2">Home</p>
               </Link>
@@ -107,7 +108,15 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="footer-Mdi-box3">box3</div>
+
+          <div className="footer-Mdi-box3">
+            <p className="footer-MdiBox2-Text1">SOCIAL MEDIA</p>
+            <div>
+              <Link className="footer-Mdi-Link">
+                hhh
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="footer-Down-Line" />

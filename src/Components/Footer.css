@@ -73,7 +73,26 @@ margin-bottom: 30px;
 
 .footer-Mdi-box3{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
+.footer-Mdi-Link{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 .footer-Down {
   height: 80px;
   width: 100%;
