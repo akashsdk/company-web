@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
-import { Button, Dropdown, Tooltip } from "antd";
+import { Button, Dropdown, Tooltip, Drawer } from "antd";
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -10,6 +10,7 @@ import {
   MacCommandOutlined,
   DesktopOutlined,
   CustomerServiceOutlined,
+  DoubleRightOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
@@ -59,13 +60,36 @@ const items = [
 ];
 
 export default function Footer() {
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  
+
   return (
     <div className="footer-Body">
       <div className="footer-Top">
         <h1>Icon and Name</h1>
       </div>
       <div className="footer-Mdi">
-        <div>side</div>
+        <button onClick={showDrawer} className="footer-MdiSide-Button">
+          <DoubleRightOutlined />
+        </button>
+        <Drawer
+          placement="left"
+          title="Basic Drawer"
+          onClose={onClose}
+          open={open}
+          className="footer-MdiSide-Drawer"
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
         <div className="footer-Mdi-Box">
           <div className="footer-Mdi-box1">Box1</div>
 
@@ -127,35 +151,35 @@ export default function Footer() {
               </Tooltip>
 
               <Tooltip title="Instagram" color="#d62976">
-              <Link className="footer-Mdi-Link">
-                <div className="footer-Mdi-IconDiv">
-                  <img className="footer-Mdi-Icon" src={icon2} alt="" />
-                </div>
-              </Link>
+                <Link className="footer-Mdi-Link">
+                  <div className="footer-Mdi-IconDiv">
+                    <img className="footer-Mdi-Icon" src={icon2} alt="" />
+                  </div>
+                </Link>
               </Tooltip>
 
               <Tooltip title="Twitter X" color="Black">
-              <Link className="footer-Mdi-Link">
-                <div className="footer-Mdi-IconDiv">
-                  <img className="footer-Mdi-Icon" src={icon3} alt="" />
-                </div>
-              </Link>
+                <Link className="footer-Mdi-Link">
+                  <div className="footer-Mdi-IconDiv">
+                    <img className="footer-Mdi-Icon" src={icon3} alt="" />
+                  </div>
+                </Link>
               </Tooltip>
 
               <Tooltip title="What's App" color="#075E54">
-              <Link className="footer-Mdi-Link">
-                <div className="footer-Mdi-IconDiv">
-                  <img className="footer-Mdi-Icon" src={icon4} alt="" />
-                </div>
-              </Link>
+                <Link className="footer-Mdi-Link">
+                  <div className="footer-Mdi-IconDiv">
+                    <img className="footer-Mdi-Icon" src={icon4} alt="" />
+                  </div>
+                </Link>
               </Tooltip>
 
               <Tooltip placement="topRight" title="YouTube" color="#FF0000">
-              <Link className="footer-Mdi-Link">
-                <div className="footer-Mdi-IconDiv">
-                  <img className="footer-Mdi-Icon" src={icon5} alt="" />
-                </div>
-              </Link>
+                <Link className="footer-Mdi-Link">
+                  <div className="footer-Mdi-IconDiv">
+                    <img className="footer-Mdi-Icon" src={icon5} alt="" />
+                  </div>
+                </Link>
               </Tooltip>
             </div>
           </div>
