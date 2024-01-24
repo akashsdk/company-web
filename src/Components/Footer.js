@@ -13,6 +13,12 @@ import {
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
+import icon1 from "../Icon/facebook.png";
+import icon2 from "../Icon/instagram-new.png";
+import icon3 from "../Icon/twitter-x-new.png";
+import icon4 from "../Icon/whatsapp-nwe.png";
+import icon5 from "../Icon/youtube.png";
+
 const items = [
   {
     key: "1",
@@ -111,9 +117,39 @@ export default function Footer() {
 
           <div className="footer-Mdi-box3">
             <p className="footer-MdiBox2-Text1">SOCIAL MEDIA</p>
-            <div>
+            <div style={{display:'flex'}}>
               <Link className="footer-Mdi-Link">
-                hhh
+                <div className="footer-Mdi-IconDiv">
+                  <img className="footer-Mdi-Icon" src={icon1} alt="" />
+                </div>
+              </Link>
+
+
+              <Link className="footer-Mdi-Link">
+                <div className="footer-Mdi-IconDiv">
+                  <img className="footer-Mdi-Icon" src={icon2} alt="" />
+                </div>
+              </Link>
+
+
+              <Link className="footer-Mdi-Link">
+                <div className="footer-Mdi-IconDiv">
+                  <img className="footer-Mdi-Icon" src={icon3} alt="" />
+                </div>
+              </Link>
+
+
+              <Link className="footer-Mdi-Link">
+                <div className="footer-Mdi-IconDiv">
+                  <img className="footer-Mdi-Icon" src={icon4} alt="" />
+                </div>
+              </Link>
+
+
+              <Link className="footer-Mdi-Link">
+                <div className="footer-Mdi-IconDiv">
+                  <img className="footer-Mdi-Icon" src={icon5} alt="" />
+                </div>
               </Link>
             </div>
           </div>

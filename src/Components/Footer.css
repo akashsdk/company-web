@@ -74,15 +74,30 @@ margin-bottom: 30px;
 .footer-Mdi-box3{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     flex-direction: column;
 }
 .footer-Mdi-Link{
-    height: 50px;
-    width: 50px;
-    background-color: #fff;
     text-decoration: none;
+}
+.footer-Mdi-IconDiv{
+    height: 38px;
+    width: 38px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 3px;
+}
+.footer-Mdi-IconDiv:hover{
+background-color: red;
+}
+.footer-Mdi-Icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
 }
 
 
