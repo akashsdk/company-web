@@ -190,7 +190,7 @@ export default function Footer() {
         </Link>
 
         <Link className="footer-Mdi2-Link">
-          <p className="footer-Mdi2-Text">Privacy policy  </p>
+          <p className="footer-Mdi2-Text">Privacy policy </p>
         </Link>
 
         <Link className="footer-Mdi2-Link">
@@ -202,11 +202,11 @@ export default function Footer() {
         </Link>
 
         <button onClick={showDrawer} className="footer-MdiSide-Button">
-        <p className="footer-Mdi2-Text2">FeedBack </p>
+          <p className="footer-Mdi2-Text2">FeedBack </p>
         </button>
         <Drawer
           title="Feedback Form"
-          placement='bottom'
+          placement="bottom"
           width={500}
           onClose={onClose}
           open={open}
@@ -223,7 +223,7 @@ export default function Footer() {
           <p>Some contents...</p>
         </Drawer>
       </div>
-      
+
       <div className="footer-Down-Line" />
       <div className="footer-Down">
         <p style={{ marginLeft: "20px", opacity: ".6" }}>
