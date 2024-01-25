@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import { Button, Dropdown, Tooltip, Drawer } from "antd";
+import { Button, Dropdown, Tooltip, Drawer, Space } from "antd";
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -10,7 +10,6 @@ import {
   MacCommandOutlined,
   DesktopOutlined,
   CustomerServiceOutlined,
-  DoubleRightOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -75,22 +74,16 @@ export default function Footer() {
         <h1>Icon and Name</h1>
       </div>
       <div className="footer-Mdi">
-        <button onClick={showDrawer} className="footer-MdiSide-Button">
-          <DoubleRightOutlined />
-        </button>
-        <Drawer
-          placement="left"
-          title="Basic Drawer"
-          onClose={onClose}
-          open={open}
-          className="footer-MdiSide-Drawer"
-        >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-        </Drawer>
         <div className="footer-Mdi-Box">
-          <div className="footer-Mdi-box1">Box1</div>
+          <div className="footer-Mdi-box1">
+            <div className="footer-Mdi-box1Div">
+              <p className="footer-MdiBox2-Text1">Stay Connected</p>
+              <p className="footer-MdiBox1-Text1">Web site name</p>
+              <p className="footer-MdiBox1-Text1">Address:</p>
+              <br />
+              <p className="footer-MdiBox1-Text1">Email:</p>
+            </div>
+          </div>
 
           <div className="footer-Mdi-box2">
             <div className="footer-MdiBox2-Div">
@@ -191,9 +184,49 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="footer-Mdi2-Box">
+        <Link className="footer-Mdi2-Link">
+          <p className="footer-Mdi2-Text">Terms and conditions </p>
+        </Link>
+
+        <Link className="footer-Mdi2-Link">
+          <p className="footer-Mdi2-Text">Privacy policy  </p>
+        </Link>
+
+        <Link className="footer-Mdi2-Link">
+          <p className="footer-Mdi2-Text">Cookies policy</p>
+        </Link>
+
+        <Link className="footer-Mdi2-Link">
+          <p className="footer-Mdi2-Text">Copyright policy </p>
+        </Link>
+
+        <button onClick={showDrawer} className="footer-MdiSide-Button">
+        <p className="footer-Mdi2-Text2">FeedBack </p>
+        </button>
+        <Drawer
+          title="Feedback Form"
+          placement='bottom'
+          width={500}
+          onClose={onClose}
+          open={open}
+          extra={
+            <Space>
+              <Button onClick={onClose} style={{ borderColor: "#fb6565" }}>
+                Cancel
+              </Button>
+            </Space>
+          }
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
+      </div>
+      
       <div className="footer-Down-Line" />
       <div className="footer-Down">
-        <p style={{ marginLeft: "10px", opacity: ".6" }}>
+        <p style={{ marginLeft: "20px", opacity: ".6" }}>
           Copyright &copy; {new Date().getFullYear()} name | All rights
           reserved.
         </p>

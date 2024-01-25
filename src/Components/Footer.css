@@ -23,28 +23,47 @@
     align-items: center;
 }
 .footer-MdiSide-Button{
-    height: 250px;
-    width: 15px;
-    margin-left: -7.5px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 3px;
-    position: relative;
-    margin-top: -20px;
+    height: 30px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.footer-MdiSide-Drawer{
-    height: 500px;
+    background-color: transparent;
+    border: none;
+    margin-top: 13px;
 }
 
 .footer-Mdi-box1{
     flex: 1;
 }
+.footer-Mdi-box1Div{
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer-MdiBox1-Text1{
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer-Mdi-box2{
     flex: 1;
     display: flex;
@@ -71,9 +90,6 @@ margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     margin-top: -20px;
-}
-.footer-MdiBox2-Link:hover{
-    color: rgb(255, 0, 0);
 }
 .footer-MdiBox2-Icon{
 
@@ -146,7 +162,23 @@ margin-bottom: 30px;
 }
 
 
-
+.footer-Mdi2-Box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.footer-Mdi2-Link{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.footer-Mdi2-Text{
+    color: #fff;
+}
+.footer-Mdi2-Text2{
+    color: rgb(255, 89, 89);
+    font-size: 17px;
+}
 
 
 
@@ -164,6 +196,7 @@ margin-bottom: 30px;
   height: 1px;
   width: 100%;
   background-color: #fff;
+  opacity: .6;
 }
 .footer-Down-Button {
   margin-right: 10px;
@@ -191,4 +224,32 @@ margin-bottom: 30px;
   .footer-Body {
     margin-top: 40px;
   }
+  .footer-Mdi-Box{
+    flex-direction: column;
+  }
+  .footer-Mdi-box1{
+    width: 90%;
+}
+.footer-Mdi-box2{
+    width: 90%;
+}
+.footer-Mdi-box3{
+    width: 90%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+  .footer-Mdi-box1Div{
+    margin-left: 0px;
+width: 100%;
+}
+.footer-Mdi2-Box{
+    flex-direction: column;
+}
+.footer-Mdi2-Text{
+    margin-top: -3px;
+}
+.footer-MdiSide-Button{
+    margin-top: -3px;
+}
 }
