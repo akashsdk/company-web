@@ -97,6 +97,35 @@ margin-bottom: 30px;
     align-items: flex-end;
     flex-direction: column;
 }
+.footer-MdiA-Box{
+    height: 60px;
+    width: 220px;
+    margin-top: -15px;
+    border-radius: 35px; 
+    cursor: pointer;
+    box-shadow: rgb(98, 54, 242) 0px 2px 15px 0px;
+    border: 1.5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-MdiA-Icon{
+    font-size: 30px;
+    transform: rotate(100deg);
+}
+.footer-MdiA-Line{
+    height: 40px;
+    width: 2px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-MdiA-Text{
+    font-size: 20px;
+}
+.footer-MdiA-Box:hover{
+    box-shadow: #fff 0px 2px 15px 0px;
+}
 .footer-Mdi-Link{
     text-decoration: none;
 }

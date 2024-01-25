@@ -11,6 +11,7 @@ import {
   DesktopOutlined,
   CustomerServiceOutlined,
   DoubleRightOutlined,
+  PhoneOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
@@ -67,8 +68,6 @@ export default function Footer() {
   const onClose = () => {
     setOpen(false);
   };
-
-  
 
   return (
     <div className="footer-Body">
@@ -140,8 +139,15 @@ export default function Footer() {
           </div>
 
           <div className="footer-Mdi-box3">
+            <p className="footer-MdiBox2-Text1">SUPPORT</p>
+            <div className="footer-MdiA-Box">
+              <PhoneOutlined className="footer-MdiA-Icon" />
+              <div className="footer-MdiA-Line" />
+              <p className="footer-MdiA-Text">015-80233165</p>
+            </div>
+
             <p className="footer-MdiBox2-Text1">SOCIAL MEDIA</p>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", marginTop: "-15px" }}>
               <Tooltip placement="topLeft" title="Facebook" color="#316FF6">
                 <Link className="footer-Mdi-Link">
                   <div className="footer-Mdi-IconDiv">
@@ -187,7 +193,7 @@ export default function Footer() {
       </div>
       <div className="footer-Down-Line" />
       <div className="footer-Down">
-        <p style={{ marginLeft: "10px" }}>
+        <p style={{ marginLeft: "10px", opacity: ".6" }}>
           Copyright &copy; {new Date().getFullYear()} name | All rights
           reserved.
         </p>
