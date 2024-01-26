@@ -22,6 +22,11 @@ import ProjectDevelopment from './SemiScreen/ProjectDevelopment';
 import OffshoreDev from './SemiScreen/OffshoreDev';
 import MVPServices from './SemiScreen/MVPServices';
 
+import TermsAndConditions from './Others/TermsAndConditions';
+import PrivacyPolicy from './Others/PrivacyPolicy';
+import CookiesPolicy from './Others/CookiesPolicy';
+import CopyrightPolicy from './Others/CopyrightPolicy';
+
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -54,6 +59,11 @@ function App() {
           <Route path="/home/project-development" element={<ProjectDevelopment />} />
           <Route path="/home/mvp-services" element={<MVPServices />} />
           <Route path="/home/offshore-development" element={<OffshoreDev />} />
+
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cookies-policy" element={<CookiesPolicy />} />
+          <Route path="/copyright-policy" element={<CopyrightPolicy />} />
         </Routes>
       </div>
       <FloatButton.Group

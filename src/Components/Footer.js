@@ -32,6 +32,7 @@ import img from "../Image/Feedback-removebg-preview.png";
 
 const { TextArea } = Input;
 
+// Dropdown
 const items = [
   {
     key: "1",
@@ -157,46 +158,53 @@ export default function Footer() {
 
           <div className="footer-Mdi-box2">
             <div className="footer-MdiBox2-Div">
-              <p className="footer-MdiBox2-Text1">HELP</p>
-              <Link className="footer-MdiBox2-Link">
-                <ContactsOutlined />
-                <p className="footer-MdiBox2-Text2">Authors</p>
-              </Link>
-              <Link className="footer-MdiBox2-Link">
-                <HomeOutlined className="footer-MdiBox2-Icon" />
-                <p className="footer-MdiBox2-Text2">FAQs</p>
-              </Link>
-              <Link className="footer-MdiBox2-Link">
-                <AppstoreOutlined className="footer-MdiBox2-Icon" />
-                <p className="footer-MdiBox2-Text2">Follow</p>
-              </Link>
-            </div>
-
-            <div className="footer-MdiBox2-Div">
               <p className="footer-MdiBox2-Text1">COMPANY</p>
               <Link to="/" className="footer-MdiBox2-Link">
                 <HomeOutlined className="footer-MdiBox2-Icon" />
                 <p className="footer-MdiBox2-Text2">Home</p>
               </Link>
-              <Link className="footer-MdiBox2-Link">
-                <AppstoreOutlined className="footer-MdiBox2-Icon" />
-                <p className="footer-MdiBox2-Text2">Services</p>
-              </Link>
-              <Link className="footer-MdiBox2-Link">
+
+              <Link to="/career" className="footer-MdiBox2-Link">
                 <ContactsOutlined className="footer-MdiBox2-Icon" />
                 <p className="footer-MdiBox2-Text2">Career</p>
               </Link>
-              <Link className="footer-MdiBox2-Link">
+
+              <Link to="/blog" className="footer-MdiBox2-Link">
                 <MacCommandOutlined className="footer-MdiBox2-Icon" />
                 <p className="footer-MdiBox2-Text2">Blog</p>
               </Link>
-              <Link className="footer-MdiBox2-Link">
+
+              <Link to="/contacts" className="footer-MdiBox2-Link">
                 <DesktopOutlined className="footer-MdiBox2-Icon" />
                 <p className="footer-MdiBox2-Text2"> Contact</p>
               </Link>
-              <Link className="footer-MdiBox2-Link">
+
+              <Link to="/about-us" className="footer-MdiBox2-Link">
                 <CustomerServiceOutlined className="footer-MdiBox2-Icon" />
                 <p className="footer-MdiBox2-Text2">About Us</p>
+              </Link>
+            </div>
+
+            <div className="footer-MdiBox2-Div">
+              <p className="footer-MdiBox2-Text1">Service</p>
+              <Link to="/team-augmentation" className="footer-MdiBox2-Link">
+                <AppstoreOutlined />
+                <p className="footer-MdiBox2-Text2">Team Augmentation</p>
+              </Link>
+
+              <Link to="/offshore-development" className="footer-MdiBox2-Link">
+                <AppstoreOutlined className="footer-MdiBox2-Icon" />
+                <p className="footer-MdiBox2-Text2">Offshore Development</p>
+              </Link>
+
+              <Link to="/mvp-services" className="footer-MdiBox2-Link">
+                <AppstoreOutlined className="footer-MdiBox2-Icon" />
+                <p className="footer-MdiBox2-Text2">MVP Service</p>
+              </Link>
+
+              <Link to="/project-development" className="footer-MdiBox2-Link">
+                <AppstoreOutlined className="footer-MdiBox2-Icon" />
+                <p className="footer-MdiBox2-Text2">End to End Development</p>
               </Link>
             </div>
           </div>
@@ -255,19 +263,19 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-Mdi2-Box">
-        <Link className="footer-Mdi2-Link">
+        <Link to="/terms-and-conditions" className="footer-Mdi2-Link">
           <p className="footer-Mdi2-Text">Terms and conditions </p>
         </Link>
 
-        <Link className="footer-Mdi2-Link">
+        <Link to="/privacy-policy" className="footer-Mdi2-Link">
           <p className="footer-Mdi2-Text">Privacy policy </p>
         </Link>
 
-        <Link className="footer-Mdi2-Link">
+        <Link to="/cookies-policy" className="footer-Mdi2-Link">
           <p className="footer-Mdi2-Text">Cookies policy</p>
         </Link>
 
-        <Link className="footer-Mdi2-Link">
+        <Link to="/copyright-policy" className="footer-Mdi2-Link">
           <p className="footer-Mdi2-Text">Copyright policy </p>
         </Link>
 
@@ -332,10 +340,18 @@ export default function Footer() {
                 className="footer-Drawer-TextArea"
               />
               <div className="footer-Drawer-ButtonDiv">
-                <Button className="footer-Drawer-Button" onClick={handleReset} danger>
+                <Button
+                  className="footer-Drawer-Button"
+                  onClick={handleReset}
+                  danger
+                >
                   Reset
                 </Button>
-                <Button className="footer-Drawer-Button2" onClick={handleSend} type="primary">
+                <Button
+                  className="footer-Drawer-Button2"
+                  onClick={handleSend}
+                  type="primary"
+                >
                   Submit
                 </Button>
               </div>

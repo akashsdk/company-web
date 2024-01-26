@@ -22,17 +22,6 @@
   justify-content: center;
   align-items: center;
 }
-.footer-MdiSide-Button {
-  height: 30px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  margin-top: 13px;
-}
 
 .footer-Mdi-box1 {
   flex: 1;
@@ -47,10 +36,11 @@
 }
 .footer-MdiBox1-Text1 {
   margin-top: -10px;
+  opacity: .8;
 }
 
 .footer-Mdi-box2 {
-  flex: 1;
+  flex: 1.8;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -75,6 +65,10 @@
   justify-content: center;
   align-items: center;
   margin-top: -20px;
+  opacity: .6;
+}
+.footer-MdiBox2-Link:hover {
+  opacity: 1;
 }
 .footer-MdiBox2-Text2 {
   margin-left: 10px;
@@ -98,6 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: .6;
 }
 .footer-MdiA-Icon {
   font-size: 30px;
@@ -115,6 +110,7 @@
 }
 .footer-MdiA-Box:hover {
   box-shadow: #fff 0px 2px 15px 0px;
+  opacity: 1;
 }
 .footer-Mdi-Link {
   text-decoration: none;
@@ -128,6 +124,10 @@
   align-items: center;
   border-radius: 5px;
   margin: 3px;
+  opacity: .6;
+}
+.footer-Mdi-IconDiv:hover {
+  opacity: 1;
 }
 .footer-Mdi-Icon {
   height: 35px;
@@ -144,12 +144,32 @@
 .footer-Mdi2-Link {
   text-decoration: none;
   margin-left: 10px;
+  opacity: .6;
+}
+.footer-Mdi2-Link:hover {
+  opacity: 1;
 }
 .footer-Mdi2-Text {
   color: #fff;
 }
+
+.footer-MdiSide-Button {
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-top: 13px;
+  opacity: .6;
+}
+.footer-MdiSide-Button:hover {
+  opacity: 1;
+}
 .footer-Mdi2-Text2 {
-  color: rgb(255, 89, 89);
+  color: rgb(254, 78, 78);
   font-size: 17px;
 }
 
@@ -334,16 +354,9 @@
   .footer-Mdi-IconDiv {
     height: 33px;
     width: 33px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin: 3px;
   }
   .footer-Mdi-Icon {
     height: 30px;
     width: 30px;
-    border-radius: 5px;
   }
 }
