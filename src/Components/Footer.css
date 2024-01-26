@@ -76,8 +76,6 @@
   align-items: center;
   margin-top: -20px;
 }
-.footer-MdiBox2-Icon {
-}
 .footer-MdiBox2-Text2 {
   margin-left: 10px;
 }
@@ -190,6 +188,22 @@
   font-size: 18px;
   display: none;
 }
+
+
+
+
+.footer-Drawer-Box{
+  height: auto;
+  width: 50%;
+}
+.footer-Drawer-Text{
+  font-size: 20px;
+  opacity: .6;
+  margin-bottom: 3px;
+}
+.footer-Drawer-Input{
+  
+}
 @media only screen and (max-width: 1000px) {
   .footer-Body {
     margin-top: 40px;
@@ -221,5 +235,8 @@
   }
   .footer-MdiSide-Button {
     margin-top: -3px;
+  }
+  .footer-Drawer-Box{
+    width: 100%;
   }
 }

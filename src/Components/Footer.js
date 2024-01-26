@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import { Button, Dropdown, Tooltip, Drawer, Space } from "antd";
+import { Button, Dropdown, Tooltip, Drawer, Space, Input } from "antd";
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -19,6 +19,8 @@ import icon2 from "../Icon/instagram-new.png";
 import icon3 from "../Icon/twitter-x-new.png";
 import icon4 from "../Icon/whatsapp-nwe.png";
 import icon5 from "../Icon/youtube.png";
+
+const { TextArea } = Input;
 
 const items = [
   {
@@ -89,7 +91,7 @@ export default function Footer() {
             <div className="footer-MdiBox2-Div">
               <p className="footer-MdiBox2-Text1">HELP</p>
               <Link className="footer-MdiBox2-Link">
-                <ContactsOutlined className="footer-MdiBox2-Icon" />
+                <ContactsOutlined />
                 <p className="footer-MdiBox2-Text2">Authors</p>
               </Link>
               <Link className="footer-MdiBox2-Link">
@@ -208,6 +210,7 @@ export default function Footer() {
           title="Feedback Form"
           placement="bottom"
           width={500}
+          height={500}
           onClose={onClose}
           open={open}
           extra={
@@ -218,9 +221,33 @@ export default function Footer() {
             </Space>
           }
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <div className="footer-Drawer-Box">
+            <p className="footer-Drawer-Text">Name:</p>
+            <Input
+              placeholder="Your Name"
+              allowClear
+              onChange={""}
+              className="footer-Drawer-Input"
+            />
+            <p>Email:</p>
+            <Input
+              placeholder="Your Email Id"
+              allowClear
+              onChange={""}
+            />
+            <p>Message:</p>
+            <TextArea
+              allowClear
+              showCount
+              maxLength={500}
+              onChange={""}
+              placeholder="Your FeedBack"
+              style={{
+                height: 120,
+                resize: "none",
+              }}
+            />
+          </div>
         </Drawer>
       </div>
 
