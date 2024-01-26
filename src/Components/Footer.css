@@ -189,20 +189,68 @@
   display: none;
 }
 
+.footer-Drawer {
+  display: flex;
+  margin-top: -30px;
+}
 
-
-
-.footer-Drawer-Box{
+.footer-Drawer-Box {
   height: auto;
   width: 50%;
 }
-.footer-Drawer-Text{
-  font-size: 20px;
-  opacity: .6;
-  margin-bottom: 3px;
+.footer-Drawer-Box2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-Drawer-Input{
-  
+.footer-Drawer-TextDiv {
+  display: flex;
+}
+.footer-Drawer-Text {
+  font-size: 20px;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+.footer-Drawer-Text2 {
+  font-size: 20px;
+  color: red;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+.footer-Drawer-Input {
+  font-size: 20px;
+  border-color: rgb(98, 54, 242);
+}
+.footer-Drawer-TextArea {
+  font-size: 18px;
+  border-color: rgb(98, 54, 242);
+}
+.footer-Drawer-ButtonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.footer-Drawer-Button{
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-Drawer-Button2{
+  font-size: 20px;
+  height: 40px;
+  margin-left: 20px;
+  background-color: rgb(98, 54, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-Drawer-Img {
+  height: 400px;
 }
 @media only screen and (max-width: 1000px) {
   .footer-Body {
@@ -236,7 +284,66 @@
   .footer-MdiSide-Button {
     margin-top: -3px;
   }
-  .footer-Drawer-Box{
+  .footer-Drawer-Box {
     width: 100%;
+  }
+  .footer-Drawer-Box2 {
+    display: none;
+  }
+  .footer-Drawer-Text {
+    font-size: 18px;
+  }
+  .footer-Drawer-Text2 {
+    font-size: 18px;
+  }
+  .footer-Drawer-Input {
+    font-size: 16px;
+  }
+  .footer-Drawer-TextArea {
+    font-size: 15px;
+  }
+  .footer-Drawer-ButtonDiv {
+    margin-top: 20px;
+  }
+  .footer-Drawer-Button{
+    font-size: 16px;
+    height: 35px;
+  }
+  .footer-Drawer-Button2{
+    font-size: 16px;
+    height: 35px;
+    margin-left: 10px;
+  }
+  .footer-MdiBox2-Text1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .footer-MdiA-Box {
+    height: 45px;
+    width: 190px;
+  }
+  .footer-MdiA-Icon {
+    font-size: 25px;
+  }
+  .footer-MdiA-Line {
+    height: 30px;
+  }
+  .footer-MdiA-Text {
+    font-size: 18px;
+  }
+  .footer-Mdi-IconDiv {
+    height: 33px;
+    width: 33px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 3px;
+  }
+  .footer-Mdi-Icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
   }
 }
