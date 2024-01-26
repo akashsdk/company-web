@@ -189,8 +189,8 @@ export default function Blog() {
         </div>
 
         {/* Part-2 */}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

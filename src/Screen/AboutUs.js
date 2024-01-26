@@ -28,46 +28,46 @@ export default function AboutUs() {
   };
   return (
     <div className="AppBody">
-      <div>
-        <button onClick={openDrawer}>Open Drawer</button>
+      <div className="About-Body">
+        <div>
+          <button onClick={openDrawer}>Open Drawer</button>
 
-        {isDrawerOpen && (
-          <div
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              height: "100%",
-              width: "100%",
-              overflow: "hidden",
-            }}
-          >
+          {isDrawerOpen && (
             <div
               style={{
+                position: "fixed",
+                top: 0,
+                left: 0,
+                height: "100%",
                 width: "100%",
-                height: "350px",
-                backgroundColor: "#f0f0f0",
-                position: "absolute",
-                left: isDrawerOpen ? "0" : "-100%",
-                transition: "left 0.5s",
+                overflow: "hidden",
               }}
             >
-              {/* Drawer content goes here */}
-              <p>Your drawer content goes here!</p>
-              <button onClick={closeDrawer}>Close Drawer</button>
+              <div
+                style={{
+                  width: "100%",
+                  height: "350px",
+                  backgroundColor: "#f0f0f0",
+                  position: "absolute",
+                  left: isDrawerOpen ? "0" : "-100%",
+                  transition: "left 0.5s",
+                }}
+              >
+                {/* Drawer content goes here */}
+                <p>Your drawer content goes here!</p>
+                <button onClick={closeDrawer}>Close Drawer</button>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
-
-      <div className="About-Body">
+          )}
+        </div>
         <h1>AboutUs</h1>
         <a
-            style={{ textDecoration: "none" }}
-            href="https://www.facebook.com/tasnimSakash/"
-            target="_blank"
-          >jhbggg
-          </a>
+          style={{ textDecoration: "none" }}
+          href="https://www.facebook.com/tasnimSakash/"
+          target="_blank"
+        >
+          jhbggg
+        </a>
 
         <p>
           1. Your Mission 2. Your Story (History) 3. Your Services (And
@@ -79,9 +79,8 @@ export default function AboutUs() {
             <button onClick={handleClose}>Close</button>
           </div>
         )}
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -40,7 +40,7 @@ const items = [
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.antgroup.com"
+        href="https://www.facebook.com/tasnimSakash/"
       >
         1st menu item
       </a>
@@ -52,7 +52,7 @@ const items = [
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.aliyun.com"
+        href="https://www.facebook.com/tasnimSakash/"
       >
         2nd menu item
       </a>
@@ -64,7 +64,7 @@ const items = [
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
+        href="https://www.facebook.com/tasnimSakash/"
       >
         3rd menu item
       </a>

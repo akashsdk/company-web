@@ -4,7 +4,6 @@ import "./CheckOut.css";
 import Footer from "../Components/Footer";
 
 import { CloseOutlined } from "@ant-design/icons";
-import { Input, Space } from "antd";
 
 export default function CheckOut() {
   // For Name Input
@@ -166,8 +165,8 @@ export default function CheckOut() {
             <div style={{height:'50px'}}></div>
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -401,9 +401,8 @@ export default function Home() {
           text5="Designing, hypothesis testing, frontend and backend development."
           text6="Deploying the finished products, Maintenance and updates."
         />
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

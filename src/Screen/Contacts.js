@@ -193,8 +193,8 @@ export default function Contacts() {
           </div>
         </div>
         
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -32,8 +32,8 @@ export default function MVPServices() {
           text5="Signing the contract for MVP development"
           text6="Built an engaging MVP Product development, product release"
         />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

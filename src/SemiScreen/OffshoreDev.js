@@ -30,8 +30,8 @@ export default function OffshoreDev() {
       text5='Establish communication between the offshore office and the parent company'
       text6='Setting up a cost effective offshore office with the help of {web sit name}'
       />
-      <Footer />
     </div>
+    <Footer />
   </div>
   )
 }
