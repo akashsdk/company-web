@@ -171,13 +171,12 @@ export default function Header() {
         <div className="headerBox-1">Icon and name</div>
         <div className="headerBox-2">
           <div className="headerBox-2-Box">
-            <Link to="/" className="headerBox-2-Link">
-              <p
-                className={`headerBox-2-Text ${textColors[0]}`}
-                onClick={() => handleTextClick(0)}
-              >
-                Home
-              </p>
+            <Link
+              to="/"
+              className="headerBox-2-Link"
+              onClick={() => handleTextClick(0)}
+            >
+              <p className={`headerBox-2-Text ${textColors[0]}`}>Home</p>
             </Link>
           </div>
 
@@ -218,35 +217,32 @@ export default function Header() {
           </div>
 
           <div className="headerBox-2-Box">
-            <Link to="/career" className="headerBox-2-Link">
-              <p
-                className={`headerBox-2-Text ${textColors[2]}`}
-                onClick={() => handleTextClick(2)}
-              >
-                Career
-              </p>
+            <Link
+              to="/career"
+              className="headerBox-2-Link"
+              onClick={() => handleTextClick(2)}
+            >
+              <p className={`headerBox-2-Text ${textColors[2]}`}>Career</p>
             </Link>
           </div>
 
           <div className="headerBox-2-Box">
-            <Link to="/blog" className="headerBox-2-Link">
-              <p
-                className={`headerBox-2-Text ${textColors[3]}`}
-                onClick={() => handleTextClick(3)}
-              >
-                Blog
-              </p>
+            <Link
+              to="/blog"
+              className="headerBox-2-Link"
+              onClick={() => handleTextClick(3)}
+            >
+              <p className={`headerBox-2-Text ${textColors[3]}`}>Blog</p>
             </Link>
           </div>
 
           <div className="headerBox-2-Box">
-            <Link to="/about-us" className="headerBox-2-Link">
-              <p
-                className={`headerBox-2-Text ${textColors[4]}`}
-                onClick={() => handleTextClick(4)}
-              >
-                About Us
-              </p>
+            <Link
+              to="/about-us"
+              className="headerBox-2-Link"
+              onClick={() => handleTextClick(4)}
+            >
+              <p className={`headerBox-2-Text ${textColors[4]}`}>About Us</p>
             </Link>
           </div>
         </div>

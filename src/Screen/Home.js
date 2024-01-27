@@ -50,9 +50,6 @@ export default function Home() {
   return (
     <div className="home-Body">
       <div className="homeBody">
-        {/* HomeAnimation-Part */}
-        {/* <HomeAnimation /> */}
-
         {/* Main-Body */}
         <div className="homeMain-Body">
           <div className="homeMain-Left">
@@ -385,6 +382,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* HomeAnimation-Part */}
+        <HomeAnimation />
+
         {/* HelpCart-Part */}
         <HelpCart
           text1="Our Working Process"
