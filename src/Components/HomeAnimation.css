@@ -1,5 +1,29 @@
-.h-AnimationBody{
-    height: calc(100vh - 100px);
-    width: 100%;
-    background-color: aquamarine;
+.h-AnimationBody {
+  height: auto;
+  width: 108%;
+  margin-top: 10px;
+  background-color: rgb(232, 232, 250);
+  border-radius: 8px;
+  margin-left: -4%;
+}
+.Animation-Div {
+  width: 92.7%;
+  margin-left: 3.5%;
+}
+.Animation-Text1 {
+  font-size: 30px;
+  color: rgb(49, 49, 143);
+  font-weight: 800;
+}
+.Animation-Text2 {
+  font-size: 16px;
+  opacity: 0.6;
+  text-align: center;
+}
+/* color: rgb(98, 54, 242); */
+
+@media only screen and (max-width: 1000px) {
+  .Animation-Text1 {
+    font-size: 25px;
+  }
 }
