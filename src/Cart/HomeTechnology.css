@@ -33,3 +33,15 @@
         font-size: 25px;
     }
 }
+@media only screen and (max-width: 600px) {
+    .HomeTech-Body{
+        height: 50px;
+        width: 130px;
+    }
+    .HomeTech-Imag{
+        height: 38px;
+    }
+    .HomeTech-Text{
+        font-size: 23px;
+    }
+}

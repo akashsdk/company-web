@@ -223,7 +223,14 @@ export default function Career() {
                     </button>
                   </div>
                 ) : (
-                  <p className="careerBox3-text5">Senior Node.js Developer</p>
+                  <p
+                    className="careerBox3-text5"
+                    onClick={() => {
+                      setActiveBox(1);
+                    }}
+                  >
+                    Senior Node.js Developer
+                  </p>
                 )}
               </div>
               <div
@@ -248,7 +255,12 @@ export default function Career() {
                     </button>
                   </div>
                 ) : (
-                  <p className="careerBox3-text5">
+                  <p
+                    className="careerBox3-text5"
+                    onClick={() => {
+                      setActiveBox(2);
+                    }}
+                  >
                     Senior Software Engineer (MERN)
                   </p>
                 )}
@@ -273,7 +285,14 @@ export default function Career() {
                     </button>
                   </div>
                 ) : (
-                  <p className="careerBox3-text5">Senior UX & UI Designer </p>
+                  <p
+                    className="careerBox3-text5"
+                    onClick={() => {
+                      setActiveBox(3);
+                    }}
+                  >
+                    Senior UX & UI Designer{" "}
+                  </p>
                 )}
               </div>
             </div>
@@ -417,7 +436,6 @@ export default function Career() {
             <div className="Career-Box6-Div1">
               <Input
                 className="Career-Box6-Input"
-                
                 size="large"
                 placeholder="Passport/NID Number"
                 prefix={<IdcardOutlined />}
@@ -534,7 +552,6 @@ export default function Career() {
             ></Modal>
           </div>
         </div>
-
       </div>
       <Footer />
     </div>

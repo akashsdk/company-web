@@ -221,8 +221,11 @@
 }
 .careerBox3-text5 {
   font-size: 23px;
-  color: rgb(98, 54, 242);
   margin-top: 10px;
+  cursor: pointer;
+}
+.careerBox3-text5:hover {
+  color: rgb(98, 54, 242);
 }
 /* part-4 */
 .Career-Box4 {
@@ -394,7 +397,7 @@ font-size: 20px;
     width: 100%;
   }
   .Career-Box1Right-Img {
-    height: 350px;
+    height: 370px;
   }
   .Career-Box2Left-text1 {
     font-size: 25px;
@@ -494,5 +497,10 @@ font-size: 20px;
   .Career-Box6-Select{
     width: 100%;
     margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Career-Box1Right-Img {
+    height: 300px;
   }
 }
