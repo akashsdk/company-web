@@ -3,62 +3,19 @@ import "./CheckOut.css";
 
 import Footer from "../Components/Footer";
 
-import { CloseOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  MailOutlined,
+  PhoneOutlined,
+  EnvironmentOutlined,
+  LeftOutlined,
+  RightOutlined,
+} from "@ant-design/icons";
+import { Input, Button } from "antd";
+
+const { TextArea } = Input;
 
 export default function CheckOut() {
-  // For Name Input
-  const [inputValue, setInputValue] = useState("");
-  const [isFocused, setIsFocused] = useState(false);
-
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-    setIsFocused(true);
-  };
-
-  const handleClearInput = () => {
-    setInputValue("");
-    setIsFocused(false);
-  };
-  // For e-mail Input
-  const [inputValue2, setInputValue2] = useState("");
-  const [isFocused2, setIsFocused2] = useState(false);
-
-  const handleInputChange2 = (e) => {
-    setInputValue2(e.target.value);
-    setIsFocused2(true);
-  };
-
-  const handleClearInput2 = () => {
-    setInputValue2("");
-    setIsFocused2(false);
-  };
-
-  // For Phone Input
-  const [inputValue3, setInputValue3] = useState("");
-  const [isFocused3, setIsFocused3] = useState(false);
-
-  const handleInputChange3 = (e) => {
-    setInputValue3(e.target.value);
-    setIsFocused3(true);
-  };
-
-  const handleClearInput3 = () => {
-    setInputValue3("");
-    setIsFocused3(false);
-  };
-  // For Text Input
-  const [inputValue4, setInputValue4] = useState("");
-  const [isFocused4, setIsFocused4] = useState(false);
-
-  const handleInputChange4 = (e) => {
-    setInputValue4(e.target.value);
-    setIsFocused4(true);
-  };
-
-  const handleClearInput4 = () => {
-    setInputValue4("");
-    setIsFocused4(false);
-  };
   return (
     <div className="AppBody">
       <div className="CheckOut-Body">
@@ -69,100 +26,64 @@ export default function CheckOut() {
             is to provide you with good quality service. Hope you like our
             service, Thank you so much. 😊
           </p>
-          <div className="Check-BodyBox">
-            <div className="Check-Div">
-              <p className="Check-Text2">Full Name:</p>
-              <div
-                className={`text-input-container ${isFocused ? "focused" : ""}`}
-              >
-                <input
-                  type="text"
-                  value={inputValue}
-                  onChange={handleInputChange}
-                  placeholder="full name"
-                  className="Check-Input"
-                />
-                {inputValue && (
-                  <CloseOutlined
-                    className="Check-InputIcon"
-                    onClick={handleClearInput}
-                  />
-                )}
-              </div>
+        </div>
+        <div className="Check-BodyBox">
+          <div className="Check-BodyDiv">
+            <p>Step: 1 (Basic Information)</p>
+            <Input
+              size="large"
+              placeholder="Full Name"
+              allowClear
+              prefix={<UserOutlined />}
+            />
+            <br />
+            <br />
+            <Input
+              size="large"
+              placeholder="Email Id"
+              allowClear
+              prefix={<MailOutlined />}
+            />
+            <br />
+            <br />
+
+            <Input
+              size="large"
+              placeholder="Phone No"
+              allowClear
+              prefix={<PhoneOutlined />}
+            />
+            <br />
+            <br />
+            <Input
+              size="large"
+              placeholder="Address"
+              allowClear
+              prefix={<EnvironmentOutlined />}
+            />
+            <br />
+            <br />
+            <TextArea
+              showCount
+              maxLength={250}
+              placeholder="Message (Optional)"
+              style={{
+                height: 120,
+                resize: "none",
+              }}
+            />
+            <div>
+              <button>
+                <LeftOutlined /> <p>next</p>
+              </button>
+              <Button size="large" danger>
+                Reset
+              </Button>
+              <button>
+              <p>next</p>
+                <RightOutlined /> 
+              </button>
             </div>
-
-            <div className="Check-Div">
-              <p className="Check-Text2">Email ID:</p>
-              <div
-                className={`text-input-container ${
-                  isFocused2 ? "focused" : ""
-                }`}
-              >
-                <input
-                  type="text"
-                  value={inputValue2}
-                  onChange={handleInputChange2}
-                  placeholder="email id"
-                  className="Check-Input"
-                />
-                {inputValue2 && (
-                  <CloseOutlined
-                    className="Check-InputIcon"
-                    onClick={handleClearInput2}
-                  />
-                )}
-              </div>
-            </div>
-
-            <div className="Check-Div">
-              <p className="Check-Text2">Phone Number:</p>
-              <div
-                className={`text-input-container ${
-                  isFocused3 ? "focused" : ""
-                }`}
-              >
-                <input
-                  type="text"
-                  value={inputValue3}
-                  onChange={handleInputChange3}
-                  placeholder="phone number"
-                  className="Check-Input"
-                />
-                {inputValue3 && (
-                  <CloseOutlined
-                    className="Check-InputIcon"
-                    onClick={handleClearInput3}
-                  />
-                )}
-              </div>
-            </div>
-
-            <div className="Check-Div">
-              <p className="Check-Text2">Message:</p>
-              <div
-                className={`text-input-container ${
-                  isFocused4 ? "focused" : ""
-                }`}
-              >
-                <textarea
-                  type="text"
-                  value={inputValue4}
-                  onChange={handleInputChange4}
-                  placeholder="Message"
-                  className="Check-Input2"
-                />
-                {inputValue4 && (
-                  <CloseOutlined
-                    className="Check-InputIcon2"
-                    onClick={handleClearInput4}
-                  />
-                )}
-              </div>
-            </div>
-
-            
-
-            <div style={{height:'50px'}}></div>
           </div>
         </div>
       </div>
