@@ -29,7 +29,7 @@ export default function CheckOut() {
         </div>
         <div className="Check-BodyBox">
           <div className="Check-BodyDiv">
-            <p>Step: 1 (Basic Information)</p>
+            <p className="Check-Text2">Step: 1 (Basic Information)</p>
             <Input
               size="large"
               placeholder="Full Name"
@@ -57,7 +57,7 @@ export default function CheckOut() {
             <br />
             <Input
               size="large"
-              placeholder="Address"
+              placeholder="Address (Optional)"
               allowClear
               prefix={<EnvironmentOutlined />}
             />
@@ -72,16 +72,17 @@ export default function CheckOut() {
                 resize: "none",
               }}
             />
-            <div>
-              <button>
-                <LeftOutlined /> <p>next</p>
+            <div className="CheckOut-Button-Div">
+              <button className="CheckOut-Button">
+                <LeftOutlined className="CheckOut-Button-Icon" />{" "}
+                <p className="CheckOut-Button-Text">Previous</p>
               </button>
-              <Button size="large" danger>
-                Reset
+              <Button className="CheckOut-Button2" danger>
+                <p className="CheckOut-Button-Text">Reset</p>
               </Button>
-              <button>
-              <p>next</p>
-                <RightOutlined /> 
+              <button className="CheckOut-Button">
+                <p className="CheckOut-Button-Text">Next</p>
+                <RightOutlined className="CheckOut-Button-Icon" />
               </button>
             </div>
           </div>
