@@ -10,13 +10,14 @@ import {
   EnvironmentOutlined,
   LeftOutlined,
   RightOutlined,
+  AppstoreOutlined,
 } from "@ant-design/icons";
-import { Input, Button, Steps } from "antd";
+import { Input, Button, Steps, Checkbox, Drawer, theme } from "antd";
 
 const { TextArea } = Input;
 
 export default function CheckOut() {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
 
   // step-1
   const [formData, setFormData] = useState({
@@ -44,6 +45,31 @@ export default function CheckOut() {
       address: "",
       message: "",
     });
+  };
+
+  const { token } = theme.useToken();
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+  const [open2, setOpen2] = useState(false);
+  const showDrawer2 = () => {
+    setOpen2(true);
+  };
+  const onClose2 = () => {
+    setOpen2(false);
+  };
+  const containerStyle = {
+    position: "relative",
+    height: 200,
+    padding: 48,
+    overflow: "hidden",
+    background: token.colorFillAlter,
+    border: `1px solid ${token.colorBorderSecondary}`,
+    borderRadius: token.borderRadiusLG,
   };
 
   return (
@@ -115,6 +141,7 @@ export default function CheckOut() {
                 showCount
                 maxLength={250}
                 placeholder="Message (Optional)"
+                allowClear
                 type="text"
                 name="message"
                 value={message}
@@ -154,41 +181,85 @@ export default function CheckOut() {
               <p className="Check-Text2">Step: 2 (Project Proposal)</p>
               <Input
                 size="large"
-                placeholder="Full Name"
+                placeholder="Application Name"
                 allowClear
-                prefix={<UserOutlined />}
+                prefix={<AppstoreOutlined />}
               />
               <br />
               <br />
-              <Input
-                size="large"
-                placeholder="Email Id"
-                allowClear
-                prefix={<MailOutlined />}
-              />
+              <select className="CheckOut-Select">
+                <option value="">Application Type</option>
+                <option value="option1">Web Application</option>
+                <option value="option2">Mobile Application</option>
+                <option value="option3">Both (Web & Mobile)</option>
+                <option value="option4">Desktop Application</option>
+                <option value="option%">Game Development</option>
+              </select>
               <br />
               <br />
-
-              <Input
-                size="large"
-                placeholder="Phone No"
-                allowClear
-                prefix={<PhoneOutlined />}
-              />
+              <select className="CheckOut-Select">
+                <option value="">Admin Dashboard</option>
+                <option value="option1"> Website </option>
+                <option value="option2"> Application</option>
+                <option value="option3">Both</option>
+                <option value="option4">Without Admin Panel</option>
+              </select>
               <br />
               <br />
-              <Input
-                size="large"
-                placeholder="Address (Optional)"
-                allowClear
-                prefix={<EnvironmentOutlined />}
-              />
+              <select className="CheckOut-Select">
+                <option value="">Programming Language</option>
+                <option value="option1">JavaScript</option>
+                <option value="option2">Python</option>
+                <option value="option3">PHP</option>
+                <option value="option4">Java</option>
+              </select>
+              <br />
+              <br />
+              <div className="CheckOut-Checkbox">
+                <div style={containerStyle}>
+                  Render in this
+                  <div
+                    style={{
+                      marginTop: 16,
+                    }}
+                  >
+                    <Button type="primary" onClick={showDrawer2}>
+                      Open2
+                    </Button>
+                    <Button type="primary" onClick={showDrawer}>
+                      Open
+                    </Button>
+                    
+                  </div>
+                  <Drawer
+                    title="Back-end"
+                    placement="right"
+                    closable={false}
+                    onClose={onClose}
+                    open={open}
+                    getContainer={false}
+                  >
+                    <p>Some contents...</p>
+                  </Drawer>
+                  <Drawer
+                    title="Front-end"
+                    placement="left"
+                    closable={false}
+                    onClose={onClose2}
+                    open={open2}
+                    getContainer={false}
+                  >
+                    <p>Some contents...</p>
+                  </Drawer>
+                </div>
+              </div>
+              
               <br />
               <br />
               <TextArea
                 showCount
                 maxLength={250}
-                placeholder="Message (Optional)"
+                placeholder="Project Details (Optional)"
                 style={{
                   height: 120,
                   resize: "none",
@@ -259,7 +330,7 @@ export default function CheckOut() {
                   <LeftOutlined className="CheckOut-Button-Icon" />
                   <p className="CheckOut-Button-Text">Previous</p>
                 </button>
-                <Button className="CheckOut-Button2" type="primary" >
+                <Button className="CheckOut-Button2" type="primary">
                   <p className="CheckOut-Button-Text">Submit</p>
                 </Button>
                 <button className="CheckOut-Button">
@@ -271,7 +342,7 @@ export default function CheckOut() {
           ) : (
             <h1> Error page</h1>
           )}
-          <div className="Check-Steps-Div"> 
+          <div className="Check-Steps-Div">
             <Steps
               size="small"
               current={page}
