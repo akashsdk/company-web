@@ -122,6 +122,25 @@
   opacity: .6;
   font-size: 18px;
 }
+.CheckOut-Checkbox{
+  height: auto;
+  width: 100%;
+}
+.CheckOut-Checkbox-MainDiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.CheckOut-Checkbox-Div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.CheckOut-Checkbox-Text{
+  font-size: 20px;
+}
 @media only screen and (max-width: 1000px) {
   .Check-HeaderText {
     font-size: 40px;

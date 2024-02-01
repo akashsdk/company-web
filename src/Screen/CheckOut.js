@@ -12,7 +12,7 @@ import {
   RightOutlined,
   AppstoreOutlined,
 } from "@ant-design/icons";
-import { Input, Button, Steps, Checkbox, Drawer, theme } from "antd";
+import { Input, Button, Steps, Checkbox, Col, Row, Drawer, theme } from "antd";
 
 const { TextArea } = Input;
 
@@ -47,29 +47,10 @@ export default function CheckOut() {
     });
   };
 
-  const { token } = theme.useToken();
-  const [open, setOpen] = useState(false);
-  const showDrawer = () => {
-    setOpen(true);
-  };
-  const onClose = () => {
-    setOpen(false);
-  };
-  const [open2, setOpen2] = useState(false);
-  const showDrawer2 = () => {
-    setOpen2(true);
-  };
-  const onClose2 = () => {
-    setOpen2(false);
-  };
-  const containerStyle = {
-    position: "relative",
-    height: 200,
-    padding: 48,
-    overflow: "hidden",
-    background: token.colorFillAlter,
-    border: `1px solid ${token.colorBorderSecondary}`,
-    borderRadius: token.borderRadiusLG,
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const onChange = (checkedValues) => {
+    console.log("checked = ", checkedValues);
   };
 
   return (
@@ -207,7 +188,7 @@ export default function CheckOut() {
               <br />
               <br />
               <select className="CheckOut-Select">
-                <option value="">Programming Language</option>
+                <option value="">Core Programming Language</option>
                 <option value="option1">JavaScript</option>
                 <option value="option2">Python</option>
                 <option value="option3">PHP</option>
@@ -215,45 +196,132 @@ export default function CheckOut() {
               </select>
               <br />
               <br />
-              <div className="CheckOut-Checkbox">
-                <div style={containerStyle}>
-                  Render in this
-                  <div
+              <select
+                className="CheckOut-Select"
+                value={selectedOption}
+                onChange={(e) => setSelectedOption(e.target.value)}
+              >
+                <option value="">Programming Language</option>
+                <option value="box1">Only Front-End</option>
+                <option value="box2">Only Back-End</option>
+                <option value="box3">Front-End & Back-End</option>
+              </select>
+
+              {selectedOption === "box1" && (
+                <div className="CheckOut-Checkbox">
+                  <Checkbox.Group
                     style={{
-                      marginTop: 16,
+                      width: "100%",
                     }}
+                    onChange={onChange}
                   >
-                    <Button type="primary" onClick={showDrawer2}>
-                      Open2
-                    </Button>
-                    <Button type="primary" onClick={showDrawer}>
-                      Open
-                    </Button>
-                    
-                  </div>
-                  <Drawer
-                    title="Back-end"
-                    placement="right"
-                    closable={false}
-                    onClose={onClose}
-                    open={open}
-                    getContainer={false}
-                  >
-                    <p>Some contents...</p>
-                  </Drawer>
-                  <Drawer
-                    title="Front-end"
-                    placement="left"
-                    closable={false}
-                    onClose={onClose2}
-                    open={open2}
-                    getContainer={false}
-                  >
-                    <p>Some contents...</p>
-                  </Drawer>
+                    <p className="CheckOut-Checkbox-Text">For Front-End:</p>
+                    <div className="CheckOut-Checkbox-MainDiv">
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="CSS">CSS</Checkbox>
+                        <Checkbox value="HTLM">HTLM</Checkbox>
+                        <Checkbox value="React Js">React Js</Checkbox>
+                        <Checkbox value="Swift">Swift</Checkbox>
+                        <Checkbox value="Express Js">Express Js</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="Angular">Angular</Checkbox>
+                        <Checkbox value="jQuery">jQuery</Checkbox>
+                        <Checkbox value="Vue.js">Vue.js</Checkbox>
+                        <Checkbox value="Bootstrap">Bootstrap</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="Python">Python</Checkbox>
+                        <Checkbox value="PHP">PHP</Checkbox>
+                        <Checkbox value="Java">Java</Checkbox>
+                        <Checkbox value="Git">Git</Checkbox>
+                      </div>
+                    </div>
+                  </Checkbox.Group>
                 </div>
-              </div>
-              
+              )}
+              {selectedOption === "box2" && (
+                <div className="CheckOut-Checkbox">
+                  <Checkbox.Group
+                    style={{
+                      width: "100%",
+                    }}
+                    onChange={onChange}
+                  >
+                    <p className="CheckOut-Checkbox-Text">For Back-End:</p>
+                    <div className="CheckOut-Checkbox-MainDiv">
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="Python">Python</Checkbox>
+                        <Checkbox value="C#">C#</Checkbox>
+                        <Checkbox value="JavaScript">JavaScript</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="NodeJS">NodeJS</Checkbox>
+                        <Checkbox value="ExpressJS">ExpressJS</Checkbox>
+                        <Checkbox value="MongoDB">MongoDB</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="aws">aws</Checkbox>
+                        <Checkbox value="MySQL">MySQL</Checkbox>
+                        <Checkbox value="Firebase">Firebase</Checkbox>
+                      </div>
+                    </div>
+                  </Checkbox.Group>
+                </div>
+              )}
+              {selectedOption === "box3" && (
+                <div className="CheckOut-Checkbox">
+                  <Checkbox.Group
+                    style={{
+                      width: "100%",
+                    }}
+                    onChange={onChange}
+                  >
+                    <p className="CheckOut-Checkbox-Text">For Front-End:</p>
+                    <div className="CheckOut-Checkbox-MainDiv">
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="CSS">CSS</Checkbox>
+                        <Checkbox value="HTLM">HTLM</Checkbox>
+                        <Checkbox value="React">React Js</Checkbox>
+                        <Checkbox value="Swift">Swift</Checkbox>
+                        <Checkbox value="Express Js">Express Js</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="Angular">Angular</Checkbox>
+                        <Checkbox value="jQuery">jQuery</Checkbox>
+                        <Checkbox value="Vue.js">Vue.js</Checkbox>
+                        <Checkbox value="Bootstrap">Bootstrap</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="Python">Python</Checkbox>
+                        <Checkbox value="PHP">PHP</Checkbox>
+                        <Checkbox value="Java">Java</Checkbox>
+                        <Checkbox value="Git">Git</Checkbox>
+                      </div>
+                    </div>
+
+                    <p className="CheckOut-Checkbox-Text">For Back-End:</p>
+                    <div className="CheckOut-Checkbox-MainDiv">
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="Python">Python</Checkbox>
+                        <Checkbox value="C#">C#</Checkbox>
+                        <Checkbox value="JavaScript">JavaScript</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="NodeJS">NodeJS</Checkbox>
+                        <Checkbox value="ExpressJS">ExpressJS</Checkbox>
+                        <Checkbox value="MongoDB">MongoDB</Checkbox>
+                      </div>
+                      <div className="CheckOut-Checkbox-Div">
+                        <Checkbox value="aws">aws</Checkbox>
+                        <Checkbox value="MySQL">MySQL</Checkbox>
+                        <Checkbox value="Firebase">Firebase</Checkbox>
+                      </div>
+                    </div>
+                  </Checkbox.Group>
+                </div>
+              )}
+
               <br />
               <br />
               <TextArea
