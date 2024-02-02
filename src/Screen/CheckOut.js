@@ -11,6 +11,8 @@ import {
   LeftOutlined,
   RightOutlined,
   AppstoreOutlined,
+  FileProtectOutlined,
+  DollarOutlined,
 } from "@ant-design/icons";
 import { Input, Button, Steps, Checkbox, Col, Row, Drawer, theme } from "antd";
 
@@ -26,8 +28,24 @@ export default function CheckOut() {
     phone: "",
     address: "",
     message: "",
+    appName: "",
+    projectProposal: "",
+    customPac: "",
+    budget: "",
+    projectDetails: "",
   });
-  const { name, email, phone, address, message } = formData;
+  const {
+    name,
+    email,
+    phone,
+    address,
+    message,
+    appName,
+    projectProposal,
+    customPac,
+    budget,
+    projectDetails,
+  } = formData;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -47,7 +65,45 @@ export default function CheckOut() {
     });
   };
 
-  const [selectedOption, setSelectedOption] = useState("");
+  const [appType, setAppType] = useState("");
+  const selectChange1 = (e) => {
+    setAppType(e.target.value);
+  };
+
+  const [admin, setAdmin] = useState("");
+  const selectChange2 = (e) => {
+    setAdmin(e.target.value);
+  };
+
+  const [coreLanguage, setCoreLanguage] = useState("");
+  const selectChange3 = (e) => {
+    setCoreLanguage(e.target.value);
+  };
+
+  const [language, setLanguage] = useState("");
+  const selectChange4 = (e) => {
+    setLanguage(e.target.value);
+  };
+
+  const [newPackage, setNewPackage] = useState("");
+  const selectChange5 = (e) => {
+    setNewPackage(e.target.value);
+  };
+
+  const handleReset2 = () => {
+    setFormData({
+      appName: "",
+      projectProposal: "",
+      customPac: "",
+      budget: "",
+      projectDetails: "",
+    });
+    setAppType("");
+    setAdmin("");
+    setCoreLanguage("");
+    setLanguage("");
+    setNewPackage("");
+  };
 
   const onChange = (checkedValues) => {
     console.log("checked = ", checkedValues);
@@ -162,52 +218,86 @@ export default function CheckOut() {
               <p className="Check-Text2">Step: 2 (Project Proposal)</p>
               <Input
                 size="large"
-                placeholder="Application Name"
+                placeholder="Application Name (Optional)"
                 allowClear
                 prefix={<AppstoreOutlined />}
+                type="text"
+                name="appName"
+                value={appName}
+                onChange={handleInputChange}
               />
               <br />
               <br />
-              <select className="CheckOut-Select">
-                <option value="">Application Type</option>
-                <option value="option1">Web Application</option>
-                <option value="option2">Mobile Application</option>
-                <option value="option3">Both (Web & Mobile)</option>
-                <option value="option4">Desktop Application</option>
-                <option value="option%">Game Development</option>
-              </select>
+              <TextArea
+                showCount
+                maxLength={1000}
+                placeholder="Project Proposal (Optional)"
+                allowClear
+                style={{
+                  height: 220,
+                  resize: "none",
+                }}
+                type="text"
+                name="projectProposal"
+                value={projectProposal}
+                onChange={handleInputChange}
+              />
               <br />
               <br />
-              <select className="CheckOut-Select">
-                <option value="">Admin Dashboard</option>
-                <option value="option1"> Website </option>
-                <option value="option2"> Application</option>
-                <option value="option3">Both</option>
-                <option value="option4">Without Admin Panel</option>
-              </select>
-              <br />
-              <br />
-              <select className="CheckOut-Select">
-                <option value="">Core Programming Language</option>
-                <option value="option1">JavaScript</option>
-                <option value="option2">Python</option>
-                <option value="option3">PHP</option>
-                <option value="option4">Java</option>
+              <select
+                className="CheckOut-Select"
+                value={appType}
+                onChange={selectChange1}
+              >
+                <option value="">Application Type (Optional)</option>
+                <option value="Web Application">Web Application</option>
+                <option value="Mobile Application">Mobile Application</option>
+                <option value="Both (Web & Mobile)">Both (Web & Mobile)</option>
+                <option value="Desktop Application">Desktop Application</option>
+                <option value="Game Development">Game Development</option>
               </select>
               <br />
               <br />
               <select
                 className="CheckOut-Select"
-                value={selectedOption}
-                onChange={(e) => setSelectedOption(e.target.value)}
+                value={admin}
+                onChange={selectChange2}
               >
-                <option value="">Programming Language</option>
-                <option value="box1">Only Front-End</option>
-                <option value="box2">Only Back-End</option>
-                <option value="box3">Front-End & Back-End</option>
+                <option value="">Admin Dashboard (Optional)</option>
+                <option value="Website"> Website </option>
+                <option value="Application"> Application</option>
+                <option value="Both">Both</option>
+                <option value="Without Admin Panel">Without Admin Panel</option>
+              </select>
+              <br />
+              <br />
+              <select
+                className="CheckOut-Select"
+                value={coreLanguage}
+                onChange={selectChange3}
+              >
+                <option value="">Core Programming Language (Optional)</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+              </select>
+              <br />
+              <br />
+              <select
+                className="CheckOut-Select"
+                value={language}
+                onChange={selectChange4}
+              >
+                <option value="">Programming Language (Optional)</option>
+                <option value="Only Front-End">Only Front-End</option>
+                <option value="Only Back-End">Only Back-End</option>
+                <option value="Front-End & Back-End">
+                  Front-End & Back-End
+                </option>
               </select>
 
-              {selectedOption === "box1" && (
+              {language === "Only Front-End" && (
                 <div className="CheckOut-Checkbox">
                   <Checkbox.Group
                     style={{
@@ -240,7 +330,7 @@ export default function CheckOut() {
                   </Checkbox.Group>
                 </div>
               )}
-              {selectedOption === "box2" && (
+              {language === "Only Back-End" && (
                 <div className="CheckOut-Checkbox">
                   <Checkbox.Group
                     style={{
@@ -269,7 +359,7 @@ export default function CheckOut() {
                   </Checkbox.Group>
                 </div>
               )}
-              {selectedOption === "box3" && (
+              {language === "Front-End & Back-End" && (
                 <div className="CheckOut-Checkbox">
                   <Checkbox.Group
                     style={{
@@ -324,14 +414,60 @@ export default function CheckOut() {
 
               <br />
               <br />
+              <select
+                className="CheckOut-Select"
+                value={newPackage}
+                onChange={selectChange5}
+              >
+                <option value="">Package (Optional)</option>
+                <option value="Basic">Basic (1-5 page up to 6 sections)</option>
+                <option value="Standard">Standard (1 to 10 pages)</option>
+                <option value="Premium">Premium (1 to 20 pages)</option>
+                <option value="Custom Package">Custom Package</option>
+              </select>
+              {newPackage === "Custom Package" && (
+                <div>
+                  <br />
+                  <Input
+                    size="large"
+                    placeholder="Custom Package"
+                    allowClear
+                    prefix={<FileProtectOutlined />}
+                    type="text"
+                    name="customPac"
+                    value={customPac}
+                    onChange={handleInputChange}
+                  />
+                </div>
+              )}
+              <br />
+              <br />
+              <Input
+                size="large"
+                placeholder="Project Budget (Optional)"
+                allowClear
+                prefix={<DollarOutlined />}
+                type="text"
+                name="budget"
+                value={budget}
+                onChange={handleInputChange}
+              />
+              <br />
+              <br />
+
               <TextArea
                 showCount
-                maxLength={250}
+                maxLength={500}
                 placeholder="Project Details (Optional)"
+                allowClear
                 style={{
                   height: 120,
                   resize: "none",
                 }}
+                type="text"
+                name="projectDetails"
+                value={projectDetails}
+                onChange={handleInputChange}
               />
 
               <div className="CheckOut-Button-Div">
@@ -344,7 +480,11 @@ export default function CheckOut() {
                   <LeftOutlined className="CheckOut-Button-Icon" />{" "}
                   <p className="CheckOut-Button-Text">Previous</p>
                 </button>
-                <Button className="CheckOut-Button2" danger>
+                <Button
+                  className="CheckOut-Button2"
+                  onClick={handleReset2}
+                  danger
+                >
                   <p className="CheckOut-Button-Text">Reset</p>
                 </Button>
                 <button
@@ -363,6 +503,7 @@ export default function CheckOut() {
             <div className="Check-BodyDiv">
               <p className="Check-Text2">Step: 3 (Overview)</p>
 
+              <p>Basic Information</p>
               <div className="Check-BodyBox-Div">
                 <p className="Check-BodyBox-Text">Name: </p>
                 <p className="Check-BodyBox-Text2">{name}</p>
@@ -386,6 +527,77 @@ export default function CheckOut() {
               <div className="Check-BodyBox-Div">
                 <p className="Check-BodyBox-Text">Message: </p>
                 <p className="Check-BodyBox-Text2">{message}</p>
+              </div>
+
+              <p>Project Proposal</p>
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Apps Name: </p>
+                <p className="Check-BodyBox-Text2">{appName}</p>
+              </div>
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Project Proposal: </p>
+                <p className="Check-BodyBox-Text2">{projectProposal}</p>
+              </div>
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Application Type: </p>
+                <p className="Check-BodyBox-Text2">{appType}</p>
+              </div>
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Admin Dashboard: </p>
+                <p className="Check-BodyBox-Text2">{admin}</p>
+              </div>
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">
+                  Core Programming Language:{" "}
+                </p>
+                <p className="Check-BodyBox-Text2">{coreLanguage}</p>
+              </div>
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Programming Language: </p>
+                <p className="Check-BodyBox-Text2">{language}</p>
+              </div>
+
+              {newPackage === "Basic" && (
+                <div className="Check-BodyBox-Div">
+                  <p className="Check-BodyBox-Text">Package: </p>
+                  <p className="Check-BodyBox-Text2">{newPackage}</p>
+                </div>
+              )}
+
+              {newPackage === "Standard" && (
+                <div className="Check-BodyBox-Div">
+                  <p className="Check-BodyBox-Text">Package: </p>
+                  <p className="Check-BodyBox-Text2">{newPackage}</p>
+                </div>
+              )}
+
+              {newPackage === "Premium" && (
+                <div className="Check-BodyBox-Div">
+                  <p className="Check-BodyBox-Text">Package: </p>
+                  <p className="Check-BodyBox-Text2">{newPackage}</p>
+                </div>
+              )}
+
+              {newPackage === "Custom Package" && (
+                <div className="Check-BodyBox-Div">
+                  <p className="Check-BodyBox-Text">Custom Package: </p>
+                  <p className="Check-BodyBox-Text2">{customPac}</p>
+                </div>
+              )}
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Project Budget: </p>
+                <p className="Check-BodyBox-Text2">{budget}</p>
+              </div>
+
+              <div className="Check-BodyBox-Div">
+                <p className="Check-BodyBox-Text">Project Details: </p>
+                <p className="Check-BodyBox-Text2">{projectDetails}</p>
               </div>
 
               <div className="CheckOut-Button-Div">
