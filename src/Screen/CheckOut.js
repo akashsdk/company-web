@@ -14,7 +14,16 @@ import {
   FileProtectOutlined,
   DollarOutlined,
 } from "@ant-design/icons";
-import { Input, Button, Steps, Checkbox, Col, Row, Drawer, theme } from "antd";
+import {
+  Input,
+  Button,
+  Steps,
+  Checkbox,
+  Modal,
+  Result,
+  notification,
+  message,
+} from "antd";
 
 const { TextArea } = Input;
 
@@ -55,16 +64,6 @@ export default function CheckOut() {
     });
   };
 
-  const handleReset = () => {
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      address: "",
-      message: "",
-    });
-  };
-
   const [appType, setAppType] = useState("");
   const selectChange1 = (e) => {
     setAppType(e.target.value);
@@ -90,7 +89,34 @@ export default function CheckOut() {
     setNewPackage(e.target.value);
   };
 
-  const handleReset2 = () => {
+  const onChange = (checkedValues) => {
+    console.log("checked = ", checkedValues);
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      address: "",
+      message: "",
+    });
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
+  const showModal2 = () => {
+    setIsModalOpen2(true);
+  };
+  const handleOk2 = () => {
+    setIsModalOpen2(false);
     setFormData({
       appName: "",
       projectProposal: "",
@@ -104,13 +130,48 @@ export default function CheckOut() {
     setLanguage("");
     setNewPackage("");
   };
-
-  const onChange = (checkedValues) => {
-    console.log("checked = ", checkedValues);
+  const handleCancel2 = () => {
+    setIsModalOpen2(false);
   };
 
+  const [api, contextHolder] = notification.useNotification();
+  const openNotificationWithIcon = (type) => {
+    api[type]({
+      message: "Notification Title",
+      description:
+        "This is the content of the notification. This is the content of the notification. This is the content of the notification.",
+    });
+  };
+
+  const submit = () => {
+    setTimeout(() => {
+      openNotificationWithIcon("success");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        message: "",
+        appName: "",
+        projectProposal: "",
+        customPac: "",
+        budget: "",
+        projectDetails: "",
+      });
+
+      setAppType("");
+      setAdmin("");
+      setCoreLanguage("");
+      setLanguage("");
+      setNewPackage("");
+    }, 1000);
+
+    setPage(3);
+  };
   return (
     <div className="AppBody">
+      {contextHolder}
       <div className="CheckOut-Body">
         <div className="Check-Body">
           <p className="Check-HeaderText">Oder Now</p>
@@ -194,11 +255,7 @@ export default function CheckOut() {
                   <LeftOutlined className="CheckOut-Button-Icon" />
                   <p className="CheckOut-Button-Text">Previous</p>
                 </button>
-                <Button
-                  onClick={handleReset}
-                  className="CheckOut-Button2"
-                  danger
-                >
+                <Button onClick={showModal} className="CheckOut-Button2" danger>
                   <p className="CheckOut-Button-Text">Reset</p>
                 </Button>
                 <button
@@ -211,6 +268,12 @@ export default function CheckOut() {
                   <RightOutlined className="CheckOut-Button-Icon" />
                 </button>
               </div>
+              <Modal
+                title="Confirm to Reset !"
+                open={isModalOpen}
+                onOk={handleOk}
+                onCancel={handleCancel}
+              ></Modal>
             </div>
           ) : page === 1 ? (
             // Step: 2 (Project Proposal)
@@ -482,7 +545,7 @@ export default function CheckOut() {
                 </button>
                 <Button
                   className="CheckOut-Button2"
-                  onClick={handleReset2}
+                  onClick={showModal2}
                   danger
                 >
                   <p className="CheckOut-Button-Text">Reset</p>
@@ -497,9 +560,15 @@ export default function CheckOut() {
                   <RightOutlined className="CheckOut-Button-Icon" />
                 </button>
               </div>
+              <Modal
+                title="Confirm to Reset !"
+                open={isModalOpen2}
+                onOk={handleOk2}
+                onCancel={handleCancel2}
+              ></Modal>
             </div>
           ) : page === 2 ? (
-            // Step: 1 (Overview)
+            // Step: 3 (Overview)
             <div className="Check-BodyDiv">
               <p className="Check-Text2">Step: 3 (Overview)</p>
 
@@ -610,7 +679,11 @@ export default function CheckOut() {
                   <LeftOutlined className="CheckOut-Button-Icon" />
                   <p className="CheckOut-Button-Text">Previous</p>
                 </button>
-                <Button className="CheckOut-Button2" type="primary">
+                <Button
+                  onClick={submit}
+                  className="CheckOut-Button2"
+                  type="primary"
+                >
                   <p className="CheckOut-Button-Text">Submit</p>
                 </Button>
                 <button className="CheckOut-Button">
@@ -618,6 +691,25 @@ export default function CheckOut() {
                   <RightOutlined className="CheckOut-Button-Icon" />
                 </button>
               </div>
+            </div>
+          ) : page === 3 ? (
+            // Step: 4 (Result)
+            <div className="Check-BodyDiv">
+              <Result
+                status="success"
+                title="Successfully Purchased."
+                subTitle="Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait."
+                extra={[
+                  <Button
+                    type="primary"
+                    onClick={() => {
+                      setPage(0);
+                    }}
+                  >
+                    Go Back
+                  </Button>,
+                ]}
+              />
             </div>
           ) : (
             <h1> Error page</h1>
