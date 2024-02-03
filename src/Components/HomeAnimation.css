@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 .Animation-Box-Left{
   width: 60%;
@@ -36,6 +37,10 @@
 }
 .Animation-Box-Right{
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .Animation-ImgDiv{
   overflow: hidden;

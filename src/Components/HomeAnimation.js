@@ -37,7 +37,44 @@ export default function HomeAnimation() {
               <ArrowRightOutlined className="Animation-Icon" />
             </Link>
           </div>
-          <div className="Animation-Box-Right">Right</div>
+
+          <div className="Animation-Box-Right">
+            <div className="Animation-ImgDiv">
+              <img className="Animation-Img" src={Img3} alt="" />
+            </div>
+            <p className="Animation-Text3">Name</p>
+            <p className="Animation-Text4">Detels</p>
+            <Link className="Animation-Link">
+              <p className="Animation-Text5">Contact Us</p>
+              <ArrowRightOutlined className="Animation-Icon" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="Animation-Box">
+          <div className="Animation-Box-Right">
+            <div className="Animation-ImgDiv">
+              <img className="Animation-Img" src={Img1} alt="" />
+            </div>
+            <p className="Animation-Text3">Name</p>
+            <p className="Animation-Text4">Detels</p>
+            <Link className="Animation-Link">
+              <p className="Animation-Text5">Contact Us</p>
+              <ArrowRightOutlined className="Animation-Icon" />
+            </Link>
+          </div>
+
+          <div className="Animation-Box-Left">
+            <div className="Animation-ImgDiv">
+              <img className="Animation-Img" src={Img2} alt="" />
+            </div>
+            <p className="Animation-Text3">Name</p>
+            <p className="Animation-Text4">Detels</p>
+            <Link className="Animation-Link">
+              <p className="Animation-Text5">Contact Us</p>
+              <ArrowRightOutlined className="Animation-Icon" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
