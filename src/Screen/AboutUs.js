@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function AboutUs() {
   const storedColors = localStorage.getItem("selectedTextColors");
   const [textColors, setTextColors] = useState(
-    storedColors ? JSON.parse(storedColors) : ["black", "black", "black", "black", "black"]
+    storedColors ? JSON.parse(storedColors) : ["black", "black", "black", "black", "black", "black"]
   );
 
   const handleTextClick = (index) => {
@@ -15,7 +15,6 @@ export default function AboutUs() {
       i === index ? "red" : "black"
     );
     setTextColors(updatedColors);
-    localStorage.setItem("selectedTextColors", JSON.stringify(updatedColors));
   };
 
   useEffect(() => {
@@ -27,7 +26,7 @@ export default function AboutUs() {
         <div>
           <div className="headerBox-2-Box">
             <Link
-              to="/"
+              to=""
               className="headerBox-2-Link"
               onClick={() => handleTextClick(0)}
             >
@@ -64,6 +63,17 @@ export default function AboutUs() {
               <p className={`headerBox-2-Text ${textColors[4]}`}>About Us</p>
             </Link>
           </div>
+
+          <div className="headerBox-3">
+          <Link style={{ textDecoration: "none" }} to="">
+            <button
+              className={`headerBox-3-Button ${textColors[0]}`}
+              onClick={() => handleTextClick(5)}
+            >
+              <p className="headerBox-3-BText">Get Started</p>
+            </button>
+          </Link>
+        </div>
         </div>
       </div>
       <Footer />

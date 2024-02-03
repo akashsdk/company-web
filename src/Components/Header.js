@@ -38,23 +38,25 @@ export default function Header() {
     setOpen(false);
   };
 
-  const [textColors, setTextColors] = useState([
-    "black",
-    "black",
-    "black",
-    "black",
-    "black",
-    "black",
-    "black",
-  ]);
+  const storedColors = localStorage.getItem("selectedTextColors");
+  const [textColors, setTextColors] = useState(
+    storedColors
+      ? JSON.parse(storedColors)
+      : ["black", "black", "black", "black", "black", "black", "black"]
+  );
 
   const handleTextClick = (index) => {
     const updatedColors = textColors.map((_, i) =>
       i === index ? "red" : "black"
     );
     setTextColors(updatedColors);
+    localStorage.setItem("selectedTextColors", JSON.stringify(updatedColors));
     setOpen(false);
   };
+
+  useEffect(() => {
+    localStorage.setItem("selectedTextColors", JSON.stringify(textColors));
+  }, [textColors]);
 
   const items = [
     getItem(
@@ -277,7 +279,7 @@ export default function Header() {
                 )}
               </div>
             ) : (
-              <p>Rrror</p>
+              <img className="headerNew-Icon" alt="" src={icon1} />
             )}
 
             <DownOutlined className="headerBox-2-Icon" />
