@@ -163,8 +163,8 @@ export default function Header() {
             <div className="header-DrawerHeader">
               <Link style={{ textDecoration: "none" }} to="/Check-Out">
                 <button
-                  className={`headerBox-3-Button2 ${textColors[5]}`}
-                  onClick={() => handleTextClick(5)}
+                  className={`headerBox-3-Button2 ${textColors[0]}`}
+                  onClick={() => handleTextClick(0)}
                 >
                   <p className="headerBox-3-BText2">Get Started</p>
                 </button>
@@ -187,18 +187,12 @@ export default function Header() {
         </Drawer>
 
         {/* For mim size 1000 */}
-        <div className="headerBox-1">Icon and name</div>
-        <div className="headerBox-2">
-          <div className="headerBox-2-Box">
-            <Link
-              to="/"
-              className="headerBox-2-Link"
-              onClick={() => handleTextClick(0)}
-            >
-              <p className={`headerBox-2-Text ${textColors[0]}`}>Home</p>
-            </Link>
-          </div>
 
+        <div className="headerBox-1">
+          <Link to="/" onClick={() => handleTextClick(5)}>Icon and name</Link>
+        </div>
+        
+        <div className="headerBox-2">
           <div className="dropdown">
             <p className={`headerBox-2-Text ${textColors[1]}`}>Services</p>
             <DownOutlined className="headerBox-2-Icon" />
@@ -314,8 +308,8 @@ export default function Header() {
         <div className="headerBox-3">
           <Link style={{ textDecoration: "none" }} to="/Check-Out">
             <button
-              className={`headerBox-3-Button ${textColors[5]}`}
-              onClick={() => handleTextClick(5)}
+              className={`headerBox-3-Button ${textColors[0]}`}
+              onClick={() => handleTextClick(0)}
             >
               <p className="headerBox-3-BText">Get Started</p>
             </button>

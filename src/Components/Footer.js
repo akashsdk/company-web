@@ -42,7 +42,7 @@ const items = [
         rel="noopener noreferrer"
         href="https://www.facebook.com/tasnimSakash/"
       >
-        1st menu item
+        English
       </a>
     ),
   },
@@ -54,7 +54,7 @@ const items = [
         rel="noopener noreferrer"
         href="https://www.facebook.com/tasnimSakash/"
       >
-        2nd menu item
+        Bangla
       </a>
     ),
   },
@@ -66,7 +66,7 @@ const items = [
         rel="noopener noreferrer"
         href="https://www.facebook.com/tasnimSakash/"
       >
-        3rd menu item
+        Hindi
       </a>
     ),
   },
@@ -174,14 +174,14 @@ export default function Footer() {
                 <p className="footer-MdiBox2-Text2">Blog</p>
               </Link>
 
-              <Link to="/contacts" className="footer-MdiBox2-Link">
+              <Link to="/about-us" className="footer-MdiBox2-Link">
                 <DesktopOutlined className="footer-MdiBox2-Icon" />
-                <p className="footer-MdiBox2-Text2"> Contact</p>
+                <p className="footer-MdiBox2-Text2">About Us</p>
               </Link>
 
-              <Link to="/about-us" className="footer-MdiBox2-Link">
+              <Link to="/contacts" className="footer-MdiBox2-Link">
                 <CustomerServiceOutlined className="footer-MdiBox2-Icon" />
-                <p className="footer-MdiBox2-Text2">About Us</p>
+                <p className="footer-MdiBox2-Text2"> Contact</p>
               </Link>
             </div>
 
