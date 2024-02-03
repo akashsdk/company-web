@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 
 import { Link } from "react-router-dom";
@@ -14,6 +14,10 @@ import {
   AppstoreOutlined,
   CustomerServiceOutlined,
 } from "@ant-design/icons";
+
+import icon1 from "../Icon/united-kingdom.png";
+import icon2 from "../Icon/flag.png";
+import icon3 from "../Icon/india.png";
 
 function getItem(label, key, icon, children) {
   return {
@@ -115,6 +119,19 @@ export default function Header() {
       <CustomerServiceOutlined />
     ),
   ];
+
+  const storedSocialMedia = localStorage.getItem("selectedSocialMedia");
+  const [selectedSocialMedia, setSelectedSocialMedia] = useState(
+    storedSocialMedia || null
+  );
+
+  const handleSocialMediaSelect = (socialMedia) => {
+    setSelectedSocialMedia(socialMedia);
+  };
+
+  useEffect(() => {
+    localStorage.setItem("selectedSocialMedia", selectedSocialMedia);
+  }, [selectedSocialMedia]);
   return (
     <div className="header-body">
       <div className="headerBody">
@@ -244,6 +261,52 @@ export default function Header() {
             >
               <p className={`headerBox-2-Text ${textColors[4]}`}>About Us</p>
             </Link>
+          </div>
+
+          <div className="dropdown">
+            {selectedSocialMedia ? (
+              <div>
+                {selectedSocialMedia === "english" && (
+                  <img className="headerNew-Icon" alt="" src={icon1} />
+                )}
+                {selectedSocialMedia === "bangla" && (
+                  <img className="headerNew-Icon" alt="" src={icon2} />
+                )}
+                {selectedSocialMedia === "hindi" && (
+                  <img className="headerNew-Icon" alt="" src={icon3} />
+                )}
+              </div>
+            ) : (
+              <p>Rrror</p>
+            )}
+
+            <DownOutlined className="headerBox-2-Icon" />
+            <UpOutlined className="headerBox-2-Icon2" />
+            <div className="dropdown-content">
+              <button
+                className="headerNew-Button"
+                onClick={() => handleSocialMediaSelect("english")}
+              >
+                <img className="headerNew-Icon2" alt="" src={icon1} />
+                <p className="headerBox-2-Text">English</p>
+              </button>
+
+              <button
+                className="headerNew-Button"
+                onClick={() => handleSocialMediaSelect("bangla")}
+              >
+                <img className="headerNew-Icon2" alt="" src={icon2} />
+                <p className="headerBox-2-Text">Bangla</p>
+              </button>
+
+              <button
+                className="headerNew-Button"
+                onClick={() => handleSocialMediaSelect("hindi")}
+              >
+                <img className="headerNew-Icon2" alt="" src={icon3} />
+                <p className="headerBox-2-Text">Hindi</p>
+              </button>
+            </div>
           </div>
         </div>
         <div className="headerBox-3">
