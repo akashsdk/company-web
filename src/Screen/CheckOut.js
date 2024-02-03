@@ -14,6 +14,7 @@ import {
   FileProtectOutlined,
   DollarOutlined,
 } from "@ant-design/icons";
+
 import {
   Input,
   Button,
@@ -22,7 +23,6 @@ import {
   Modal,
   Result,
   notification,
-  message,
 } from "antd";
 
 const { TextArea } = Input;

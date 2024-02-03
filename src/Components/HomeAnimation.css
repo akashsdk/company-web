@@ -20,8 +20,58 @@
   opacity: 0.6;
   text-align: center;
 }
-/* color: rgb(98, 54, 242); */
-
+.Animation-Box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Animation-Box-Left{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Animation-Box-Right{
+  width: 40%;
+}
+.Animation-ImgDiv{
+  overflow: hidden;
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+}
+.Animation-Img{
+  transition: transform 0.3s ease-in-out;
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+}
+.Animation-ImgDiv:hover .Animation-Img{
+  transform: scale(1.2); 
+}
+.Animation-Text3{
+  font-size: 20px;
+  color: rgb(49, 49, 143);
+  font-weight: 600;
+}
+.Animation-Text4{
+  font-size: 20px;
+}
+.Animation-Link{
+  display: flex;
+  color: rgb(49, 49, 143);
+  text-decoration: none;
+}
+.Animation-Text4{
+  font-size: 20px;
+}
+.Animation-Icon{
+font-size: 20px;
+margin-left: 10px;
+}
 @media only screen and (max-width: 1000px) {
   .Animation-Text1 {
     font-size: 25px;
