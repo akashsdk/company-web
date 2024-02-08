@@ -32,13 +32,12 @@ export default function HomeAnimation() {
               </div>
               <p className="Animation-Text3">Creative Design</p>
               <p className="Animation-Text4">
-                "Discover the artistry of our software solutions at [Your
-                Company Name]. Our creative design services redefine digital
+                "Discover the artistry of our software solutions at ABCode. Our creative design services redefine digital
                 experiences, seamlessly integrating aesthetics with
                 functionality. Elevate your brand with bespoke designs that
                 captivate and engage. From user-friendly interfaces to unique
                 branding, we tailor each project to exceed expectations. At
-                [Your Company Name], we blend innovation with precision,
+                ABCode, we blend innovation with precision,
                 delivering software solutions that not only meet but exceed
                 client aspirations. Experience a new realm of creative design
                 with our expert team."
@@ -56,7 +55,7 @@ export default function HomeAnimation() {
               <p className="Animation-Text3">Flexible Design</p>
               <p className="Animation-Text4">
                 "Embrace adaptability with our innovative approach to Flexible
-                Design at [Your Company Name]. Our small IT company is dedicated
+                Design at ABCode. Our small IT company is dedicated
                 to crafting top-tier, client-centric software solutions marked
                 by unparalleled flexibility. We understand the dynamic nature of
                 businesses, and our team excels in creating designs that
@@ -64,7 +63,7 @@ export default function HomeAnimation() {
                 versatile applications, we prioritize flexibility in every
                 project, ensuring your software not only meets current
                 requirements but easily accommodates future enhancements. At
-                [Your Company Name], we redefine flexibility, providing software
+                ABCode, we redefine flexibility, providing software
                 solutions that grow with your business, setting the foundation
                 for sustained success in the ever-changing digital landscape."
               </p>
@@ -82,7 +81,7 @@ export default function HomeAnimation() {
               </div>
               <p className="Animation-Text3">Responsive Design</p>
               <p className="Animation-Text4">
-                "At [Your Company Name], we redefine digital experiences through
+                "At ABCode, we redefine digital experiences through
                 Responsive Design. Our small IT company takes pride in
                 delivering high-quality software with an unwavering focus on
                 responsiveness. Seamlessly adapting to various devices and
@@ -107,7 +106,7 @@ export default function HomeAnimation() {
               </div>
               <p className="Animation-Text3">Clean Design</p>
               <p className="Animation-Text4">
-                "At [Your Company Name], we specialize in crafting software with
+                "At ABCode, we specialize in crafting software with
                 a commitment to Clean Design. Our small IT company places
                 emphasis on minimalist and user-friendly interfaces, ensuring an
                 immersive and clutter-free experience for clients. From sleek
@@ -115,8 +114,7 @@ export default function HomeAnimation() {
                 simplicity in design, enhancing usability and leaving a lasting
                 impression. Experience the elegance of our solutions, where
                 every line of code contributes to a clean and sophisticated user
-                interface, setting the benchmark for quality software at [Your
-                Company Name]."
+                interface, setting the benchmark for quality software at ABCode."
               </p>
               <Link to="/contacts" className="Animation-Link">
                 <p className="Animation-Text5">Contact Us</p>

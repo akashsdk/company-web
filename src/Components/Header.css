@@ -196,7 +196,7 @@
 
 .dropdown:hover .dropdown-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -244,6 +244,12 @@
   height: 25px;
   margin-right: 7px;
 }
+.headerNew-Button1{
+  margin-top: -100px;
+}
+.headerBox-1-webIcon{
+  height: 70px;
+}
 @media only screen and (max-width: 1000px) {
   .headerBody {
     height: 80px;
@@ -262,6 +268,9 @@
   }
   .headerBox-3 {
     display: none;
+  }
+  .headerBox-1-webIcon{
+    height: 50px;
   }
 }
 

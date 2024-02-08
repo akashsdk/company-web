@@ -18,6 +18,7 @@ import {
 import icon1 from "../Icon/united-kingdom.png";
 import icon2 from "../Icon/flag.png";
 import icon3 from "../Icon/india.png";
+import webIcon from "../Icon/web logo.png";
 
 function getItem(label, key, icon, children) {
   return {
@@ -148,10 +149,13 @@ export default function Header() {
               icon={<MenuOutlined />}
             />
           </div>
+          <div className="header-MenuBox2"></div>
           <div className="header-MenuBox">
-            <Link to="/">Name&Icon</Link>
+            <Link to="/">
+            <img className="headerBox-1-webIcon" alt="" src={webIcon}/>
+            </Link>
           </div>
-          <div className="header-MenuBox2">Icon</div>
+          
         </div>
 
         <Drawer
@@ -189,7 +193,9 @@ export default function Header() {
         {/* For mim size 1000 */}
 
         <div className="headerBox-1">
-          <Link to="/" onClick={() => handleTextClick(5)}>Icon and name</Link>
+          <Link to="/" onClick={() => handleTextClick(5)}>
+            <img className="headerBox-1-webIcon" alt="" src={webIcon}/>
+          </Link>
         </div>
         
         <div className="headerBox-2">

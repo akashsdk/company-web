@@ -54,13 +54,13 @@ export default function Home() {
         <div className="homeMain-Body">
           <div className="homeMain-Left">
             <p className="homeMain-Left-Text1">
-              Offshore Software Development 🙌
+              Welcome to Advanced Binary Code Limited 🙌
             </p>
             <p className="homeMain-Left-Text2">
               We Deploy World Class Agile Product Teams on Demand
             </p>
             <p className="homeMain-Left-Text3">
-              'Web Name' specializes in providing custom software development
+              ABCode specializes in providing custom software development
               services. Get premium software solutions from a reliable
               outsourcing partner and set your business apart. Skilled teams
               that can design, build, space and scale your vision in the most
@@ -98,7 +98,9 @@ export default function Home() {
         <div className="home-Part-Box2">
           <div style={{ height: "20px" }} />
           <div className="home-Part-Div2">
-            <p className="home-Part-Text1">How 'web name' Works</p>
+            <p className="home-Part-Text1">
+              How ABCode Works
+            </p>
             <p className="home-Part-Text2">
               We follow agile methodology to deliver a high quality task to meet
               established deadline. A business can choose the software
@@ -222,9 +224,8 @@ export default function Home() {
             <p className="home-Part-Text1">Technology We Used</p>
             <p className="home-Part-Text2">
               It has become a prerequisite for companies to develop custom
-              software products to stay competitive. 'web Name' technical
-              expertise use the most popular technology for development
-              outsourcing software.
+              software products to stay competitive. ABCode technical expertise use the most popular technology for
+              development outsourcing software.
             </p>
           </div>
 
@@ -409,11 +410,11 @@ export default function Home() {
         <div className="Terms-Div">
           <p className="Terms-Text1">Terms And Conditions</p>
           <p className="Terms-Text2">
-            Welcome to [Your Company Name]! We are delighted to have you on
-            board as a valued client for your software development needs. Our
-            commitment is to deliver high-quality mobile apps and web
-            applications that not only meet but exceed your expectations. Please
-            take a moment to review our Terms and Conditions.
+            Welcome to ABCode! We are delighted to have you on board as a valued
+            client for your software development needs. Our commitment is to
+            deliver high-quality mobile apps and web applications that not only
+            meet but exceed your expectations. Please take a moment to review
+            our Terms and Conditions.
           </p>
 
           <p className="Terms-Text3">1. Project Initiation:</p>
@@ -425,10 +426,10 @@ export default function Home() {
 
           <p className="Terms-Text3">2. Quality Assurance:</p>
           <p className="Terms-Text2">
-            At [Your Software Development Company], we pride ourselves on
-            delivering top-notch software solutions. Our dedicated team of
-            professionals works diligently to maintain the highest standards of
-            quality throughout the development process.
+            At ABCode, we pride ourselves on delivering top-notch software
+            solutions. Our dedicated team of professionals works diligently to
+            maintain the highest standards of quality throughout the development
+            process.
           </p>
 
           <p className="Terms-Text3">3. Cost Transparency:</p>
@@ -478,9 +479,8 @@ export default function Home() {
 
           <p className="Terms-Text3">9. Legal Compliance:</p>
           <p className="Terms-Text2">
-            [Your Software Development Company] operates in full compliance with
-            local and international laws. We respect privacy and adhere to data
-            protection regulations.
+            ABCode operates in full compliance with local and international
+            laws. We respect privacy and adhere to data protection regulations.
           </p>
 
           <p className="Terms-Text3">10. Amendments to Terms:</p>
@@ -490,17 +490,18 @@ export default function Home() {
             requirements. Clients will be notified of any updates promptly.
             <br />
             <br />
-            By engaging with [Your Software Development Company], you agree to
-            these Terms and Conditions. We look forward to a successful
-            collaboration and the opportunity to bring your software ideas to
-            life. If you have any questions or concerns, please feel free to
-            contact us.
+            By engaging with ABCode, you agree to these Terms and Conditions. We
+            look forward to a successful collaboration and the opportunity to
+            bring your software ideas to life. If you have any questions or
+            concerns, please feel free to contact us.
             <br />
             <br />
-            Thank you for choosing [Your Software Development Company]!
+            Thank you for choosing ABCode!
             <br />
             <br />
-            [Your Company Name] [Your Contact Information]
+            Advanced Binary Code Limited
+            <br />
+            [Your Contact Information]
           </p>
         </div>
       </div>

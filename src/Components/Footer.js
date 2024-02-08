@@ -142,7 +142,7 @@ export default function Footer() {
     <div className="footer-Body">
       {contextHolder}
       <div className="footer-Top">
-        <h1>Icon and Name</h1>
+        <h1>Advanced Binary Code Limited</h1>
       </div>
       <div className="footer-Mdi">
         <div className="footer-Mdi-Box">
