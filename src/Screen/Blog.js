@@ -22,25 +22,25 @@ export default function Blog() {
         <div className="blogPart1-Body">
           <div className="blogPart1-div1">
             <div className="blogPart1-div">
-              <Image className="blogPart1-img" src={photo1} />
+              <Image className="blogPart1-img" src={""} />
             </div>
           </div>
-          <p className="blogPart1-text2">Tasnim Shahriar Akash</p>
+          <p className="blogPart1-text2">CHAIRMAN Name</p>
           <p className="blogPart1-text3">
             Dear Valued Clients,
             <br />
             <br />
             I am delighted to extend a warm welcome to you on behalf of our
-            dynamic team at ABCode, where innovation meets
-            excellence. As the Chairman of this esteemed software company, it is
-            my privilege to connect with each and every one of you.
+            dynamic team at ABCode, where innovation meets excellence. As the
+            Chairman of this esteemed software company, it is my privilege to
+            connect with each and every one of you.
             <br />
             <br />
-            At ABCode, we are driven by a commitment to deliver
-            cutting-edge solutions that transcend expectations. We understand
-            that in today's rapidly evolving digital landscape, your needs are
-            unique, and we are dedicated to crafting bespoke software solutions
-            tailored to meet and exceed those needs.
+            At ABCode, we are driven by a commitment to deliver cutting-edge
+            solutions that transcend expectations. We understand that in today's
+            rapidly evolving digital landscape, your needs are unique, and we
+            are dedicated to crafting bespoke software solutions tailored to
+            meet and exceed those needs.
             <br />
             <br />
             Our journey is guided by a passion for innovation, a commitment to
@@ -58,15 +58,16 @@ export default function Blog() {
             with unwavering dedication.
             <br />
             <br />
-            Thank you for choosing ABCode. We look forward to
-            contributing to your success and creating a future shaped by
-            innovation, collaboration, and unparalleled technological solutions.
+            Thank you for choosing ABCode. We look forward to contributing to
+            your success and creating a future shaped by innovation,
+            collaboration, and unparalleled technological solutions.
             <br />
             <br />
             Warm regards,
             <br />
             <br />
-            Tasnim Shahriar Akash
+            CHAIRMAN Name
+            {/* Tasnim Shahriar Akash */}
             <br />
             Chairman
             <br />
@@ -77,7 +78,7 @@ export default function Blog() {
               <Button
                 type="link"
                 className=""
-                href="https://www.linkedin.com/in/tasnimsakash/"
+                // href="https://www.linkedin.com/in/tasnimsakash/"
                 target="_blank"
               >
                 <LinkedinOutlined className="blogPart1-Icon1" />
@@ -87,7 +88,7 @@ export default function Blog() {
               <Button
                 type="link"
                 className=""
-                href="https://web.facebook.com/tasnimSakash/"
+                // href="https://web.facebook.com/tasnimSakash/"
                 target="_blank"
               >
                 <FacebookOutlined className="blogPart1-Icon1" />
@@ -97,7 +98,7 @@ export default function Blog() {
               <Button
                 type="link"
                 className=""
-                href="https://my-portfolio-d43ec.web.app/"
+                // href="https://my-portfolio-d43ec.web.app/"
                 target="_blank"
               >
                 <GlobalOutlined className="blogPart1-Icon1" />
@@ -110,25 +111,25 @@ export default function Blog() {
         <div className="blogPart1-Body">
           <div className="blogPart1-div1">
             <div className="blogPart1-div">
-              <Image className="blogPart1-img" src={photo2} />
+              <Image className="blogPart1-img" src={""} />
             </div>
           </div>
-          <p className="blogPart1-text-2">Nabil Ul Tanvir Neon</p>
+          <p className="blogPart1-text-2">CEO name</p>
           <p className="blogPart1-text3">
             Dear Esteemed Clients,
             <br />
             <br />
-            As the CEO of ABCode, it is my pleasure to extend a
-            heartfelt welcome to you. At our core, we believe in the
-            transformative power of technology and its ability to redefine the
-            way businesses operate and thrive. I am thrilled to lead a team of
-            dedicated professionals who are committed to delivering innovative
-            and reliable software solutions.
+            As the CEO of ABCode, it is my pleasure to extend a heartfelt
+            welcome to you. At our core, we believe in the transformative power
+            of technology and its ability to redefine the way businesses operate
+            and thrive. I am thrilled to lead a team of dedicated professionals
+            who are committed to delivering innovative and reliable software
+            solutions.
             <br />
             <br />
-            Our mission at ABCode is to empower your business with
-            technology that not only meets but exceeds your expectations. In
-            today's fast-paced digital landscape, staying ahead is not just an
+            Our mission at ABCode is to empower your business with technology
+            that not only meets but exceeds your expectations. In today's
+            fast-paced digital landscape, staying ahead is not just an
             advantage—it's a necessity. We understand the challenges you face,
             and we are here to provide robust, scalable, and future-ready
             software solutions that propel your success.
@@ -141,15 +142,16 @@ export default function Blog() {
             delivering excellence.
             <br />
             <br />
-            Thank you for considering ABCode as your technology
-            partner. We look forward to fostering a collaborative relationship,
-            driving innovation, and contributing to your growth story.
+            Thank you for considering ABCode as your technology partner. We look
+            forward to fostering a collaborative relationship, driving
+            innovation, and contributing to your growth story.
             <br />
             <br />
             Best regards,
             <br />
             <br />
-            Nabil Ul Tanvir Neon
+            CEO name
+            {/* Nabil Ul Tanvir Neon */}
             <br />
             CEO
             <br />
@@ -165,7 +167,7 @@ export default function Blog() {
               <Button
                 type="link"
                 className=""
-                href="https://web.facebook.com/neon.nabil.3"
+                // href="https://web.facebook.com/neon.nabil.3"
                 target="_blank"
               >
                 <FacebookOutlined className="blogPart1-Icon1" />
@@ -175,7 +177,7 @@ export default function Blog() {
               <Button
                 type="link"
                 className=""
-                href="https://www.instagram.com/nabilneon/"
+                // href="https://www.instagram.com/nabilneon/"
                 target="_blank"
               >
                 <InstagramOutlined className="blogPart1-Icon1" />
