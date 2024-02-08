@@ -180,12 +180,12 @@ export default function Career() {
             <p className="Career-Box2Left-text1">Why! Join with us?</p>
             <p className="Career-Box2Left-text2">
               If you are looking for a company that values creativity,
-              innovation, and collaboration, then 'web site name' is the place
+              innovation, and collaboration, then ABCode is the place
               for you. We offer a dynamic work environment that promotes
               professional growth and encourages individuals to challenge
               themselves. Our team is composed of talented individuals from
               diverse backgrounds who are committed to creating exceptional
-              software solutions for our clients. By joining 'web site name',
+              software solutions for our clients. By joining ABCode,
               you will have the opportunity to work with cutting-edge
               technologies, collaborate with a talented team of professionals,
               and make a meaningful impact in the industry.
@@ -303,7 +303,7 @@ export default function Career() {
         <div className="Career-Box4">
           <p className="Career-Box3-text1">Benefits and Opportunities</p>
           <p className="Career-Box3-text2">
-            At 'web site name', we believe in empowering our team to reach their
+            At ABCode, we believe in empowering our team to reach their
             full potential. We offer a rich array of benefits and opportunities
             for professional and personal growth.
           </p>
@@ -325,7 +325,7 @@ export default function Career() {
         <div className="Career-Box5">
           <p className="Career-Box3-text1">How to Join Our Dynamic Team</p>
           <p className="Career-Box3-text2">
-            Become a part of the (web site name) family through our thorough
+            Become a part of the ABCode family through our thorough
             4-step hiring process.
           </p>
           <div className="Career-Box5-Div1">
@@ -335,7 +335,7 @@ export default function Career() {
                 <div className="Career-Box5-Div3">
                   <p className="Career-Box5-Text2">Apply</p>
                   <p className="Career-Box5-Text3">
-                    Do you want to be a part of the (web site name) team? Go
+                    Do you want to be a part of the ABCode team? Go
                     through our job openings and submit your application.
                   </p>
                 </div>

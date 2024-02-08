@@ -33,9 +33,21 @@
 .homeMain-Right-Img {
   height: 500px;
 }
+.homeMain-Left-Text1NewBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .homeMain-Left-Text1 {
   font-size: 16px;
   text-align: left;
+}
+.homeMain-Left-Text1New {
+  font-size: 16px;
+  text-align: left;
+  background-color: #e9f109;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .homeMain-Left-Text2 {
   font-size: 30px;

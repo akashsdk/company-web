@@ -149,10 +149,12 @@ export default function Footer() {
           <div className="footer-Mdi-box1">
             <div className="footer-Mdi-box1Div">
               <p className="footer-MdiBox2-Text1">Stay Connected</p>
-              <p className="footer-MdiBox1-Text1">Web site name</p>
+              <p className="footer-MdiBox1-Text1">Advanced Binary Code Limited</p>
               <p className="footer-MdiBox1-Text1">Address:</p>
               <br />
-              <p className="footer-MdiBox1-Text1">Email:</p>
+              <br />
+              <p className="footer-MdiBox1-Text1">Email: advancedbinarycode@gmail.com</p>
+              <p className="footer-MdiBox1-Text1">Phone: 01580-233165</p>
             </div>
           </div>
 

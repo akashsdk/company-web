@@ -31,12 +31,12 @@ export default function Blog() {
             <br />
             <br />
             I am delighted to extend a warm welcome to you on behalf of our
-            dynamic team at [Your Company Name], where innovation meets
+            dynamic team at ABCode, where innovation meets
             excellence. As the Chairman of this esteemed software company, it is
             my privilege to connect with each and every one of you.
             <br />
             <br />
-            At [Your Company Name], we are driven by a commitment to deliver
+            At ABCode, we are driven by a commitment to deliver
             cutting-edge solutions that transcend expectations. We understand
             that in today's rapidly evolving digital landscape, your needs are
             unique, and we are dedicated to crafting bespoke software solutions
@@ -58,7 +58,7 @@ export default function Blog() {
             with unwavering dedication.
             <br />
             <br />
-            Thank you for choosing [Your Company Name]. We look forward to
+            Thank you for choosing ABCode. We look forward to
             contributing to your success and creating a future shaped by
             innovation, collaboration, and unparalleled technological solutions.
             <br />
@@ -68,11 +68,9 @@ export default function Blog() {
             <br />
             Tasnim Shahriar Akash
             <br />
-            <br />
             Chairman
             <br />
-            <br />
-            [Your Company Name]
+            Advanced Binary Code Limited.
           </p>
           <div className="blogPart1-div3">
             <Tooltip title="Linkedin">
@@ -120,7 +118,7 @@ export default function Blog() {
             Dear Esteemed Clients,
             <br />
             <br />
-            As the CEO of [Your Company Name], it is my pleasure to extend a
+            As the CEO of ABCode, it is my pleasure to extend a
             heartfelt welcome to you. At our core, we believe in the
             transformative power of technology and its ability to redefine the
             way businesses operate and thrive. I am thrilled to lead a team of
@@ -128,7 +126,7 @@ export default function Blog() {
             and reliable software solutions.
             <br />
             <br />
-            Our mission at [Your Company Name] is to empower your business with
+            Our mission at ABCode is to empower your business with
             technology that not only meets but exceeds your expectations. In
             today's fast-paced digital landscape, staying ahead is not just an
             advantage—it's a necessity. We understand the challenges you face,
@@ -143,7 +141,7 @@ export default function Blog() {
             delivering excellence.
             <br />
             <br />
-            Thank you for considering [Your Company Name] as your technology
+            Thank you for considering ABCode as your technology
             partner. We look forward to fostering a collaborative relationship,
             driving innovation, and contributing to your growth story.
             <br />
@@ -153,11 +151,9 @@ export default function Blog() {
             <br />
             Nabil Ul Tanvir Neon
             <br />
-            <br />
             CEO
             <br />
-            <br />
-            [Your Company Name]
+            Advanced Binary Code Limited
           </p>
           <div className="blogPart1-div3">
             <Tooltip title="Linkedin">

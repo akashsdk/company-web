@@ -12,7 +12,7 @@ export default function MVPServices() {
         <ServicesCart
           text1="Minimum Viable product (MVP) Development Service"
           text2="Boost Your Market & Launch Cost-Effective Product With Expert MVP Development"
-          text3="Align MVP software development with your business goals to build solutions. {web site}, an MVP development company, helps launch key software features that satisfy potential customers and balance with the project budget."
+          text3="Align MVP software development with your business goals to build solutions. ABCode, an MVP development company, helps launch key software features that satisfy potential customers and balance with the project budget."
           text4="About MVP Development"
           text5="MVP is a way to minimize risk and ensure that the product is developed in the right direction. The purpose of an MVP is to validate the product concept and gather feedback to guide future development."
           text6="MVP Software Development"

@@ -12,7 +12,7 @@ export default function ProjectDevelopment() {
         <ServicesCart
           text1="End to End Product Development"
           text2="End to End Development that Deliver Outstading Product Efficiently"
-          text3="Grow your business with the help of end-to-end software development. {web site name} offers a complete end-to-end product development process to launch a new product."
+          text3="Grow your business with the help of end-to-end software development. ABCode offers a complete end-to-end product development process to launch a new product."
           text4="About End to End Software Development"
           text5="End to end development services refer to a software development approach that involves designing and building a complete software solution from start to finish. Our expert team delivers high-quality end to end development solutions."
           text6="End to End Product Development"

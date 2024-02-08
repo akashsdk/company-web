@@ -14,7 +14,7 @@ export default function OffshoreDev() {
       text2='Ready to Expand Your Offshore Office?'
       text3='Set your company with quality software solutions from a dependable partner. Teams that can most effectively design, develop, space, and scale your concept.'
       text4='About Offshore Office Expansion Service'
-      text5='Expand Your Business Overseas with Our Offshore Office Services. We will help you establish your new office in another country while retaining control and oversight. With {web sit name}, you will get the support you need to penetrate new markets and take your business to new heights.'
+      text5='Expand Your Business Overseas with Our Offshore Office Services. We will help you establish your new office in another country while retaining control and oversight. With ABCode, you will get the support you need to penetrate new markets and take your business to new heights.'
       text6='Offshore office expansion'
       text7='The offshore office service typically includes the setup of the office, including the acquisition of necessary equipment, management, and technical support to ensure the smooth operation of the business. This service includes staffing the talented developer, training them, and collaborating with the existing team.
 

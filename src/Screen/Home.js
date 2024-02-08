@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import "../Others/TermsAndConditions.css";
 
-import { FloatButton } from "antd";
 import { Link } from "react-router-dom";
 
 import HomeAnimation from "../Components/HomeAnimation";
@@ -53,9 +52,14 @@ export default function Home() {
         {/* Main-Body */}
         <div className="homeMain-Body">
           <div className="homeMain-Left">
-            <p className="homeMain-Left-Text1">
-              Welcome to Advanced Binary Code Limited 🙌
-            </p>
+            <div className="homeMain-Left-Text1NewBox">
+              <p className="homeMain-Left-Text1">Welcome to</p>
+              <p className="homeMain-Left-Text1New">
+                Advanced Binary Code Limited
+              </p>
+              <p className="homeMain-Left-Text1">🙌</p>
+            </div>
+
             <p className="homeMain-Left-Text2">
               We Deploy World Class Agile Product Teams on Demand
             </p>
@@ -98,9 +102,7 @@ export default function Home() {
         <div className="home-Part-Box2">
           <div style={{ height: "20px" }} />
           <div className="home-Part-Div2">
-            <p className="home-Part-Text1">
-              How ABCode Works
-            </p>
+            <p className="home-Part-Text1">How ABCode Works</p>
             <p className="home-Part-Text2">
               We follow agile methodology to deliver a high quality task to meet
               established deadline. A business can choose the software
@@ -224,8 +226,9 @@ export default function Home() {
             <p className="home-Part-Text1">Technology We Used</p>
             <p className="home-Part-Text2">
               It has become a prerequisite for companies to develop custom
-              software products to stay competitive. ABCode technical expertise use the most popular technology for
-              development outsourcing software.
+              software products to stay competitive. ABCode technical expertise
+              use the most popular technology for development outsourcing
+              software.
             </p>
           </div>
 
@@ -499,9 +502,9 @@ export default function Home() {
             Thank you for choosing ABCode!
             <br />
             <br />
-            Advanced Binary Code Limited
+            Advanced Binary Code Limited.
             <br />
-            [Your Contact Information]
+            advancedbinarycode@gmail.com.
           </p>
         </div>
       </div>

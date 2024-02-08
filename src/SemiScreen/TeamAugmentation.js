@@ -12,7 +12,7 @@ export default function TeamAugmentation() {
         <ServicesCart
           text1="IT Staff Augmentation Services"
           text2="Get Expert Resources, Maximize Your Team Performance Through Augmentation Strategies"
-          text3="Looking for top-tier IT staff augmentation services? (web site name) has you covered. We offer comprehensive team augmentation solutions with highly skilled personnel to help you grow and strengthen your team. From software developers to project managers, we have the expertise to elevate your business to the next level. Partner with (web site name) today and watch your team thrive."
+          text3="Looking for top-tier IT staff augmentation services? ABCode has you covered. We offer comprehensive team augmentation solutions with highly skilled personnel to help you grow and strengthen your team. From software developers to project managers, we have the expertise to elevate your business to the next level. Partner with ABCode today and watch your team thrive."
           text4="About Team Augmentation Services"
           text5="Do not let understaffing hold you back. Maximize your teams performance and reach your business goals with the best IT Staff Augmentation services from one of the most promising IT Staffing Companies. We provide the resources and support you need to keep your project on track and meet your deadlines."
           text6="The Agile Solution for Business Growth: How Team Augmentation Can Help You Succeed"
