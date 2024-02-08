@@ -1,45 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-
-import { FloatButton } from "antd";
-import sun from "./Icon/sun.png";
-import moon from "./Icon/moon.png";
 
 import WrongPage from "./Screen/WrongPage";
 import Home from "./Screen/Home";
 import Header from "./Components/Header";
 import Contacts from "./Screen/Contacts";
-import AboutUs from './Screen/AboutUs';
-import Career from './Screen/Career';
-import Services from './Screen/Services';
-import Blog from './Screen/Blog';
-import CheckOut from './Screen/CheckOut';
+import AboutUs from "./Screen/AboutUs";
+import Career from "./Screen/Career";
+import Services from "./Screen/Services";
+import Blog from "./Screen/Blog";
+import CheckOut from "./Screen/CheckOut";
 
-import TeamAugmentation from './SemiScreen/TeamAugmentation';
-import ProjectDevelopment from './SemiScreen/ProjectDevelopment';
-import OffshoreDev from './SemiScreen/OffshoreDev';
-import MVPServices from './SemiScreen/MVPServices';
+import TeamAugmentation from "./SemiScreen/TeamAugmentation";
+import ProjectDevelopment from "./SemiScreen/ProjectDevelopment";
+import OffshoreDev from "./SemiScreen/OffshoreDev";
+import MVPServices from "./SemiScreen/MVPServices";
 
-import TermsAndConditions from './Others/TermsAndConditions';
-import PrivacyPolicy from './Others/PrivacyPolicy';
-import CookiesPolicy from './Others/CookiesPolicy';
-import CopyrightPolicy from './Others/CopyrightPolicy';
+import TermsAndConditions from "./Others/TermsAndConditions";
+import PrivacyPolicy from "./Others/PrivacyPolicy";
+import CookiesPolicy from "./Others/CookiesPolicy";
+import CopyrightPolicy from "./Others/CopyrightPolicy";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  const handleDarkTheme = () => {
-    setTheme("dark");
-  };
-
-  const handleLightTheme = () => {
-    setTheme("light");
-  };
   return (
     <BrowserRouter>
-      <div className={theme}>
+      <div>
         <Header />
         <Routes>
           <Route path="*" element={<WrongPage />} />
@@ -55,49 +42,26 @@ function App() {
           <Route path="/project-development" element={<ProjectDevelopment />} />
           <Route path="/mvp-services" element={<MVPServices />} />
           <Route path="/offshore-development" element={<OffshoreDev />} />
-          <Route path="/home/team-augmentation" element={<TeamAugmentation />} />
-          <Route path="/home/project-development" element={<ProjectDevelopment />} />
+          <Route
+            path="/home/team-augmentation"
+            element={<TeamAugmentation />}
+          />
+          <Route
+            path="/home/project-development"
+            element={<ProjectDevelopment />}
+          />
           <Route path="/home/mvp-services" element={<MVPServices />} />
           <Route path="/home/offshore-development" element={<OffshoreDev />} />
 
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cookies-policy" element={<CookiesPolicy />} />
           <Route path="/copyright-policy" element={<CopyrightPolicy />} />
         </Routes>
       </div>
-      <FloatButton.Group
-        shape="circle"
-        style={{
-          right: 24,
-        }}
-      >
-        {theme === "dark" ? (
-          <FloatButton
-            onClick={handleLightTheme}
-            icon={
-              <img
-                style={{ height: "25px", marginLeft: "-3px" }}
-                src={sun}
-                alt=""
-              />
-            }
-          />
-        ) : (
-          <FloatButton
-            onClick={handleDarkTheme}
-            icon={
-              <img
-                style={{ height: "25px", marginLeft: "-3px" }}
-                src={moon}
-                alt=""
-              />
-            }
-          />
-        )}
-
-        <FloatButton.BackTop visibilityHeight={0} />
-      </FloatButton.Group>
     </BrowserRouter>
   );
 }

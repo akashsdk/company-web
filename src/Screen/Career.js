@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Career.css";
 import Footer from "../Components/Footer";
 import SoftwareService from "../Cart/SoftwareService";
@@ -144,6 +144,8 @@ export default function Career() {
     setIsModalOpen(false);
   };
 
+  const careerRef = useRef(null);
+
   return (
     <div className="AppBody">
       <div className="Career-Body">
@@ -162,7 +164,14 @@ export default function Career() {
               and cohesive team delivering innovative software solutions.
             </p>
 
-            <button className="Career-Box1Left-Button">
+            <button
+              className="Career-Box1Left-Button"
+              onClick={() => {
+                careerRef.current?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               <p className="Career-Box1Left-text4">Apply Now</p>
             </button>
           </div>
@@ -180,15 +189,15 @@ export default function Career() {
             <p className="Career-Box2Left-text1">Why! Join with us?</p>
             <p className="Career-Box2Left-text2">
               If you are looking for a company that values creativity,
-              innovation, and collaboration, then ABCode is the place
-              for you. We offer a dynamic work environment that promotes
-              professional growth and encourages individuals to challenge
-              themselves. Our team is composed of talented individuals from
-              diverse backgrounds who are committed to creating exceptional
-              software solutions for our clients. By joining ABCode,
-              you will have the opportunity to work with cutting-edge
-              technologies, collaborate with a talented team of professionals,
-              and make a meaningful impact in the industry.
+              innovation, and collaboration, then ABCode is the place for you.
+              We offer a dynamic work environment that promotes professional
+              growth and encourages individuals to challenge themselves. Our
+              team is composed of talented individuals from diverse backgrounds
+              who are committed to creating exceptional software solutions for
+              our clients. By joining ABCode, you will have the opportunity to
+              work with cutting-edge technologies, collaborate with a talented
+              team of professionals, and make a meaningful impact in the
+              industry.
             </p>
           </div>
         </div>
@@ -217,7 +226,14 @@ export default function Career() {
                       <p className="careerBox3-text2">Remote</p>
                       <p className="careerBox3-text3">Exp: 3+ Years</p>
                     </div>
-                    <button className="careerBox3-button">
+                    <button
+                      className="careerBox3-button"
+                      onClick={() => {
+                        careerRef.current?.scrollIntoView({
+                          behavior: "smooth",
+                        });
+                      }}
+                    >
                       <p className="careerBox3-text4">Apply Now</p>
                       <ArrowRightOutlined className="careerBox3-Icon2" />
                     </button>
@@ -249,7 +265,14 @@ export default function Career() {
                       <p className="careerBox3-text2">Remote</p>
                       <p className="careerBox3-text3">Exp: 4+ Years</p>
                     </div>
-                    <button className="careerBox3-button">
+                    <button
+                      className="careerBox3-button"
+                      onClick={() => {
+                        careerRef.current?.scrollIntoView({
+                          behavior: "smooth",
+                        });
+                      }}
+                    >
                       <p className="careerBox3-text4">Apply Now</p>
                       <ArrowRightOutlined className="careerBox3-Icon2" />
                     </button>
@@ -279,7 +302,14 @@ export default function Career() {
                       <p className="careerBox3-text2">Remote</p>
                       <p className="careerBox3-text3">Exp: 2+ Years</p>
                     </div>
-                    <button className="careerBox3-button">
+                    <button
+                      className="careerBox3-button"
+                      onClick={() => {
+                        careerRef.current?.scrollIntoView({
+                          behavior: "smooth",
+                        });
+                      }}
+                    >
                       <p className="careerBox3-text4">Apply Now</p>
                       <ArrowRightOutlined className="careerBox3-Icon2" />
                     </button>
@@ -303,9 +333,9 @@ export default function Career() {
         <div className="Career-Box4">
           <p className="Career-Box3-text1">Benefits and Opportunities</p>
           <p className="Career-Box3-text2">
-            At ABCode, we believe in empowering our team to reach their
-            full potential. We offer a rich array of benefits and opportunities
-            for professional and personal growth.
+            At ABCode, we believe in empowering our team to reach their full
+            potential. We offer a rich array of benefits and opportunities for
+            professional and personal growth.
           </p>
 
           <div className="Career-Box4-Flex">
@@ -325,8 +355,8 @@ export default function Career() {
         <div className="Career-Box5">
           <p className="Career-Box3-text1">How to Join Our Dynamic Team</p>
           <p className="Career-Box3-text2">
-            Become a part of the ABCode family through our thorough
-            4-step hiring process.
+            Become a part of the ABCode family through our thorough 4-step
+            hiring process.
           </p>
           <div className="Career-Box5-Div1">
             <div className="Career-Box5-Div2">
@@ -335,8 +365,8 @@ export default function Career() {
                 <div className="Career-Box5-Div3">
                   <p className="Career-Box5-Text2">Apply</p>
                   <p className="Career-Box5-Text3">
-                    Do you want to be a part of the ABCode team? Go
-                    through our job openings and submit your application.
+                    Do you want to be a part of the ABCode team? Go through our
+                    job openings and submit your application.
                   </p>
                 </div>
               </div>
@@ -387,7 +417,9 @@ export default function Career() {
 
         {/* part-6 */}
         <div className="Career-Box6">
-          <p className="Career-Box3-text1">Send Us Your Resume</p>
+          <p className="Career-Box3-text1" ref={careerRef} id="career">
+            Send Us Your Resume
+          </p>
           <div className="Career-Box6-From">
             <div className="Career-Box6-Div1">
               <Input

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Home.css";
 import "../Others/TermsAndConditions.css";
 
 import { Link } from "react-router-dom";
+import { FloatButton } from "antd";
+
+import { VerticalAlignTopOutlined } from '@ant-design/icons';
 
 import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from "../Cart/SoftwareService";
@@ -46,9 +49,10 @@ import icon27 from "../Icon/muSQL-removebg-preview.png";
 import HelpCart from "../Cart/HelpCart";
 
 export default function Home() {
+  const topRef = useRef(null);
   return (
-    <div className="home-Body">
-      <div className="homeBody">
+    <div className="home-Body" >
+      <div className="homeBody" ref={topRef} id="top">
         {/* Main-Body */}
         <div className="homeMain-Body">
           <div className="homeMain-Left">
@@ -507,6 +511,13 @@ export default function Home() {
             advancedbinarycode@gmail.com.
           </p>
         </div>
+
+        <FloatButton icon={<VerticalAlignTopOutlined />} visibilityHeight={0} onClick={() => {
+            topRef.current?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}/>
+        
       </div>
       <Footer />
     </div>
