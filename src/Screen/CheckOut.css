@@ -87,7 +87,7 @@
   font-weight: 600;
 }
 .Check-BodyBox-Div{
-  height: 45px;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -155,4 +155,34 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .Check-BodyBox-Text{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  .Check-BodyBox-Text2{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+    opacity: .6;
+  }
+  .CheckOut-Button {
+    height: 35px;
+  }
+  .CheckOut-Button2 {
+    height: 35px;
+  }
+  .CheckOut-Button-Text{
+    font-size: 16px;
+  }
+  .CheckOut-Button-Icon{
+    font-size: 16px;
+  }
+  .Check-HeaderText {
+    font-size: 25px;
+  }
+  .Check-Text1{
+    font-size: 18px;
+  }
+  
 }

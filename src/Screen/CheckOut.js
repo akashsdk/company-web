@@ -28,7 +28,7 @@ import {
 const { TextArea } = Input;
 
 export default function CheckOut() {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
 
   // step-1
   const [formData, setFormData] = useState({
@@ -89,7 +89,10 @@ export default function CheckOut() {
     setNewPackage(e.target.value);
   };
 
+  const [checked, setChecked] = useState([]);
+
   const onChange = (checkedValues) => {
+    setChecked(checkedValues);
     console.log("checked = ", checkedValues);
   };
 
@@ -251,10 +254,10 @@ export default function CheckOut() {
               />
 
               <div className="CheckOut-Button-Div">
-                <button className="CheckOut-Button">
+                <Button className="CheckOut-Button" disabled>
                   <LeftOutlined className="CheckOut-Button-Icon" />
                   <p className="CheckOut-Button-Text">Previous</p>
-                </button>
+                </Button>
                 <Button onClick={showModal} className="CheckOut-Button2" danger>
                   <p className="CheckOut-Button-Text">Reset</p>
                 </Button>
@@ -366,28 +369,30 @@ export default function CheckOut() {
                     style={{
                       width: "100%",
                     }}
+                    name="checked"
+                    value={checked}
                     onChange={onChange}
                   >
                     <p className="CheckOut-Checkbox-Text">For Front-End:</p>
                     <div className="CheckOut-Checkbox-MainDiv">
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="CSS">CSS</Checkbox>
-                        <Checkbox value="HTLM">HTLM</Checkbox>
-                        <Checkbox value="React Js">React Js</Checkbox>
-                        <Checkbox value="Swift">Swift</Checkbox>
-                        <Checkbox value="Express Js">Express Js</Checkbox>
+                        <Checkbox value="CSS,">CSS</Checkbox>
+                        <Checkbox value="HTLM,">HTLM</Checkbox>
+                        <Checkbox value="React Js,">React Js</Checkbox>
+                        <Checkbox value="Swift,">Swift</Checkbox>
+                        <Checkbox value="Express Js,">Express Js</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="Angular">Angular</Checkbox>
-                        <Checkbox value="jQuery">jQuery</Checkbox>
-                        <Checkbox value="Vue.js">Vue.js</Checkbox>
-                        <Checkbox value="Bootstrap">Bootstrap</Checkbox>
+                        <Checkbox value="Angular,">Angular</Checkbox>
+                        <Checkbox value="jQuery,">jQuery</Checkbox>
+                        <Checkbox value="Vue.js,">Vue.js</Checkbox>
+                        <Checkbox value="Bootstrap,">Bootstrap</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="Python">Python</Checkbox>
-                        <Checkbox value="PHP">PHP</Checkbox>
-                        <Checkbox value="Java">Java</Checkbox>
-                        <Checkbox value="Git">Git</Checkbox>
+                        <Checkbox value="Python,">Python</Checkbox>
+                        <Checkbox value="PHP,">PHP</Checkbox>
+                        <Checkbox value="Java,">Java</Checkbox>
+                        <Checkbox value="Git,">Git</Checkbox>
                       </div>
                     </div>
                   </Checkbox.Group>
@@ -404,19 +409,19 @@ export default function CheckOut() {
                     <p className="CheckOut-Checkbox-Text">For Back-End:</p>
                     <div className="CheckOut-Checkbox-MainDiv">
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="Python">Python</Checkbox>
-                        <Checkbox value="C#">C#</Checkbox>
-                        <Checkbox value="JavaScript">JavaScript</Checkbox>
+                        <Checkbox value="Python,">Python</Checkbox>
+                        <Checkbox value="C#,">C#</Checkbox>
+                        <Checkbox value="JavaScript,">JavaScript</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="NodeJS">NodeJS</Checkbox>
-                        <Checkbox value="ExpressJS">ExpressJS</Checkbox>
-                        <Checkbox value="MongoDB">MongoDB</Checkbox>
+                        <Checkbox value="NodeJS,">NodeJS</Checkbox>
+                        <Checkbox value="ExpressJS,">ExpressJS</Checkbox>
+                        <Checkbox value="MongoDB,">MongoDB</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="aws">aws</Checkbox>
-                        <Checkbox value="MySQL">MySQL</Checkbox>
-                        <Checkbox value="Firebase">Firebase</Checkbox>
+                        <Checkbox value="aws,">aws</Checkbox>
+                        <Checkbox value="MySQL,">MySQL</Checkbox>
+                        <Checkbox value="Firebase,">Firebase</Checkbox>
                       </div>
                     </div>
                   </Checkbox.Group>
@@ -433,42 +438,42 @@ export default function CheckOut() {
                     <p className="CheckOut-Checkbox-Text">For Front-End:</p>
                     <div className="CheckOut-Checkbox-MainDiv">
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="CSS">CSS</Checkbox>
-                        <Checkbox value="HTLM">HTLM</Checkbox>
-                        <Checkbox value="React">React Js</Checkbox>
-                        <Checkbox value="Swift">Swift</Checkbox>
-                        <Checkbox value="Express Js">Express Js</Checkbox>
+                        <Checkbox value="CSS,">CSS</Checkbox>
+                        <Checkbox value="HTLM,">HTLM</Checkbox>
+                        <Checkbox value="React,">React Js</Checkbox>
+                        <Checkbox value="Swift,">Swift</Checkbox>
+                        <Checkbox value="Express Js,">Express Js</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="Angular">Angular</Checkbox>
-                        <Checkbox value="jQuery">jQuery</Checkbox>
-                        <Checkbox value="Vue.js">Vue.js</Checkbox>
-                        <Checkbox value="Bootstrap">Bootstrap</Checkbox>
+                        <Checkbox value="Angular,">Angular</Checkbox>
+                        <Checkbox value="jQuery,">jQuery</Checkbox>
+                        <Checkbox value="Vue.js,">Vue.js</Checkbox>
+                        <Checkbox value="Bootstrap,">Bootstrap</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="Python">Python</Checkbox>
-                        <Checkbox value="PHP">PHP</Checkbox>
-                        <Checkbox value="Java">Java</Checkbox>
-                        <Checkbox value="Git">Git</Checkbox>
+                        <Checkbox value="Python,">Python</Checkbox>
+                        <Checkbox value="PHP,">PHP</Checkbox>
+                        <Checkbox value="Java,">Java</Checkbox>
+                        <Checkbox value="Git,">Git</Checkbox>
                       </div>
                     </div>
 
                     <p className="CheckOut-Checkbox-Text">For Back-End:</p>
                     <div className="CheckOut-Checkbox-MainDiv">
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="Python">Python</Checkbox>
-                        <Checkbox value="C#">C#</Checkbox>
-                        <Checkbox value="JavaScript">JavaScript</Checkbox>
+                        <Checkbox value="Python,">Python</Checkbox>
+                        <Checkbox value="C#,">C#</Checkbox>
+                        <Checkbox value="JavaScript,">JavaScript</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="NodeJS">NodeJS</Checkbox>
-                        <Checkbox value="ExpressJS">ExpressJS</Checkbox>
-                        <Checkbox value="MongoDB">MongoDB</Checkbox>
+                        <Checkbox value="NodeJS,">NodeJS</Checkbox>
+                        <Checkbox value="ExpressJS,">ExpressJS</Checkbox>
+                        <Checkbox value="MongoDB,">MongoDB</Checkbox>
                       </div>
                       <div className="CheckOut-Checkbox-Div">
-                        <Checkbox value="aws">aws</Checkbox>
-                        <Checkbox value="MySQL">MySQL</Checkbox>
-                        <Checkbox value="Firebase">Firebase</Checkbox>
+                        <Checkbox value="aws,">aws</Checkbox>
+                        <Checkbox value="MySQL,">MySQL</Checkbox>
+                        <Checkbox value="Firebase,">Firebase</Checkbox>
                       </div>
                     </div>
                   </Checkbox.Group>
@@ -631,6 +636,12 @@ export default function CheckOut() {
                 <p className="Check-BodyBox-Text2">{language}</p>
               </div>
 
+              {checked.length > 0 && (
+                <div className="Check-BodyBox-Div">
+                  <p className="Check-BodyBox-Text2">{checked}</p>
+                </div>
+              )}
+
               {newPackage === "Basic" && (
                 <div className="Check-BodyBox-Div">
                   <p className="Check-BodyBox-Text">Package: </p>
@@ -686,10 +697,10 @@ export default function CheckOut() {
                 >
                   <p className="CheckOut-Button-Text">Submit</p>
                 </Button>
-                <button className="CheckOut-Button">
+                <Button className="CheckOut-Button" disabled>
                   <p className="CheckOut-Button-Text">Next</p>
                   <RightOutlined className="CheckOut-Button-Icon" />
-                </button>
+                </Button>
               </div>
             </div>
           ) : page === 3 ? (

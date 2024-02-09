@@ -75,7 +75,7 @@ export default function Home() {
               efficient way.
             </p>
             <div className="homeMain-Left-Box1">
-              <div>
+              <div className="homeMain-Left-Box2new">
                 <p className="homeMain-Left-Text4">3+</p>
                 <img className="homeMain-Left-Img" src={img2} alt="" />
                 <p className="homeMain-Left-Text5">Years of experience</p>
