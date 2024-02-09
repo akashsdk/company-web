@@ -12,6 +12,7 @@ import SoftwareService from "../Cart/SoftwareService";
 import HomeWorks from "../Cart/HomeWorks";
 import HomeTechnology from "../Cart/HomeTechnology";
 import Footer from "../Components/Footer";
+import Index from '../Components/Index';
 
 import img1 from "../Image/We-Deploy-World.png";
 import img2 from "../Image/pngtree-blue-removebg-preview (1).png";
@@ -53,6 +54,9 @@ export default function Home() {
   return (
     <div className="home-Body">
       <div className="homeBody" ref={topRef} id="top">
+        {/* Index */}
+        <Index/>
+
         {/* Main-Body */}
         <div className="homeMain-Body">
           <div className="homeMain-Left">

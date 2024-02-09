@@ -1,0 +1,28 @@
+.index-Body {
+  height: calc(100vh - 100px);
+  width: 108%;
+  margin-left: -4%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: linear-gradient(
+    to left,
+    rgb(98, 54, 242),
+    rgb(49, 49, 143),
+    #000000
+  );
+  color: #fff;
+  display: flex;
+}
+.index-Left{
+    width: 45%;
+}
+.index-Right{
+    height: calc(100vh - 100px);
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
