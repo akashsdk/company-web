@@ -8,7 +8,9 @@ export default function TermsAndConditions() {
     <div className="AppBody">
       <div className="Terms-Body">
         <div className="Terms-Div">
-          <p className="Terms-Text1">Terms And Conditions</p>
+          <div className="Terms-DivNew">
+            <p className="Terms-Text1">Terms And Conditions</p>
+          </div>
           <p className="Terms-Text2">
             Welcome to ABCode! We are delighted to have you on board as a valued
             client for your software development needs. Our commitment is to
@@ -18,6 +20,7 @@ export default function TermsAndConditions() {
           </p>
 
           <p className="Terms-Text3">1. Project Initiation:</p>
+
           <p className="Terms-Text2">
             The journey begins with understanding your vision and requirements.
             We strive to commence projects promptly after a thorough discussion

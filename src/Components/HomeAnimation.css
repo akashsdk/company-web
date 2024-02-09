@@ -9,6 +9,10 @@
 .Animation-Div {
   width: 92.7%;
   margin-left: 3.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .Animation-Text1 {
   font-size: 30px;
@@ -20,13 +24,13 @@
   opacity: 0.6;
   text-align: center;
 }
-.Animation-Box2{
+.Animation-Box2 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Animation-Box{
+.Animation-Box {
   width: 50%;
   height: auto;
   display: flex;
@@ -35,67 +39,67 @@
   margin-top: 60px;
   flex-direction: column;
 }
-.Animation-Box-Left{
+.Animation-Box-Left {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-.Animation-Box-Right{
+.Animation-Box-Right {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-.Animation-ImgDiv{
+.Animation-ImgDiv {
   overflow: hidden;
   width: 99%;
   height: 450px;
   border-radius: 30px;
   margin-left: 1%;
 }
-.Animation-ImgDiv2{
+.Animation-ImgDiv2 {
   overflow: hidden;
   width: 99%;
   height: 300px;
   border-radius: 30px;
   margin-left: 1%;
 }
-.Animation-Img{
+.Animation-Img {
   transition: transform 0.3s ease-in-out;
-  width:99%;
+  width: 99%;
   height: 450px;
   border-radius: 30px;
 }
-.Animation-ImgDiv:hover .Animation-Img{
-  transform: scale(1.1); 
+.Animation-ImgDiv:hover .Animation-Img {
+  transform: scale(1.1);
 }
-.Animation-Img2{
+.Animation-Img2 {
   transition: transform 0.3s ease-in-out;
   width: 99%;
   height: 300px;
   border-radius: 30px;
 }
-.Animation-ImgDiv2:hover .Animation-Img2{
-  transform: scale(1.1); 
+.Animation-ImgDiv2:hover .Animation-Img2 {
+  transform: scale(1.1);
 }
-.Animation-Text3{
+.Animation-Text3 {
   font-size: 22px;
   color: rgb(49, 49, 143);
   font-weight: 600;
   margin-left: 5%;
 }
-.Animation-Text4{
+.Animation-Text4 {
   font-size: 16px;
   text-align: justify;
   width: 90%;
   margin-top: -10px;
-  opacity: .7;
+  opacity: 0.7;
   margin-left: 5%;
 }
-.Animation-Link{
+.Animation-Link {
   margin-top: -10px;
   margin-bottom: 20px;
   display: flex;
@@ -103,75 +107,77 @@
   text-decoration: none;
   margin-left: 5%;
 }
-.Animation-Link:hover .Animation-Icon{
+.Animation-Link:hover .Animation-Icon {
   color: #fb4545;
 }
-.Animation-Text4{
+.Animation-Text4 {
   font-size: 20px;
 }
-.Animation-Icon{
-font-size: 20px;
-margin-left: 5px;
+.Animation-Icon {
+  font-size: 20px;
+  margin-left: 5px;
 }
 @media only screen and (max-width: 1000px) {
-  .h-AnimationBody{
+  .h-AnimationBody {
     margin-top: 30px;
   }
   .Animation-Text1 {
     font-size: 25px;
   }
-  .Animation-Box2{
+  .Animation-Box2 {
     flex-direction: column;
   }
-  .Animation-Box{
+  .Animation-Box {
     width: 100%;
   }
-  .Animation-ImgDiv{
-    width: 100%;
-    height: 350px;
-  }
-  .Animation-ImgDiv2{
+  .Animation-ImgDiv {
     width: 100%;
     height: 350px;
   }
-  .Animation-Img{
+  .Animation-ImgDiv2 {
     width: 100%;
     height: 350px;
   }
-  .Animation-Img2{
+  .Animation-Img {
     width: 100%;
     height: 350px;
   }
-  .Animation-Text3{
+  .Animation-Img2 {
+    width: 100%;
+    height: 350px;
+  }
+  .Animation-Text3 {
     font-size: 22px;
     width: 100%;
     margin-left: 0%;
   }
-  .Animation-Text4{
+  .Animation-Text4 {
     font-size: 16px;
     width: 100%;
     margin-left: 0%;
   }
-  .Animation-Link{
+  .Animation-Link {
     margin-left: 0%;
   }
-
 }
 @media only screen and (max-width: 600px) {
-  .Animation-ImgDiv{
+  .Animation-ImgDiv {
     width: 100%;
     height: 300px;
   }
-  .Animation-ImgDiv2{
+  .Animation-ImgDiv2 {
     width: 100%;
     height: 300px;
   }
-  .Animation-Img{
+  .Animation-Img {
     width: 100%;
     height: 300px;
   }
-  .Animation-Img2{
+  .Animation-Img2 {
     width: 100%;
     height: 300px;
+  }
+  .Animation-Text2 {
+    text-align: left;
   }
 }

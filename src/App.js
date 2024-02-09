@@ -26,7 +26,7 @@ import CopyrightPolicy from "./Others/CopyrightPolicy";
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="App">
         <Header />
         <Routes>
           <Route path="*" element={<WrongPage />} />

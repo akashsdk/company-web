@@ -5,7 +5,7 @@ import "../Others/TermsAndConditions.css";
 import { Link } from "react-router-dom";
 import { FloatButton } from "antd";
 
-import { VerticalAlignTopOutlined } from '@ant-design/icons';
+import { VerticalAlignTopOutlined } from "@ant-design/icons";
 
 import HomeAnimation from "../Components/HomeAnimation";
 import SoftwareService from "../Cart/SoftwareService";
@@ -51,7 +51,7 @@ import HelpCart from "../Cart/HelpCart";
 export default function Home() {
   const topRef = useRef(null);
   return (
-    <div className="home-Body" >
+    <div className="home-Body">
       <div className="homeBody" ref={topRef} id="top">
         {/* Main-Body */}
         <div className="homeMain-Body">
@@ -413,9 +413,13 @@ export default function Home() {
           text6="Deploying the finished products, Maintenance and updates."
         />
 
+        <div style={{height:'35px'}}/>
+
         {/* TermsAndConditions */}
         <div className="Terms-Div">
-          <p className="Terms-Text1">Terms And Conditions</p>
+          <div className="Terms-DivNew">
+            <p className="Terms-Text1">Terms And Conditions</p>
+          </div>
           <p className="Terms-Text2">
             Welcome to ABCode! We are delighted to have you on board as a valued
             client for your software development needs. Our commitment is to
@@ -512,12 +516,15 @@ export default function Home() {
           </p>
         </div>
 
-        <FloatButton icon={<VerticalAlignTopOutlined />} visibilityHeight={0} onClick={() => {
+        <FloatButton
+          icon={<VerticalAlignTopOutlined />}
+          visibilityHeight={0}
+          onClick={() => {
             topRef.current?.scrollIntoView({
               behavior: "smooth",
             });
-          }}/>
-        
+          }}
+        />
       </div>
       <Footer />
     </div>
